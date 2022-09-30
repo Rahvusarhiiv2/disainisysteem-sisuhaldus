@@ -1,0 +1,11 @@
+@tailwind base;
+
+/* Additional base styles */
+
+body {
+  color: theme("colors.gray.dark.900");
+  font-family: theme("fontFamily.body");
+}
+
+@tailwind components;
+@tailwind utilities;

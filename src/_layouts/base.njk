@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{title}} — Rahvusarhiiv Design System</title>
+
+    {# Fonts from Google Fonts CDN #}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    {# Syntax highlighting styles #}
+    <link href="https://unpkg.com/prism-themes/themes/prism-a11y-dark.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+  </head>
+  <body class="bg-gray-light-300">
+    {% include "_header.njk" %}
+
+    <div class="grid md:grid-cols-12 gap-2 m-2">
+      {% include "_sidebar.njk" %}
+      <main class="md:col-span-9 p-6 bg-white rounded shadow">
+
+        {% if formatContent === false %}
+          <article>
+            {{content | safe}}
+          </article>
+        {% else %}
+          <article class="prose prose-lg max-w-5xl">
+            {{content | safe}}
+          </article>
+        {% endif %}
+
+      </main>
+    </div>
+  </body>
+</html>
