@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Icons
+relative: ..
 
 eleventyNavigation:
   parent: Styles

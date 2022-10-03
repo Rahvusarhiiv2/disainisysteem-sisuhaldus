@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Components
+relative: ../..
 
 eleventyNavigation:
   parent: Components
