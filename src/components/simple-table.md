@@ -2,6 +2,7 @@
 layout: base
 title: Simple Table
 formatContent: false
+relative: ../..
 
 eleventyNavigation:
   parent: Components

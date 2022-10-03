@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Colors
+relative: ..
 
 eleventyNavigation:
   parent: Styles

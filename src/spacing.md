@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Spacing
+relative: ..
 
 eleventyNavigation:
   parent: Styles

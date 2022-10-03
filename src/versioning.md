@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Versioning
+relative: ..
 
 eleventyNavigation:
   parent: Home

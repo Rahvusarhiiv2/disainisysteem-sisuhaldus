@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Rahvusarhiiv
-index: true
+relative: .
 
 eleventyNavigation:
   parent: Home

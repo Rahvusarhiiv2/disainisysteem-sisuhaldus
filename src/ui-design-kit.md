@@ -1,6 +1,7 @@
 ---
 layout: base
 title: UI Design Kit
+relative: ..
 
 eleventyNavigation:
   parent: Design

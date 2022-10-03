@@ -14,10 +14,10 @@
     {# Syntax highlighting styles #}
     <link href="https://unpkg.com/prism-themes/themes/prism-a11y-dark.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="{% if index == true %}.{% else %}..{% endif %}{{ '/assets/css/style.css' | url }}">
+    <link rel="stylesheet" href="{{ relative }}{{ '/assets/css/style.css' | url }}">
 
   </head>
-  <body class="bg-gray-light-300">{{ username }}
+  <body class="bg-gray-light-300">
     {% include "_header.njk" %}
 
     <div class="grid md:grid-cols-12 gap-2 m-2">

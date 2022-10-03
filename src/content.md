@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Content (ET)
+relative: ..
 
 eleventyNavigation:
   parent: Design

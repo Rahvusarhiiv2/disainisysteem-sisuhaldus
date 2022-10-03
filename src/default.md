@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Default Tailwind CSS utilities
+relative: ..
 
 eleventyNavigation:
   parent: Styles

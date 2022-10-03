@@ -6,7 +6,7 @@
       <ul class="">
         {%- for entry in navPages %}
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light {% if entry.url == page.url %} bg-action-light {% endif %}" href="{% if index == true %}.{% else %}..{% endif %}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded py-2 px-4 hover:bg-action-light {% if entry.url == page.url %} bg-action-light {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
@@ -19,7 +19,7 @@
       <ul class="">
         {%- for entry in navPages %}
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light {% if entry.url == page.url %} bg-action-light {% endif %}" href="{% if index == true %}.{% else %}..{% endif %}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded py-2 px-4 hover:bg-action-light {% if entry.url == page.url %} bg-action-light {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
@@ -31,7 +31,7 @@
       <ul class="">
         {%- for entry in navPages %}
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light {% if entry.url == page.url %} bg-action-light {% endif %}" href="{% if index == true %}.{% else %}..{% endif %}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded py-2 px-4 hover:bg-action-light {% if entry.url == page.url %} bg-action-light {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
@@ -43,7 +43,7 @@
       <ul class="">
         {%- for entry in navPages %}
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light {% if entry.url == page.url %} bg-action-light {% endif %}" href="{% if index == true %}.{% else %}..{% endif %}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded py-2 px-4 hover:bg-action-light {% if entry.url == page.url %} bg-action-light {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>

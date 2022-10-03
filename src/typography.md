@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Typography
+relative: ..
 
 eleventyNavigation:
   parent: Styles

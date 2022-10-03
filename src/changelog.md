@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Changelog
+relative: '..'
 
 eleventyNavigation:
   parent: Home
