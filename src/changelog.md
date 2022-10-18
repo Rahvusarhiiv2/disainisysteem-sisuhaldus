@@ -47,6 +47,10 @@ Template:
 - Merged color objects in configuration
 - Rename font family `display` to semantically more correct `heading`
 
+### Fixed
+
+- Add correct heading font for Prose
+
 ### Removed
 
 - Removed `shadow-sm`

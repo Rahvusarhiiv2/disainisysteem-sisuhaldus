@@ -11,7 +11,34 @@ module.exports = {
           "linear-gradient(96.04deg, rgba(247, 227, 204, 0.65) -17.14%, #ECDDF4 94.45%)",
       },
       typography: ({ theme }) => ({
-        DEFAULT: {},
+        DEFAULT: {
+          css: {
+            h1: {
+              fontFamily:
+                "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+            },
+            h2: {
+              fontFamily:
+                "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+            },
+            h3: {
+              fontFamily:
+                "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+            },
+            h4: {
+              fontFamily:
+                "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+            },
+            h5: {
+              fontFamily:
+                "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+            },
+            h6: {
+              fontFamily:
+                "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+            },
+          },
+        },
         // 'gray' is the default. Lets override it.
         gray: {
           css: {
@@ -21,7 +48,7 @@ module.exports = {
             "--tw-prose-links": theme("colors.info.DEFAULT"),
             "--tw-prose-bold": theme("colors.gray.900"),
             "--tw-prose-counters": theme("colors.gray.900"),
-            "--tw-prose-bullets": theme("colors.green.500"),
+            "--tw-prose-bullets": theme("colors.gray.500"),
             "--tw-prose-hr": theme("colors.gray.200"),
             "--tw-prose-quotes": theme("colors.gray.900"),
             "--tw-prose-quote-borders": theme("colors.gray.200"),
