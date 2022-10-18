@@ -3,9 +3,9 @@
 
     <section class="pb-3">
       {% set navPages = collections.all | eleventyNavigation("Home") %}
-      <ul class="">
+      <ul class="space-y-1">
         {%- for entry in navPages %}
-          <li>
+          <li class="">
             <a class="block rounded py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
@@ -16,7 +16,7 @@
       <h3 class="px-4 py-2 uppercase font-bold text-sm">Design & Content</h3>
 
       {% set navPages = collections.all | eleventyNavigation("Design") %}
-      <ul class="">
+      <ul class="space-y-1">
         {%- for entry in navPages %}
           <li>
             <a class="block rounded py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
@@ -28,7 +28,7 @@
     <section class="py-3">
       <h3 class="px-4 py-2 uppercase font-bold text-sm">Styles</h3>
       {% set navPages = collections.all | eleventyNavigation("Styles") %}
-      <ul class="">
+      <ul class="space-y-1">
         {%- for entry in navPages %}
           <li>
             <a class="block rounded py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
@@ -40,7 +40,7 @@
     <section class="py-3">
       <h3 class="px-4 py-2 uppercase font-bold text-sm">Components & Patterns</h3>
       {% set navPages = collections.all | eleventyNavigation("Components") %}
-      <ul class="">
+      <ul class="space-y-1">
         {%- for entry in navPages %}
           <li>
             <a class="block rounded py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>

@@ -21,9 +21,7 @@ The system is used for designing and building consistent user interfaces faster 
 
 ## For designers
 
-```md
-- [ ] TODO: Briefly describe the UI Design Kit in Figma and link to doc site page.
-```
+From a designer's perspective, the primary tool is the **UI Design Kit**. I.e. a Figma file with all the same base styles and naming logic as is the CSS framework and developer tools. Design Kit contains components, styleguide and complex UI patterns.
 
 ---
 
