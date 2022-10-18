@@ -41,17 +41,41 @@ The design system frontend methodology is based on [Tailwind CSS](https://tailwi
 
 To integrate a proper CSS generation for your frontend code build pipeline check out [Tailwind CSS documentation for examples with using standalone executable Tailwind CLI or PostCSS](https://tailwindcss.com/docs/installation).
 
-**Note:** Rahvusarhiiv Design System Tailwind CSS uses the official [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin) plugin which is a dependency for the system.
+**Note:** Rahvusarhiiv Design System documentation site uses the official [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin) plugin which is a dependency for the site. If you want to use it on your application, install the package and add plugin into the configuration.
 
 ```shell
 npm install -D @tailwindcss/typography
 ```
 
-#### 2. Copy over the Design System custom `tailwind.config.js` into your system
+```js
+// tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  // ...
+  plugins: [require("@tailwindcss/typography")],
+};
+```
+
+#### 2. Set up Rahvusarhiiv Design System configuration preset `rahvusarhiiv.preset.js` in your codebase
 
 The foundation of Tailwind CSS is the single configuration file `tailwind.config.js` from which all the utility classes are generated.
 
-Get the newest configuration file from the [Rahvusarhiiv Design System repository](#).
+Rahvusarhiiv Design System use a [pre-configured preset](https://tailwindcss.com/docs/presets) with all the base styles.
+
+Get the newest configuration preset file from the [Rahvusarhiiv Design System repository](#).
+
+Register the preset in your code base.
+
+```js
+// tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  presets: [require("./rahvusarhiiv.preset.js")],
+  // ...
+};
+```
 
 #### 3. Configure your template paths
 
@@ -62,10 +86,8 @@ Add the paths to all of your template files into the `content` key in the new co
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,php}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+  content: ["./src/**/*.{njk,md,html,php}", "./src/**/*.svg", "./.eleventy.js"],
+  presets: [require("./rahvusarhiiv.preset.js")],
+  plugins: [require("@tailwindcss/typography")],
 };
 ```
