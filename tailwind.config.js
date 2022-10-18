@@ -171,14 +171,11 @@ module.exports = {
       full: "9999px",
     },
     boxShadow: {
-      // TODO: round the values and check the keys/names with Keijo
-      sm: "0px 0.4375px 4.625px 0px rgba(0,0,0,0.07), 0px 2px 13px 0px rgba(0,0,0,0.05), 0px 5.0625px 34.875px 0px rgba(0,0,0,0.04), 0px 10px 80px 0px rgba(0,0,0,0.02)",
-      md: "0px 1.443750023841858px 4.625px 0px rgba(0,0,0,0.07), 0px 6.599999904632568px 13px 0px rgba(0,0,0,0.05), 0px 16.706249237060547px 34.875px 0px rgba(0,0,0,0.04), 0px 33px 80px 0px rgba(0,0,0,0.02)",
+      sm: "0px 10px 80px rgba(0, 0, 0, 0.02275), 0px 5.0625px 34.875px rgba(0, 0, 0, 0.035), 0px 2px 13px rgba(0, 0, 0, 0.04725), 0px 0.4375px 4.625px rgba(0, 0, 0, 0.07)",
+      md: "0px 33px 80px rgba(0, 0, 0, 0.02275), 0px 16.7062px 34.875px rgba(0, 0, 0, 0.035), 0px 6.6px 13px rgba(0, 0, 0, 0.04725), 0px 1.44375px 4.625px rgba(0, 0, 0, 0.07)",
       DEFAULT:
-        "0px 1.881250023841858px 4.625px 0px rgba(0,0,0,0.07), 0px 8.600000381469727px 13px 0px rgba(0,0,0,0.05), 0px 21.768749237060547px 34.875px 0px rgba(0,0,0,0.04), 0px 43px 80px 0px rgba(0,0,0,0.02)",
-      lg: "0px 2.84375px 4.625px 0px rgba(0,0,0,0.07), 0px 13px 13px 0px rgba(0,0,0,0.05), 0px 32.90625px 34.875px 0px rgba(0,0,0,0.04), 0px 65px 80px 0px rgba(0,0,0,0.02)",
-      // xl: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
-      // "2xl": "0 25px 50px -12px rgb(0 0 0 / 0.25)",
+        "0px 43px 80px rgba(0, 0, 0, 0.02275), 0px 21.7687px 34.875px rgba(0, 0, 0, 0.035), 0px 8.6px 13px rgba(0, 0, 0, 0.04725), 0px 1.88125px 4.625px rgba(0, 0, 0, 0.07)",
+      lg: "0px 65px 80px rgba(0, 0, 0, 0.02275), 0px 32.9062px 34.875px rgba(0, 0, 0, 0.035), 0px 13px 13px rgba(0, 0, 0, 0.04725), 0px 2.84375px 4.625px rgba(0, 0, 0, 0.07)",
       inner: "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
       none: "none",
     },
