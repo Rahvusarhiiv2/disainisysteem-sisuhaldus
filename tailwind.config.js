@@ -180,7 +180,7 @@ module.exports = {
       none: "none",
     },
     fontFamily: {
-      display: [
+      heading: [
         "Raleway",
         "ui-sans-serif",
         "system-ui",
@@ -224,7 +224,6 @@ module.exports = {
       ],
     },
     fontSize: {
-      // TODO: Line heights review
       xs: ["0.6875rem", { lineHeight: "120%" }],
       sm: ["0.8125rem", { lineHeight: "120%" }],
       base: ["1rem", { lineHeight: "120%" }],
@@ -234,10 +233,6 @@ module.exports = {
       "3xl": ["2.0625rem", { lineHeight: "120%" }],
       "4xl": ["2.5rem", { lineHeight: "120%" }],
       "5xl": ["3rem", { lineHeight: "120%" }],
-      // "6xl": ["3.75rem", { lineHeight: "1" }],
-      // "7xl": ["4.5rem", { lineHeight: "1" }],
-      // "8xl": ["6rem", { lineHeight: "1" }],
-      // "9xl": ["8rem", { lineHeight: "1" }],
     },
   },
   plugins: [require("@tailwindcss/typography")],
