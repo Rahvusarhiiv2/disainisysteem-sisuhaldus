@@ -3,84 +3,6 @@
  * @version 0.1.0
  */
 
-const literalColors = {
-  // Gray colors are in BETA
-  gray: {
-    light: {
-      50: "#f7f8fa",
-      100: "#f6f7fb",
-      200: "#f1f3f8",
-      300: "#eceff5", // Background color
-      400: "#e7ebf2",
-      500: "#e2e7ef",
-      600: "#dde3ec",
-      700: "#d8dfe9",
-      800: "#d3dbe6",
-      900: "#ced7e3",
-    },
-    dark: {
-      50: "#798492",
-      100: "#6f7a86",
-      200: "#666f7b",
-      300: "#5c656f",
-      400: "#535a64",
-      500: "#495058",
-      600: "#40454d",
-      700: "#363b41",
-      800: "#2d3036",
-      900: "#23262a",
-    },
-  },
-  red: {
-    50: "#feeceb", // error light
-    100: "#fdd9d7",
-    200: "#fbb4af",
-    300: "#f88e86",
-    400: "#f6695e",
-    500: "#f44336", // error default
-    600: "#c3362b",
-    700: "#922820",
-    800: "#621b16",
-    900: "#310d0b",
-  },
-  yellow: {
-    50: "#fdf6ea", // warning light
-    100: "#fcedd5",
-    200: "#f8dbab",
-    300: "#f5c882",
-    400: "#f1b658",
-    500: "#eea42e", // warning default
-    600: "#be8325",
-    700: "#8f621c",
-    800: "#5f4212",
-    900: "#302109",
-  },
-  green: {
-    50: "#e4fbed", // success/action light
-    100: "#c4ecd1",
-    200: "#a1ddb6",
-    300: "#7bc994",
-    400: "#59c27e",
-    500: "#3fa864", // success/action default
-    600: "#30834d",
-    700: "#205d36",
-    800: "#0f391f",
-    900: "#001505",
-  },
-  blue: {
-    50: "#e6f1fb", // info light
-    100: "#cce3f7",
-    200: "#9ac8ef",
-    300: "#67ace8",
-    400: "#3591e0",
-    500: "#0275d8", // info default
-    600: "#025ead",
-    700: "#014682",
-    800: "#012f56",
-    900: "#00172b",
-  },
-};
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{njk,md,html}", "./src/**/*.svg", "./.eleventy.js"],
@@ -95,22 +17,22 @@ module.exports = {
         // 'gray' is the default. Lets override it.
         gray: {
           css: {
-            "--tw-prose-body": theme("colors.gray.dark.900"),
-            "--tw-prose-headings": theme("colors.gray.dark.900"),
-            "--tw-prose-lead": theme("colors.gray.dark.900"),
+            "--tw-prose-body": theme("colors.gray.900"),
+            "--tw-prose-headings": theme("colors.gray.900"),
+            "--tw-prose-lead": theme("colors.gray.900"),
             "--tw-prose-links": theme("colors.info.DEFAULT"),
-            "--tw-prose-bold": theme("colors.gray.dark.900"),
-            "--tw-prose-counters": theme("colors.gray.dark.900"),
+            "--tw-prose-bold": theme("colors.gray.900"),
+            "--tw-prose-counters": theme("colors.gray.900"),
             "--tw-prose-bullets": theme("colors.green.500"),
-            "--tw-prose-hr": theme("colors.gray.light.900"),
-            "--tw-prose-quotes": theme("colors.gray.dark.900"),
-            "--tw-prose-quote-borders": theme("colors.gray.light.900"),
-            "--tw-prose-captions": theme("colors.gray.dark.900"),
-            "--tw-prose-code": theme("colors.gray.dark.900"),
-            "--tw-prose-pre-code": theme("colors.gray.dark.900"),
+            "--tw-prose-hr": theme("colors.gray.200"),
+            "--tw-prose-quotes": theme("colors.gray.900"),
+            "--tw-prose-quote-borders": theme("colors.gray.200"),
+            "--tw-prose-captions": theme("colors.gray.900"),
+            "--tw-prose-code": theme("colors.gray.900"),
+            "--tw-prose-pre-code": theme("colors.gray.900"),
             "--tw-prose-pre-bg": theme("colors.white"),
-            "--tw-prose-th-borders": theme("colors.gray.light.900"),
-            "--tw-prose-td-borders": theme("colors.gray.light.900"),
+            "--tw-prose-th-borders": theme("colors.gray.200"),
+            "--tw-prose-td-borders": theme("colors.gray.200"),
             "--tw-prose-invert-body": theme("colors.white"),
             "--tw-prose-invert-headings": theme("colors.white"),
             "--tw-prose-invert-lead": theme("colors.white"),
@@ -140,36 +62,70 @@ module.exports = {
       "2xl": "1536px",
     },
     colors: {
-      // Functional
       inherit: "inherit",
       current: "currentColor",
       transparent: "transparent",
-
-      // Literal
       black: "#000",
       white: "#fff",
-      ...literalColors,
-
-      // Semantic (references literal colors)
-      action: {
-        light: literalColors.green[50],
-        DEFAULT: literalColors.green[500],
+      gray: {
+        50: "#F0F3F6",
+        100: "#E8EBF0",
+        200: "#D3D8DF",
+        300: "#979FAB",
+        400: "#798492",
+        500: "#6C7683",
+        600: "#5F6874",
+        700: "#4E5863",
+        800: "#3E4651",
+        900: "#242A30",
       },
-      success: {
-        light: literalColors.green[50],
-        DEFAULT: literalColors.green[500],
+      red: {
+        50: "#FEECEB",
+        100: "#FDD9D7",
+        200: "#FBB4AF",
+        300: "#F88E86",
+        400: "#F6695E",
+        500: "#F44336",
+        600: "#C3362B",
+        700: "#922820",
+        800: "#621B16",
+        900: "#310D0B",
       },
-      info: {
-        light: literalColors.blue[50],
-        DEFAULT: literalColors.blue[500],
+      yellow: {
+        50: "#FDF6EA",
+        100: "#FCEDD5",
+        200: "#F8DBAB",
+        300: "#F5C882",
+        400: "#F1B658",
+        500: "#EEA42E",
+        600: "#BE8325",
+        700: "#8F621C",
+        800: "#5F4212",
+        900: "#302109",
       },
-      warning: {
-        light: literalColors.yellow[50],
-        DEFAULT: literalColors.yellow[500],
+      green: {
+        50: "#E4FBED",
+        100: "#C4ECD1",
+        200: "#A1DDB6",
+        300: "#7BC994",
+        400: "#59C27E",
+        500: "#3FA864",
+        600: "#30834D",
+        700: "#205D36",
+        800: "#0F391F",
+        900: "#001505",
       },
-      error: {
-        light: literalColors.red[50],
-        DEFAULT: literalColors.red[500],
+      blue: {
+        50: "#E6F1FB",
+        100: "#CCE3F7",
+        200: "#9AC8EF",
+        300: "#67ACE8",
+        400: "#3591E0",
+        500: "#0275D8",
+        600: "#025EAD",
+        700: "#014682",
+        800: "#012F56",
+        900: "#00172B",
       },
     },
     spacing: {

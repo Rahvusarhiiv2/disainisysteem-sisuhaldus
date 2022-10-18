@@ -14,17 +14,17 @@ eleventyNavigation:
 
 <div class="space-y-8 mb-20">
   <div class="flex w-full flex-col space-y-2">
-    <code class="text-sm text-gray-dark-50">font-body</code>
+    <code class="text-sm text-gray-300">font-body</code>
     <p class="text-xl font-body">Roboto — The quick brown fox ...</p>
   </div>
 
   <div class="flex w-full flex-col space-y-2">
-    <code class="text-sm text-gray-dark-50">font-display</code>
+    <code class="text-sm text-gray-300">font-display</code>
     <p class="text-xl font-display">Raleway — The quick brown fox ...</p>
   </div>
 
   <div class="flex w-full flex-col space-y-2">
-    <code class="text-sm text-gray-dark-50">font-mono</code>
+    <code class="text-sm text-gray-300">font-mono</code>
     <p class="text-xl font-mono">System Font Stack — The quick brown fox ...</p>
   </div>
 </div>

@@ -1,12 +1,12 @@
 <aside class="md:col-span-3 p-4 bg-white rounded shadow">
-  <nav class="divide-y-2 divide-gray-light-900 sticky top-4">
+  <nav class="divide-y-2 divide-gray-200 sticky top-4">
 
     <section class="pb-3">
       {% set navPages = collections.all | eleventyNavigation("Home") %}
       <ul class="">
         {%- for entry in navPages %}
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light {% if entry.url == page.url %} bg-action-light {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
@@ -19,7 +19,7 @@
       <ul class="">
         {%- for entry in navPages %}
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light {% if entry.url == page.url %} bg-action-light {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
@@ -31,7 +31,7 @@
       <ul class="">
         {%- for entry in navPages %}
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light {% if entry.url == page.url %} bg-action-light {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
@@ -43,7 +43,7 @@
       <ul class="">
         {%- for entry in navPages %}
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light {% if entry.url == page.url %} bg-action-light {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
