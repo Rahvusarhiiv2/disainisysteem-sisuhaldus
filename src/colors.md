@@ -10,53 +10,59 @@ eleventyNavigation:
 
 # Colors
 
-```md
-- [ ] TODO: Add full color scheme table
-```
+<div>
+  <h2 class="capitalize mb-4">Varia</h2>
 
----
+  <div class="grid lg:grid-cols-10 md:grid-cols-6 grid-cols-4 gap-4">
 
-## Naming
+  <div class="flex flex-col">
+    <div class="h-12 w-full rounded border mb-2" style="background-color: #000;"></div>
+    <div class="text-sm font-bold select-all">black</div>
+    <div class="text-sm text-gray-300 select-all">#000000</div>
+  </div>
 
-As colors are not only aesthetic choices, but also have a meaning in different contexts, we have a color naming system that is in two layers — literal and semantic.
+  <div class="flex flex-col">
+    <div class="h-12 w-full rounded border mb-2" style="background-color: #fff;"></div>
+    <div class="text-sm font-bold select-all">white</div>
+    <div class="text-sm text-gray-300 select-all">#ffffff</div>
+  </div>
 
-The first layer is **literal color names** (red, green, etc.) with a numeric scale (where `50` is lightest and `900` is darkest).
+  <div class="flex flex-col">
+    <div class="h-12 w-full rounded border mb-2" style="background-color: transparent;"></div>
+    <div class="text-sm font-bold select-all">transparent</div>
+    <div class="text-sm text-gray-300 select-all">transparent</div>
+  </div>
 
-```js
-// tailwind.config.js
+  <div class="flex flex-col">
+    <div class="h-12 w-full rounded border mb-2" style="background-color: currentColor;"></div>
+    <div class="text-sm font-bold select-all">current</div>
+    <div class="text-sm text-gray-300 select-all">currentColor</div>
+  </div>
 
-const literalColors = {
-  // ...
-  red: {
-    50: "#feeceb", // error light
-    100: "#fdd9d7",
-    200: "#fbb4af",
-    300: "#f88e86",
-    400: "#f6695e",
-    500: "#f44336", // error default
-    600: "#c3362b",
-    700: "#922820",
-    800: "#621b16",
-    900: "#310d0b",
-  },
-  // ...
-};
-```
+  </div>
+</div>
 
-These literal names are the foundation colors, which are referenced by semantic names.
+{% for n1, obj1 in tailwindData.colors %}
 
-Literal colors usage should be limited only for purely aesthetics parts of the design.
+{# Discard non nested values from automatic render – `current`, `inherit`, `white`, `black`, `transparent` #}
+{% if n1 !== 'current' and n1 !== 'inherit' and n1 !== 'white' and n1 !== 'black' and n1 !== 'transparent' %}
 
-The second layer is **semantic names**. Color names like `success`, `warning`, `action`, etc. that have meaning and depend on context. Every semantic color also has a lighter version of the default color. Semantic color values come from literal colors. For example, if you need to change the color of the form error message throughout the system, you would only need to change the value of the semantic named color not the value of the base color.
+<div>
+  <h2 class="capitalize mb-4">{{ n1 }}</h2>
 
-```js
-// tailwind.config.js
+  <div class="grid lg:grid-cols-10 md:grid-cols-6 grid-cols-4 gap-4">
+  {% for n2, obj2 in obj1 %}
 
-// ...
-error: {
-  light: literalColors.red.100,
-  DEFAULT: literalColors.red.500,
-  dark: literalColors.red.700,
-},
-// ...
-```
+  <div class="flex flex-col">
+    <div class="h-12 w-full rounded border mb-2" style="background-color: {{ obj2 }};"></div>
+    <div class="text-sm font-bold select-all">{{n2}}</div>
+    <div class="text-sm text-gray-300 select-all">{{obj2}}</div>
+  </div>
+
+{% endfor %}
+
+  </div>
+</div>
+
+{% endif %}
+{% endfor %}

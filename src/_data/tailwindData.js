@@ -1,6 +1,7 @@
-const tailwindConfig = require("../../tailwind.config");
+const tailwindConfig = require("../../rahvusarhiiv.preset.js");
 
 module.exports = {
   spacing: tailwindConfig.theme.spacing,
   colors: tailwindConfig.theme.colors,
+  fontSize: tailwindConfig.theme.fontSize,
 };

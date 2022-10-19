@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
 
   // NOTE: Changing shortcodes needs restarting for the dev server
   eleventyConfig.addShortcode("betaTag", function (classes) {
-    return `<span class="bg-gray-light-700 bg-opacity-50 rounded px-2 py-1 leading-none ${classes} ">BETA</span>`;
+    return `<span class="bg-gray-200 bg-opacity-50 rounded px-2 py-1 leading-none ${classes} ">BETA</span>`;
   });
 
   return {

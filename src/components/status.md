@@ -18,7 +18,7 @@ eleventyNavigation:
     <th class="font-medium py-4 px-4">Version</th>
   </thead>
   <tbody>
-    <tr class="even:bg-gray-light-50 hover:bg-gray-light-200 odd:bg-white">
+    <tr class="even:bg-gray-50 hover:bg-green-50 odd:bg-white">
       <td class="py-4 px-4 rounded-l text-info font-medium">
         Simple Table
       </td>
@@ -27,7 +27,7 @@ eleventyNavigation:
         0.1.0
       </td>
     </tr>
-    <tr class="even:bg-gray-light-50 hover:bg-gray-light-200 odd:bg-white">
+    <tr class="even:bg-gray-50 hover:bg-green-50 odd:bg-white">
       <td class="py-4 px-4 text-info font-medium rounded-l">
         Button
       </td>

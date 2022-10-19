@@ -14,17 +14,17 @@ eleventyNavigation:
 
 <div class="space-y-8 mb-20">
   <div class="flex w-full flex-col space-y-2">
-    <code class="text-sm text-gray-dark-50">font-body</code>
+    <code class="text-sm text-gray-300">font-body</code>
     <p class="text-xl font-body">Roboto — The quick brown fox ...</p>
   </div>
 
   <div class="flex w-full flex-col space-y-2">
-    <code class="text-sm text-gray-dark-50">font-display</code>
-    <p class="text-xl font-display">Raleway — The quick brown fox ...</p>
+    <code class="text-sm text-gray-300">font-heading</code>
+    <p class="text-xl font-heading">Raleway — The quick brown fox ...</p>
   </div>
 
   <div class="flex w-full flex-col space-y-2">
-    <code class="text-sm text-gray-dark-50">font-mono</code>
+    <code class="text-sm text-gray-300">font-mono</code>
     <p class="text-xl font-mono">System Font Stack — The quick brown fox ...</p>
   </div>
 </div>
@@ -48,7 +48,7 @@ eleventyNavigation:
     <tr>
       <td>Raleway</td>
       <td>Headings</td>
-      <td><code>.font-display</code></td>
+      <td><code>.font-heading</code></td>
       <td>600</td>
     </tr>
     <tr>
@@ -62,7 +62,7 @@ eleventyNavigation:
 
 Rahvusarhiiv Design System uses two fonts: **Roboto** for body text and **Raleway** for headings.
 
-Every text should use the `body` font family by default. `display` is reserved for headings and titles. `mono` is an edge case when it comes to setting type, for example, for showing code snippets in internal tools.
+Every text should use the `body` font family by default. `heading` is reserved for headings and titles. `mono` is an edge case when it comes to setting type, for example, for showing code snippets in internal tools.
 
 Both fonts are available from Google Fonts:
 
@@ -71,9 +71,18 @@ Both fonts are available from Google Fonts:
 
 ## Typographic scale
 
-```md
-- [ ] TODO: Fetch the scale from tailwind config file and build the table
-```
+{% for name, size in tailwindData.fontSize %}
+
+<div class="bg-gray-50 rounded p-4 mb-8">
+<div class="border-b flex space-x-6 pb-4">
+<code class="text-sm select-all">text-{{ name }}</code>
+<span class="text-sm font-mono text-gray-300">font size: {{ size[0] }} — line-height: {{ size[1].lineHeight }}</span>
+</div>
+<p style="font-size: {{ size[0] }}; line-height: {{ size[1].lineHeight }};">The main task of the National Archives is to ensure preservation and usability of society’s written memory, documented cultural heritage for today’s and future generations.</p>
+
+</div>
+
+{% endfor %}
 
 ## Typographic defaults for vanilla HTML
 

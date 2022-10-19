@@ -8,13 +8,9 @@ eleventyNavigation:
   key: Shadows
 ---
 
-# Shadows/Elevation
+# Shadows
 
-```md
-- [ ] TODO: Describe usage methodology for designers
-```
-
----
+Shadows are used for showing elements subtle elevation changes and their location on the Z axis (in 3D space). Different components use elevation differently. Reference the UI Kit.
 
 <div class="flex space-x-10 mb-20">
 
