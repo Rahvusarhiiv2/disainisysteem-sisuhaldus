@@ -1,10 +1,10 @@
 ---
 layout: base
-title: Themes
+title: Border Radius
 relative: ..
 
 eleventyNavigation:
-  parent: Styles
+  parent: Utilities
   key: Border Radius
 ---
 

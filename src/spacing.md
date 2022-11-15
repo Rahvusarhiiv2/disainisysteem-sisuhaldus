@@ -4,7 +4,7 @@ title: Spacing
 relative: ..
 
 eleventyNavigation:
-  parent: Styles
+  parent: Utilities
   key: Spacing
 ---
 

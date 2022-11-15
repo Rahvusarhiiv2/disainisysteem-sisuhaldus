@@ -4,7 +4,7 @@ title: Icons
 relative: ..
 
 eleventyNavigation:
-  parent: Styles
+  parent: Utilities
   key: Icons
 ---
 
