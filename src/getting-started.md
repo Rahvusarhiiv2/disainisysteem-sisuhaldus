@@ -1,21 +1,19 @@
 ---
 layout: base
-title: Installation
+title: Getting Started
 relative: ..
 
 eleventyNavigation:
   parent: Utilities
-  key: Installation
+  key: Getting Started
   order: -1
 ---
 
-# Installation
+# Getting Started
 
 ## 1. Install Tailwind CSS
 
 Consult [the official documentation](https://tailwindcss.com/docs/installation) on how to install Tailwind CSS.
-
-
 
 ## 2. Add custom configuration file
 
