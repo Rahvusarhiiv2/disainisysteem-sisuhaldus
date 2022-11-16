@@ -4,7 +4,7 @@ title: Colors
 relative: ..
 
 eleventyNavigation:
-  parent: Styles
+  parent: Utilities
   key: Colors
 ---
 

@@ -4,7 +4,7 @@ title: Themes
 relative: ..
 
 eleventyNavigation:
-  parent: Styles
+  parent: Utilities
   key: Themes
 ---
 

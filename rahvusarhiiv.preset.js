@@ -1,83 +1,10 @@
 /**
- * Rahvusarhiiv Design System — base Tailwind CSS configuration preset
+ * Rahvusarhiiv custom presets
  * @version 0.1.0
  */
 
 module.exports = {
   theme: {
-    extend: {
-      backgroundImage: {
-        "theme-ais":
-          "linear-gradient(96.04deg, rgba(247, 227, 204, 0.65) -17.14%, #ECDDF4 94.45%)",
-      },
-      typography: ({ theme }) => ({
-        DEFAULT: {
-          css: {
-            h1: {
-              fontFamily:
-                "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
-            },
-            h2: {
-              fontFamily:
-                "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
-            },
-            h3: {
-              fontFamily:
-                "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
-            },
-            h4: {
-              fontFamily:
-                "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
-            },
-            h5: {
-              fontFamily:
-                "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
-            },
-            h6: {
-              fontFamily:
-                "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
-            },
-          },
-        },
-        // 'gray' is the default. Lets override it.
-        gray: {
-          css: {
-            "--tw-prose-body": theme("colors.gray.900"),
-            "--tw-prose-headings": theme("colors.gray.900"),
-            "--tw-prose-lead": theme("colors.gray.900"),
-            "--tw-prose-links": theme("colors.info.DEFAULT"),
-            "--tw-prose-bold": theme("colors.gray.900"),
-            "--tw-prose-counters": theme("colors.gray.900"),
-            "--tw-prose-bullets": theme("colors.gray.500"),
-            "--tw-prose-hr": theme("colors.gray.200"),
-            "--tw-prose-quotes": theme("colors.gray.900"),
-            "--tw-prose-quote-borders": theme("colors.gray.200"),
-            "--tw-prose-captions": theme("colors.gray.900"),
-            "--tw-prose-code": theme("colors.gray.900"),
-            "--tw-prose-pre-code": theme("colors.gray.900"),
-            "--tw-prose-pre-bg": theme("colors.white"),
-            "--tw-prose-th-borders": theme("colors.gray.200"),
-            "--tw-prose-td-borders": theme("colors.gray.200"),
-            "--tw-prose-invert-body": theme("colors.white"),
-            "--tw-prose-invert-headings": theme("colors.white"),
-            "--tw-prose-invert-lead": theme("colors.white"),
-            "--tw-prose-invert-links": theme("colors.white"),
-            "--tw-prose-invert-bold": theme("colors.white"),
-            "--tw-prose-invert-counters": theme("colors.white"),
-            "--tw-prose-invert-bullets": theme("colors.white"),
-            "--tw-prose-invert-hr": theme("colors.white"),
-            "--tw-prose-invert-quotes": theme("colors.white"),
-            "--tw-prose-invert-quote-borders": theme("colors.white"),
-            "--tw-prose-invert-captions": theme("colors.white"),
-            "--tw-prose-invert-code": theme("colors.black"),
-            "--tw-prose-invert-pre-code": theme("colors.white"),
-            "--tw-prose-invert-pre-bg": "rgb(0 0 0 / 50%)",
-            "--tw-prose-invert-th-borders": theme("colors.white"),
-            "--tw-prose-invert-td-borders": theme("colors.white"),
-          },
-        },
-      }),
-    },
     screens: {
       xs: "320px",
       sm: "640px",
@@ -192,7 +119,8 @@ module.exports = {
     },
     borderRadius: {
       none: "0px",
-      DEFAULT: ".5rem",
+      sm: "0.25rem",
+      DEFAULT: "0.5rem",
       full: "9999px",
     },
     boxShadow: {
@@ -258,6 +186,72 @@ module.exports = {
       "3xl": ["2.0625rem", { lineHeight: "120%" }],
       "4xl": ["2.5rem", { lineHeight: "120%" }],
       "5xl": ["3rem", { lineHeight: "120%" }],
+    },
+    extend: {
+      backgroundImage: {
+        "theme-ais":
+          "linear-gradient(96.04deg, rgba(247, 227, 204, 0.65) -17.14%, #ECDDF4 94.45%)",
+      },
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            h1: {
+              fontFamily: "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+            },
+            h2: {
+              fontFamily:"Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+            },
+            h3: {
+              fontFamily: "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+            },
+            h4: {
+              fontFamily: "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+            },
+            h5: {
+              fontFamily: "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+            },
+            h6: {
+              fontFamily: "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+            },
+          },
+        },
+        gray: {
+          css: {
+            "--tw-prose-body": theme("colors.gray.900"),
+            "--tw-prose-headings": theme("colors.gray.900"),
+            "--tw-prose-lead": theme("colors.gray.900"),
+            "--tw-prose-links": theme("colors.info.DEFAULT"),
+            "--tw-prose-bold": theme("colors.gray.900"),
+            "--tw-prose-counters": theme("colors.gray.900"),
+            "--tw-prose-bullets": theme("colors.gray.500"),
+            "--tw-prose-hr": theme("colors.gray.200"),
+            "--tw-prose-quotes": theme("colors.gray.900"),
+            "--tw-prose-quote-borders": theme("colors.gray.200"),
+            "--tw-prose-captions": theme("colors.gray.900"),
+            "--tw-prose-code": theme("colors.gray.900"),
+            "--tw-prose-pre-code": theme("colors.gray.900"),
+            "--tw-prose-pre-bg": theme("colors.white"),
+            "--tw-prose-th-borders": theme("colors.gray.200"),
+            "--tw-prose-td-borders": theme("colors.gray.200"),
+            "--tw-prose-invert-body": theme("colors.white"),
+            "--tw-prose-invert-headings": theme("colors.white"),
+            "--tw-prose-invert-lead": theme("colors.white"),
+            "--tw-prose-invert-links": theme("colors.white"),
+            "--tw-prose-invert-bold": theme("colors.white"),
+            "--tw-prose-invert-counters": theme("colors.white"),
+            "--tw-prose-invert-bullets": theme("colors.white"),
+            "--tw-prose-invert-hr": theme("colors.white"),
+            "--tw-prose-invert-quotes": theme("colors.white"),
+            "--tw-prose-invert-quote-borders": theme("colors.white"),
+            "--tw-prose-invert-captions": theme("colors.white"),
+            "--tw-prose-invert-code": theme("colors.black"),
+            "--tw-prose-invert-pre-code": theme("colors.white"),
+            "--tw-prose-invert-pre-bg": "rgb(0 0 0 / 50%)",
+            "--tw-prose-invert-th-borders": theme("colors.white"),
+            "--tw-prose-invert-td-borders": theme("colors.white"),
+          },
+        },
+      }),
     },
   },
 };

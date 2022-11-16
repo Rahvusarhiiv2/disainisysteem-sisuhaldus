@@ -4,7 +4,7 @@ title: Typography
 relative: ..
 
 eleventyNavigation:
-  parent: Styles
+  parent: Utilities
   key: Typography
 ---
 

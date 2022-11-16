@@ -1,10 +1,10 @@
 ---
 layout: base
-title: Themes
+title: Shadows
 relative: ..
 
 eleventyNavigation:
-  parent: Styles
+  parent: Utilities
   key: Shadows
 ---
 
