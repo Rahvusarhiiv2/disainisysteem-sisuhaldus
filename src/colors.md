@@ -11,7 +11,7 @@ eleventyNavigation:
 
 # Värvid
 
-<p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes tohib kasutada ainult järgmisi värve:</p>
+<p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes tohib kasutada ainult järgmisi värve</p>
 
 <div class="mt-16">
   <div class="grid lg:grid-cols-10 md:grid-cols-6 grid-cols-4 gap-4">

@@ -11,7 +11,7 @@ eleventyNavigation:
 
 # Kirjasuurused
 
-<p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes tohib kasutada ainult järgmisi kirjasuurusi ja reavahesid:</p>
+<p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes tohib kasutada ainult järgmisi kirjasuurusi ja reavahesid</p>
 
 {% for name, size in tailwindData.fontSize %}
 

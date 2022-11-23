@@ -11,7 +11,7 @@ eleventyNavigation:
 
 # Kumerused
 
-<p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes tohib kasutada ainult järgmisi kumerusi:</p>
+<p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes tohib kasutada ainult järgmisi kumerusi</p>
 
 Klass | Omadus | Soovitus
 -- | -- | --

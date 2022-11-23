@@ -11,7 +11,7 @@ eleventyNavigation:
 
 # Seadistamine
 
-<p class="-mt-8 text-gray-300">Rahvusarhiivi disainisüsteemi on soovitav kasutada stiiliraamistiku "Tailwind CSS" abil:</p>
+<p class="-mt-8 text-gray-300">Rahvusarhiivi disainisüsteemi on soovitatav kasutada stiiliraamistiku "Tailwind CSS" abil</p>
 
 ## 1. Paigalda stiiliraamistik
 
@@ -108,4 +108,23 @@ Prototüübis võib kirjatüübid Google API kaudu linkida:
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+```
+
+## 5. Seadista tüpograafia pistik
+
+Jooksuta konsoolis käsku: 
+
+```shell
+npm install @tailwindcss/typography
+```
+
+Lisa faili `tailwind.config.js`:
+
+```js
+module.exports = {
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
+  ...
+}
 ```

@@ -11,7 +11,7 @@ eleventyNavigation:
 
 # Varjud
 
-<p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes tohib kasutada ainult järgmisi varje:</p>
+<p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes tohib kasutada ainult järgmisi varje</p>
 
 Klass | Omadus | Soovitus
 -- | -- | --
