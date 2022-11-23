@@ -1,19 +1,26 @@
 ---
 layout: base
-title: Themes
+title: Teemad
 relative: ..
 
 eleventyNavigation:
   parent: Utilities
-  key: Themes
+  key: Teemad
+  order: 5
 ---
 
-# Themes
+# Teemad
 
-Some Rahvusarhiiv digital products use different gradient theme for key background elements throughout the user interface. These are built-in into the system. Reference UI kit for usage examples.
+<p class="-mt-8 text-gray-300">
+  Rahvusarhiivi rakendustes võib läbivalt kasutada järgmisi taustamustreid või -gradiente:
+</p>
 
-<div class="bg-theme-ais flex items-center justify-center text-sm w-52 h-36 rounded shadow-sm mb-20">AIS Theme</div>
+Klass | Omadus | Selgitus
+-- | -- | --
+bg-theme-ais | linear-gradient(96.04deg, rgba(247, 227, 204, 0.65) -17.14%, <br/>#ECDDF4 94.45%) | AIS-i ja väiksemate rakenduste jaoks, mis ei vaja eriilmet 
+
+<div class="bg-theme-ais flex items-center justify-center h-36 my-20">bg-theme-ais</div>
 
 ```html
-<div class="bg-theme-ais">AIS Theme</div>
+<div class="bg-theme-ais ..."></div>
 ```

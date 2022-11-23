@@ -1,32 +1,32 @@
 ---
 layout: base
-title: Getting Started
+title: Seadistamine
 relative: ..
 
 eleventyNavigation:
   parent: Utilities
-  key: Getting Started
-  order: -1
+  key: Seadistamine
+  order: 1
 ---
 
-# Getting Started
+# Seadistamine
 
-## 1. Install Tailwind CSS
+## 1. Paigalda üldine stiiliraamistik
 
-Consult [the official documentation](https://tailwindcss.com/docs/installation) on how to install Tailwind CSS.
+Loe [dokumentatsioonist](https://tailwindcss.com/docs/installation), kuidas paigaldada stiiliraamistik "Tailwind CSS".
 
-## 2. Add custom configuration file
+## 2. Kopeeri rahvusarhiivi stiilierisused 
 
-Save following as `rahvusarhiiv.presets.js` into your project:
+Kopeeri alljärgnev kood oma projekti failina `rahvusarhiiv.presets.js`:
 
 
 ```js
 {% include "../rahvusarhiiv.preset.js" %}
 ```
 
-## 3. Configure custom presets
+## 3. Seadista rahvusarhiivi stiilierisused
 
-Require `rahvusarhiiv.presets.js` as presets in `tailwind.config.js` as follows:
+Lisa faili `tailwind.config.js` viide failile `rahvusarhiiv.presets.js`:
 
 ```js
 module.exports = {
@@ -38,9 +38,12 @@ module.exports = {
 
 ```
 
-## 4. Configure custom fonts
+Rahvusarhiivi stiilierisused muudavad ainult väikest osa üldisest stiiliraamistikust. Suurem osa raamistikust toimib ka pärast erisuste paigaldamist edasi nii, nagu on kirjeldatud [dokumentatsioonis](https://tailwindcss.com/docs/).
 
-For prototyping you can use Google Fonts CDN, but for optimal performance self-hosting is more performant. In case of self-hosting add font-face rules in `tailwind.css` as follows:
+
+## 4. Seadista rahvusarhiivi kirjatüübid
+
+Laadi alla [kirjatüübi failid](../assets/fonts/fonts.zip) ja kopeeri need oma projekti `fonts` kausta. Lisa faili `tailwind.css` järgmised read:
 
 ```css
 @layer base {
@@ -97,7 +100,10 @@ For prototyping you can use Google Fonts CDN, but for optimal performance self-h
 
 ```
 
+Prototüübis võib kirjatüübid Google API kaudu linkida:
 
-## 5. Make use of default utilities
-
-Custom configuration overrides only necessary parts of the configuration to adhere to our design rules. All other utilities and configurations are default to Tailwind CSS. [Browse the official documentation.](https://tailwindcss.com/docs/)
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+```

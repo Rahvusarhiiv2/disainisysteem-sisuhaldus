@@ -1,24 +1,26 @@
 ---
 layout: base
-title: Spacing
+title: Astmik
 relative: ..
 
 eleventyNavigation:
   parent: Utilities
-  key: Spacing
+  key: Astmik
+  order: 6
 ---
 
-# Spacing scale
+# Astmik
 
-Spacing scale includes small increments needed to create cohesive spatial relationships of different elements.
+<p class="-mt-8 text-gray-300">
+  Elementide, piirjoonte ja vahekauguste suuruse määramiseks on soovitav kasutada järgmist astmikku:
+</p>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Size</th>
-      <th class="hidden sm:table-cell">
-        <span class="sr-only">Preview</span></th>
+      <th>Kood</th>
+      <th>Omadus</th>
+      <th class="hidden sm:table-cell">Näide</th>
     </tr>
   </thead>
   <tbody>
@@ -35,3 +37,11 @@ Spacing scale includes small increments needed to create cohesive spatial relati
 
 </tbody>
 </table>
+
+## Astmiku kasutamine stiiliraamistikus "Tailwind CSS"
+
+Astmiku kood esineb paljudes klassinimedes: `w-{kood}`, `h-{kood}`, `p-{kood}`, `m-{kood}`, `space-x-{kood}`, `space-y-{kood}`, `gap-{kood}`. Lisaks on võimalik määrata mõõt ka pikselite järgi: `w-[234px]`.
+
+Loe täpsemalt [dokumentatsioonist](https://tailwindcss.com/docs).
+
+
