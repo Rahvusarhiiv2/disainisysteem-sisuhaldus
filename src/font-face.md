@@ -57,20 +57,67 @@ font-mono | Monospace | programmikoodi jaoks
 
 ## Kirjalaadid
 
-Roboto kirjatüübil 
+Roboto kirjatüübi puhul saab kirjalaadi määramiseks kasutada järgmisi klasse: 
 
-Klass | Kirjatüüp | Soovitus  
--- | -- | -- 
-font-body | Roboto | vaikimisi kõikjal, kus pole määratud teist kirjatüüpi
-font-heading | Raleway | pealkirjade jaoks
+<div class="bg-gray-50 rounded p-4 mb-8">
+  <div class="border-b flex space-x-6 pb-4">
+    <code class="text-sm select-all">font-body font-normal</code>
+    <span class="text-sm font-mono text-gray-300">Roboto 400</span>
+  </div>
+  <p class="font-body font-normal">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+</div>
 
+<div class="bg-gray-50 rounded p-4 mb-8">
+  <div class="border-b flex space-x-6 pb-4">
+    <code class="text-sm select-all">font-body font-medium</code>
+    <span class="text-sm font-mono text-gray-300">Roboto 500</span>
+  </div>
+  <p class="font-body font-medium">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+</div>
 
-font-thin font-weight: 100;
-font-extralight font-weight: 200;
-font-light  font-weight: 300;
-font-weight: 400;
-font-medium font-weight: 500;
-font-semibold font-weight: 600;
-font-bold font-weight: 700;
-font-extrabold  font-weight: 800;
-font-black  font-weight: 900;
+<div class="bg-gray-50 rounded p-4 mb-8">
+  <div class="border-b flex space-x-6 pb-4">
+    <code class="text-sm select-all">font-body font-bold</code>
+    <span class="text-sm font-mono text-gray-300">Roboto 700</span>
+  </div>
+  <p class="font-body font-bold">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+</div>
+
+```html
+<div class="font-body font-normal ..."></div>
+<div class="font-body font-medium ..."></div>
+<div class="font-body font-bold ..."></div>
+```
+
+Neist kaks klassi toimivad ka kursiivis:
+
+<div class="bg-gray-50 rounded p-4 mb-8">
+  <div class="border-b flex space-x-6 pb-4">
+    <code class="text-sm select-all">font-body font-normal italic</code>
+    <span class="text-sm font-mono text-gray-300">Roboto 400 kursiiv</span>
+  </div>
+  <p class="font-body font-normal italic">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+</div>
+
+<div class="bg-gray-50 rounded p-4 mb-8">
+  <div class="border-b flex space-x-6 pb-4">
+    <code class="text-sm select-all">font-body font-bold italic</code>
+    <span class="text-sm font-mono text-gray-300">Roboto 700 kursiiv</span>
+  </div>
+  <p class="font-body font-bold italic">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+</div>
+
+```html
+<div class="font-body font-normal italic ..."></div>
+<div class="font-body font-bold italic ..."></div>
+```

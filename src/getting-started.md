@@ -11,7 +11,9 @@ eleventyNavigation:
 
 # Seadistamine
 
-## 1. Paigalda üldine stiiliraamistik
+<p class="-mt-8 text-gray-300">Rahvusarhiivi disainisüsteemi on soovitav kasutada stiiliraamistiku "Tailwind CSS" abil:</p>
+
+## 1. Paigalda stiiliraamistik
 
 Loe [dokumentatsioonist](https://tailwindcss.com/docs/installation), kuidas paigaldada stiiliraamistik "Tailwind CSS".
 
