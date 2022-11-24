@@ -6,16 +6,16 @@ relative: ..
 eleventyNavigation:
   parent: Utilities
   key: Autotüpograafia
-  order: 9
+  order: 10
 ---
 
 # Autotüpograafia
 
 <p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes saab kasutada HTML-koodile automaatselt rakenduvat tüpograafiat</p>
 
-Klass | Omadused | Soovitus  
--- | -- | -- 
-prose | _Vaata failis `rahvusarhiiv.presets.js` jaotust `typography`_ | HTML-redaktoriga lisatud sisu jaoks
+Klass | Soovitus  
+-- | --
+prose | HTML-redaktoriga lisatud sisu jaoks
 
 <article class="prose rounded bg-gray-50 my-10 px-6 py-4 w-full">
   <h2>
@@ -56,3 +56,5 @@ prose | _Vaata failis `rahvusarhiiv.presets.js` jaotust `typography`_ | HTML-red
 ```html
 <article class="prose ..."></article>
 ```
+
+Loe täpsemalt [dokumentatsioonist](https://tailwindcss.com/docs/typography-plugin).
