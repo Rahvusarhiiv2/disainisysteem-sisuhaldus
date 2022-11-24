@@ -1,47 +1,58 @@
-# Rahvusarhiiv Design System
+# Rahvusarhiiv disainisüsteemi sisuhaldus
 
-Source for custom Tailwind CSS configuration and documentation site.
+See on [Eleventy HTML-generaatori](https://www.11ty.dev/) projekt, mille abil saab luua ja hallata [Rahvusarhiivi disainisüsteemi dokumentatsiooni](https://rahvusarhiiv2.github.io/disainisysteem/).  
 
-## Documentation site
+## Töökorraldus
 
-The documentation site is built with [Eleventy (11ty)](https://www.11ty.dev/) – a simple static site generator. For the styling the documentation site use the design system own custom Tailwind CSS configuration.
+Rahvusarhiiv disainisüsteemi dokumentatsiooni haldavad **mitu toimetajat** ja **üks peatoimetaja**. 
 
-Mostly for the content
+**Toimetajad:** 
 
-## Getting Started
+- kloonivad endale käesoleva repositooriumi,
+- loovad muudatuste tegemiseks alati uue `branch`-i, 
+- esitavad muudatused alati ainult `pull request` kaudu. 
 
-### 1. Clone this Repository
+**Peatoimetaja:** 
 
+- vaatab alati `pull request`-i üle, 
+- palub vajadusel koodi muuta või muudab seda ise,
+- ühendab muudatuste haru põhiharuga,
+- genereerib dokumentatsiooni HTML-versiooni,
+- paneb uuendatud HTML-koodi [disainisüsteemi repositooriumisse](https://github.com/Rahvusarhiiv2/disainisysteem).
+
+
+## Generaatori kasutamine
+
+### 1. Klooni repositoorium
+
+```shell
+git clone https://github.com/Rahvusarhiiv2/disainisysteem-sisuhaldus.git
 ```
-git clone ...
+
+### 2. Liigu projekti juurkausta
+
+```shell
+cd disainisysteem-sisuhaldus
 ```
 
-### 2. Navigate to the directory
+### 3. Paigalda sõltuvused
 
-```
-cd ...
-```
-
-### 3. Install dependencies
-
-```
+```shell
 npm install
 ```
 
-### 5. Run
+### 4. Käivita lokaalne server
 
-Start a local dev server with auto build and refresh
-
-```
+```shell
 npm run start
 ```
 
----
+Pärast seda saad vaadata töös olevat dokumentatsiooni aadressil: http://localhost:8080 
 
-Build all the assets for deployment
+### 5. Genereeri HTML
 
-```
+```shell
 npm run build
 ```
 
-The build generates the full static site into `dist` directory which you can use for deploying the site.
+Pärast seda saab peatoimetaja panna `dist` kausta sisu disainisüsteemi repositooriumisse.
