@@ -6,7 +6,7 @@ relative: ..
 eleventyNavigation:
   parent: Utilities
   key: Kirjasuurused
-  order: 8
+  order: 9
 ---
 
 # Kirjasuurused
@@ -26,3 +26,15 @@ eleventyNavigation:
 </div>
 
 {% endfor %}
+
+```html
+<div class="font-xs ..."></div>
+<div class="font-sm ..."></div>
+<div class="font-base ..."></div>
+<div class="font-lg ..."></div>
+<div class="font-xl ..."></div>
+<div class="font-2xl ..."></div>
+<div class="font-3xl ..."></div>
+<div class="font-4xl ..."></div>
+<div class="font-5xl ..."></div>
+```
