@@ -1,21 +1,23 @@
 ---
 layout: base
-title: Border Radius
+title: Kumerused
 relative: ..
 
 eleventyNavigation:
   parent: Utilities
-  key: Border Radius
+  key: Kumerused
+  order: 2
 ---
 
-# Border Radius
+# Kumerused
 
-Class | Properties | Recommended
+<p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes tohib kasutada ainult järgmisi kumerusi</p>
+
+Klass | Omadus | Soovitus
 -- | -- | --
-rounded-sm | border-radius: 0.25rem; /* 4px */ | for something like a button
-rounded | border-radius: 0.5rem; /* 8px */ | for various elements and components (dropdowns, thumbnails, etc)
-rounded-full | border-radius: 9999px; | for components where full circle is needed
-
+rounded-sm | border-radius: 0.25rem; /* 4px */ | väikeste elementide jaoks (nupud, sildid jne)
+rounded | border-radius: 0.5rem; /* 8px */ | keskmiste ja suurte elementide jaoks (menüüd, pisipildid, hüpikaknad, jne)
+rounded-full | border-radius: 9999px; | ümmarguste elementide jaoks
 
 <div class="flex space-x-10 my-20">
   <div class="flex items-center justify-center text-sm w-52 h-36 rounded-sm border border-black">rounded-sm</div>
@@ -30,4 +32,4 @@ rounded-full | border-radius: 9999px; | for components where full circle is need
 <div class="rounded-full ..."></div>
 ```
 
-Note that you can round sides and corners separately! Please consult [the official documentation](https://tailwindcss.com/docs/border-radius#rounding-sides-separately).
+NB! Kumerusi on võimalik määrata ka nurkade ja servade kaupa! Loe selle kohta [dokumentatsioonist](https://tailwindcss.com/docs/border-radius#rounding-sides-separately).

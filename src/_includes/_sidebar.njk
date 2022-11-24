@@ -1,4 +1,4 @@
-<aside class="md:col-span-3 p-4 bg-white rounded shadow">
+<aside class="md:col-span-3 p-4 bg-white rounded-sm shadow">
   <nav class="divide-y-2 divide-gray-200 sticky top-4">
 
     <section class="pb-3">
@@ -6,7 +6,7 @@
       <ul class="space-y-1">
         {%- for entry in navPages %}
           <li class="">
-            <a class="block rounded py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
@@ -19,32 +19,32 @@
       <ul class="space-y-1">
         {%- for entry in navPages %}
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
     </section>
 
     <section class="py-3">
-      <h3 class="px-4 py-2 uppercase font-bold text-sm">Classes & Properties</h3>
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Klassid ja omadused</h3>
       {% set navPages = collections.all | eleventyNavigation("Utilities") %}
       <ul class="space-y-1">
         {%- for entry in navPages %}
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
     </section>
 
     <section class="py-3">
-      <h3 class="px-4 py-2 uppercase font-bold text-sm">Components & Layouts</h3>
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Komponendid ja küljendid</h3>
       <h3 class="px-4 py-2 uppercase text-sm">Feedback</h3>
       {% set navPages = collections.all | eleventyNavigation("Components") %}
       <ul class="space-y-1">
         {%- for entry in navPages %}
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
