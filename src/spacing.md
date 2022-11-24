@@ -12,7 +12,7 @@ eleventyNavigation:
 # Astmik
 
 <p class="-mt-8 text-gray-300">
-  Elementide, piirjoonte ja vahekauguste suuruse määramiseks on soovitav kasutada järgmist astmikku
+  Elementide, piirjoonte ja vahekauguste suuruse määramiseks on soovitatav kasutada järgmist astmikku
 </p>
 
 <table>

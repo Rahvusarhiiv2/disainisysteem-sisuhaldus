@@ -45,7 +45,7 @@ Rahvusarhiivi stiilierisused muudavad ainult väikest osa üldisest stiiliraamis
 
 ## 4. Seadista rahvusarhiivi kirjatüübid
 
-Laadi alla [kirjatüübi failid](../assets/fonts/fonts.zip) ja kopeeri need oma projekti `fonts` kausta. Lisa faili `tailwind.css` järgmised read:
+Laadi alla [kirjatüüpide failid](../assets/fonts/fonts.zip) ja kopeeri need oma projekti `fonts` kausta. Lisa faili `tailwind.css` järgmised read:
 
 ```css
 @layer base {
@@ -112,7 +112,7 @@ Prototüübis võib kirjatüübid Google API kaudu linkida:
 
 ## 5. Seadista tüpograafia pistik
 
-Jooksuta konsoolis käsku: 
+Käivita konsoolis: 
 
 ```shell
 npm install @tailwindcss/typography
