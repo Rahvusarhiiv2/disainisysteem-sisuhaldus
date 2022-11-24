@@ -1,4 +1,4 @@
-# Rahvusarhiiv disainisüsteemi sisuhaldus
+# Rahvusarhiivi disainisüsteemi sisuhaldus
 
 See on [Eleventy HTML-generaatori](https://www.11ty.dev/) projekt, mille abil saab luua ja hallata [Rahvusarhiivi disainisüsteemi dokumentatsiooni](https://rahvusarhiiv2.github.io/disainisysteem/).  
 
