@@ -1,10 +1,10 @@
 ---
 layout: base
 title: Teemad
-relative: ..
+relative: ../..
 
 eleventyNavigation:
-  parent: Utilities
+  parent: Classes
   key: Teemad
   order: 5
 ---

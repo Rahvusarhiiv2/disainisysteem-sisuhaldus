@@ -1,10 +1,10 @@
 ---
 layout: base
 title: Kirjalaadid
-relative: ..
+relative: ../..
 
 eleventyNavigation:
-  parent: Utilities
+  parent: Classes
   key: Kirjalaadid
   order: 8
 ---

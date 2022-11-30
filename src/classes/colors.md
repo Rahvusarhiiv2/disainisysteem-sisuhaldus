@@ -1,10 +1,10 @@
 ---
 layout: base
 title: Värvid
-relative: ..
+relative: ../..
 
 eleventyNavigation:
-  parent: Utilities
+  parent: Classes
   key: Värvid
   order: 4
 ---

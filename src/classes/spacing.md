@@ -1,10 +1,10 @@
 ---
 layout: base
 title: Astmik
-relative: ..
+relative: ../..
 
 eleventyNavigation:
-  parent: Utilities
+  parent: Classes
   key: Astmik
   order: 6
 ---

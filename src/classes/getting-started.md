@@ -1,10 +1,10 @@
 ---
 layout: base
 title: Seadistamine
-relative: ..
+relative: ../..
 
 eleventyNavigation:
-  parent: Utilities
+  parent: Classes
   key: Seadistamine
   order: 1
 ---

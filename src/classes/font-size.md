@@ -1,10 +1,10 @@
 ---
 layout: base
 title: Kirjasuurused
-relative: ..
+relative: ../..
 
 eleventyNavigation:
-  parent: Utilities
+  parent: Classes
   key: Kirjasuurused
   order: 9
 ---

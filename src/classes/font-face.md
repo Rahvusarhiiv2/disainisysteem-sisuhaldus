@@ -1,10 +1,10 @@
 ---
 layout: base
 title: Kirjatüübid
-relative: ..
+relative: ../..
 
 eleventyNavigation:
-  parent: Utilities
+  parent: Classes
   key: Kirjatüübid
   order: 7
 ---
