@@ -1,27 +1,39 @@
 ---
 layout: base
-title: Versioning
+title: Versioonid
 relative: ..
 
 eleventyNavigation:
   parent: Home
-  key: Versioning
+  key: Versioonid
 ---
 
-# Updating the system and keeping different parts in sync
+# Versioonid
 
-Rahvusarhiiv Design System uses [Semantic Versioning 2.0.0](https://semver.org/) for versioning the design system different parts.
+<p class="-mt-8 text-gray-300">Rahvusarhiivi disainisüsteemil tervikuna versiooninumbrit ei ole</p>
 
-Given a version number `MAJOR.MINOR.PATCH`, increment the:
+Rahvusarhiivi [stiilierisustel](../classes/getting-started/), mis on määratud failis `rahvusarhiiv.presets.js`, on kolmeosaline versiooninumber:
 
-- `MAJOR` version when you make incompatible API changes
-- `MINOR` version when you add functionality in a backwards compatible manner
-- `PATCH` version when you make backwards compatible bug fixes
-- Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+```js
+/**
+ * Rahvusarhiiv custom presets
+ * @version 1.0.0
+ */
+```
 
----
+See versiooninumber muutub [semantilise versioneerimise](https://semver.org/) reeglite järgi:
 
-## The parts that adhere to the versioning logic
+- vasakult esimene on **suurversiooni** number (*major*); 
+- punkti järel järgneb sellele **väikeversiooni** (*minor*) number; 
+- lõpus on **paiga** (*patch*) number.
 
-- **Components and layouts** in the design system **code examples library** and **UI Design Kit** — this is for keeping in sync the Figma file and code examples. The version is marked on the documentation site and Figma file.
-- The **custom presets configuration file** `rahvusarhiiv.presets.js` and **Figma styles in UI Design Kit** — this is for developers and designer to understand which version of the configuration/styles is in use. Also, the UI Design Kit and the configuration file versions and features should be matched. If there is change in the Figma file styles the configuration need to change and match the version or vice versa. Version is marked in the beginning of the configuration file and in Figma.
+Suur- ja väikeversiooni vahe on selles, et väikeversioon tohib stiilierisusi ainult laiendada (ei tohi muuta). Kõik olemasolevad klassid, komponendid ja küljendid peavad toimima täpselt samamoodi nagu eelmise väikeversiooniga. Teisisõnu, väikeversioon peab tagama tagasiühilduvuse (*backward compatibility*). Suurversioon seevastu muudab stiilierisusi nii, et ühilduvus eelmisega versiooniga pole tagatud. Paik on kasutusel pisiparanduste jaoks.
+
+Kui komponendid ja küljendid kasutavad esimest suurversiooni, ei ole vaja seda koodis ära märkida, aga alates teisest suurversioonist on versiooninumbri lisamine kohustuslik. Näiteks:
+
+```html
+<!-- rahvusarhiiv.presets.js 2.0.0 -->
+<div class="border-l-4 border-yellow-400 bg-yellow-50 p-4">
+  ...
+</div>
+``` 
