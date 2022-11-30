@@ -23,7 +23,7 @@ Kopeeri alljärgnev kood oma projekti failina `rahvusarhiiv.presets.js`:
 
 
 ```js
-{% include "../rahvusarhiiv.preset.js" %}
+{% include "../../rahvusarhiiv.preset.js" %}
 ```
 
 ## 3. Seadista rahvusarhiivi stiilierisused
