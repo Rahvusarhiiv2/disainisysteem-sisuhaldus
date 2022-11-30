@@ -1,10 +1,10 @@
 ---
 layout: base
 title: Autotüpograafia
-relative: ..
+relative: ../..
 
 eleventyNavigation:
-  parent: Utilities
+  parent: Classes
   key: Autotüpograafia
   order: 10
 ---

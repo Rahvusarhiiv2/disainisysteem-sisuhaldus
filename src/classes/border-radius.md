@@ -1,10 +1,10 @@
 ---
 layout: base
 title: Kumerused
-relative: ..
+relative: ../..
 
 eleventyNavigation:
-  parent: Utilities
+  parent: Classes
   key: Kumerused
   order: 2
 ---

@@ -1,10 +1,10 @@
 ---
 layout: base
 title: Varjud
-relative: ..
+relative: ../..
 
 eleventyNavigation:
-  parent: Utilities
+  parent: Classes
   key: Varjud
   order: 3
 ---
