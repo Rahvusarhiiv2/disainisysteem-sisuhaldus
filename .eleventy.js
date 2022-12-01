@@ -12,10 +12,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("icon", function(name, svgTag) {
     return `<div>
     <div class="relative group h-[8.5rem]">
-      <button data-bs-toggle="tooltip" type="button" onclick="copy(this)" class="absolute cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100 ">
+      <button data-bs-toggle="tooltip" type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100 ">
         ${svgTag}
       </button>
-      <div class="absolute hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+      <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
         Kopeeri
       </div>
     </div>
