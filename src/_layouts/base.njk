@@ -6,6 +6,8 @@
 
     <title>{{title}} — Rahvusarhiivi disainisüsteem</title>
 
+    <link rel="stylesheet" href="{{ relative }}{{ '/assets/css/style.css' | url }}">
+
     {# Fonts from Google Fonts CDN #}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +16,18 @@
     {# Syntax highlighting styles #}
     <link href="https://unpkg.com/prism-themes/themes/prism-a11y-dark.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ relative }}{{ '/assets/css/style.css' | url }}">
+    {# Copy to clipboard script #}
+    <script>
+      function copy(el) {
+        navigator.clipboard.writeText(el.innerHTML);
+        el.nextElementSibling.textContent="Kopeeritud"
+        el.nextElementSibling.classList.remove("hidden");
+        setTimeout(function(){
+            el.nextElementSibling.classList.add("hidden");
+            el.nextElementSibling.textContent="Kopeeri"
+        }, 2000);
+      }
+    </script>
 
   </head>
   <body class="bg-gray-50">
