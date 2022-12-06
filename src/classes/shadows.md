@@ -22,11 +22,11 @@ shadow-lg | 0px 65px 80px rgba(0, 0, 0, 0.02275), 0px 32.9062px 34.875px rgba(0,
 shadow-inner | inset 0 2px 4px 0 rgb(0 0 0 / 0.05)
 
 <div class="flex space-x-10 my-20">
-  <div class="flex items-center justify-center text-sm w-52 h-36 shadow-sm">shadow-sm</div>
-  <div class="flex items-center justify-center text-sm w-52 h-36 shadow-md">shadow-md</div>
-  <div class="flex items-center justify-center text-sm w-52 h-36 shadow">shadow</div>
-  <div class="flex items-center justify-center text-sm w-52 h-36 shadow-lg">shadow-lg</div>
-  <div class="flex items-center justify-center text-sm w-52 h-36 shadow-inner">shadow-inner</div>
+  <div class="flex items-center justify-center text-sm w-52 h-36 shadow-sm select-all">shadow-sm</div>
+  <div class="flex items-center justify-center text-sm w-52 h-36 shadow-md select-all">shadow-md</div>
+  <div class="flex items-center justify-center text-sm w-52 h-36 shadow select-all">shadow</div>
+  <div class="flex items-center justify-center text-sm w-52 h-36 shadow-lg select-all">shadow-lg</div>
+  <div class="flex items-center justify-center text-sm w-52 h-36 shadow-inner select-all">shadow-inner</div>
 </div>
 
 ```html

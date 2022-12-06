@@ -20,9 +20,9 @@ rounded | border-radius: 0.5rem; /* 8px */ | keskmiste ja suurte elementide jaok
 rounded-full | border-radius: 9999px; | ümmarguste elementide jaoks
 
 <div class="flex space-x-10 my-20">
-  <div class="flex items-center justify-center text-sm w-52 h-36 rounded-sm border border-black">rounded-sm</div>
-  <div class="flex items-center justify-center text-sm w-52 h-36 rounded border border-black">rounded</div>
-  <div class="flex items-center justify-center text-sm w-36 h-36 rounded-full border border-black">rounded-full</div>
+  <div class="flex items-center justify-center text-sm w-52 h-36 rounded-sm border border-black select-all">rounded-sm</div>
+  <div class="flex items-center justify-center text-sm w-52 h-36 rounded border border-black select-all">rounded</div>
+  <div class="flex items-center justify-center text-sm w-36 h-36 rounded-full border border-black select-all">rounded-full</div>
 </div>
 
 

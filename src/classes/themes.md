@@ -19,7 +19,7 @@ Klass | Omadus | Selgitus
 -- | -- | --
 bg-theme-ais | linear-gradient(96.04deg, rgba(247, 227, 204, 0.65) -17.14%, <br/>#ECDDF4 94.45%) | AIS-i ja väiksemate rakenduste jaoks, mis ei vaja eriilmet 
 
-<div class="bg-theme-ais flex items-center justify-center h-36 my-20">
+<div class="bg-theme-ais flex items-center justify-center h-36 my-20 select-all">
   bg-theme-ais
 </div>
 

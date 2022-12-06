@@ -28,7 +28,7 @@ eleventyNavigation:
 {% for name, size in tailwindData.spacing %}
 
   <tr>
-    <td>{{ name }}</td>
+    <td class="select-all">{{ name }}</td>
     <td>{{ size }}</td>
     <td><div class="h-4 bg-green-500" style="width: {{ size }};"></div></td>
   </tr>
