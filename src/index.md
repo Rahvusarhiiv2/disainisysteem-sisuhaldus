@@ -10,6 +10,4 @@ eleventyNavigation:
 
 # Sissejuhatus
 
-```md
 Lisame siis, kui struktuur on lõplikult paigas.
-```

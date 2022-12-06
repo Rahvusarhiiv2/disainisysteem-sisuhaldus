@@ -10,7 +10,3 @@ eleventyNavigation:
 ---
 
 # Teist
-
-```md
-Lisame siis, kui struktuur on lõplikult paigas.
-```
