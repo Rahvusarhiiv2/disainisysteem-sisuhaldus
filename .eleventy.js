@@ -15,7 +15,6 @@ module.exports = function (eleventyConfig) {
   // Copy static assets to the `dist` dir
   eleventyConfig.addPassthroughCopy("src/assets/images");
 
-
   // https://www.npmjs.com/package/eleventy-plugin-code-clipboard
   const markdownLibrary = markdownIt({
     html: true,
@@ -26,24 +25,19 @@ module.exports = function (eleventyConfig) {
     buttonStyle: 'position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5',
     title: 'Kopeeri',
   });
-
   eleventyConfig.setLibrary('md', markdownLibrary);
 
   // NOTE: Changing shortcodes needs restarting for the dev server
-  eleventyConfig.addShortcode("icon", function(name, svgTag) {
+  eleventyConfig.addPairedShortcode("icon", function(content, description) {
     return `<div>
-    <div class="relative group h-[8.5rem]">
-      <button data-bs-toggle="tooltip" type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100 ">
-        ${svgTag}
-      </button>
-      <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
-        Kopeeri
+      <div class="relative group h-[8.5rem]">
+        <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">${content}</button>
+        <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+          Kopeeri
+        </div>
       </div>
-    </div>
-    <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">
-      ${name}
-    </div>
-  </div>`;
+      <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">${description}</div>
+    </div>`;
   });
 
   return {
