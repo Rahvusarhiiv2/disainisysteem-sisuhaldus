@@ -53,23 +53,11 @@ eleventyNavigation:
 </svg>
 {% endicon %}
 
-{% icon 'allfunktsioon' %}
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5V6.75a4.5 4.5 0 119 0v3.75M3.75 21.75h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H3.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-</svg>
-{% endicon %} 
-
 {% icon 'sari' %}
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M3 21C2.45 21 1.97933 20.8043 1.588 20.413C1.196 20.021 1 19.55 1 19V6H3V19H20V21H3ZM7 17C6.45 17 5.97933 16.8043 5.588 16.413C5.196 16.021 5 15.55 5 15V4C5 3.45 5.196 2.979 5.588 2.587C5.97933 2.19567 6.45 2 7 2H12L14 4H21C21.55 4 22.021 4.196 22.413 4.588C22.8043 4.97933 23 5.45 23 6V15C23 15.55 22.8043 16.021 22.413 16.413C22.021 16.8043 21.55 17 21 17H7ZM7 15H21V6H13.175L11.175 4H7V15ZM7 15V4V15Z" fill="#323232"/>
 </svg>
 {% endicon %}
-
-{% icon 'allsari' %}
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
-</svg>
-{% endicon %} 
 
 {% icon 'säilik' %}
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,12 +70,6 @@ eleventyNavigation:
   <path d="M8 16H16V18H8V16ZM8 12H16V14H8V12ZM14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z" fill="#323232"/>
 </svg>
 {% endicon %}
-
-{% icon 'allarhivaal' %}
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-</svg>
-{% endicon %} 
 
 {% icon 'fail' %}
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
