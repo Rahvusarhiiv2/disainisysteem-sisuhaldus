@@ -88,7 +88,7 @@ eleventyNavigation:
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M12.05 18H8V16H12.05V18ZM12.05 20H6V4H13V9H18V14.55H20V8L14 2H6C5.45 2 4.98 2.2 4.59 2.59C4.2 2.98 4 3.45 4 4V20C4 20.55 4.2 21.02 4.59 21.41C4.98 21.8 5.45 22 6 22H12.05V20ZM16 14H8V12H16V14ZM15.72 20.42L14.92 23L17.06 21.51L19.18 23L18.38 20.42L20.5 18.64H17.92L17.06 16.11L16.19 18.64H13.6L15.72 20.42Z" fill="#323232"/>
 </svg>
-{% endicon %} 
+{% endicon %}
 
 {% icon 'fail' %}
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

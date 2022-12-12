@@ -39,6 +39,21 @@ module.exports = function (eleventyConfig) {
       <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">${description}</div>
     </div>`;
   });
+  eleventyConfig.addShortcode("live", function() {
+    return `<div class="not-prose font-body rounded border-2 border-gray-50 p-10">`;
+  });
+  eleventyConfig.addShortcode("endlive", function() {
+    return `</div>`;
+  });
+  eleventyConfig.addShortcode("code", function(title) {
+    return `<details>
+      <summary class="cursor-pointer px-2 py-1.5 mt-4 text-base text-gray-600 bg-gray-50 rounded-sm -mb-1.5">${title}</summary>
+
+      `;
+  });
+  eleventyConfig.addShortcode("endcode", function() {
+    return `</details>`;
+  });
 
   return {
     markdownTemplateEngine: "njk",
