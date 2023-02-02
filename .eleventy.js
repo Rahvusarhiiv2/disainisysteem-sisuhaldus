@@ -27,7 +27,6 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.setLibrary('md', markdownLibrary);
 
-  // NOTE: Changing shortcodes needs restarting for the dev server
   eleventyConfig.addPairedShortcode("icon", function(content, description) {
     return `<div>
       <div class="relative group h-[8.5rem]">
@@ -38,6 +37,15 @@ module.exports = function (eleventyConfig) {
       </div>
       <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">${description}</div>
     </div>`;
+  });
+  eleventyConfig.addPairedShortcode("ex", function(content) {
+    return `<div class="leading-snug bg-gray-50 rounded px-10 pt-6 pb-4 mb-10">${content}</div>`;
+  });  
+  eleventyConfig.addPairedShortcode("good", function(content) {
+    return `<span class="font-bold italic text-green-500">${content}</span>`;
+  });
+  eleventyConfig.addPairedShortcode("bad", function(content) {
+    return `<span class="italic text-gray-500">${content}</span>`;
   });
   eleventyConfig.addShortcode("live", function() {
     return `<div class="not-prose font-body rounded border-2 border-gray-50 p-10">`;
