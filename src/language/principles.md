@@ -4,9 +4,9 @@ title: Üldpõhimõtted
 relative: ../..
 
 eleventyNavigation:
-  parent: Language
+  parent: _
   key: Üldpõhimõtted
-  order: 1
+  order: 0
 ---
 
 # Üldpõhimõtted
