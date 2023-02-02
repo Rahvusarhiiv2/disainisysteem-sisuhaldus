@@ -1,15 +1,15 @@
 ---
 layout: base
-title: Hääletoon
+title: Pöördumine ja hääletoon
 relative: ../..
 
 eleventyNavigation:
   parent: Language
-  key: Hääletoon
-  order: 2
+  key: Pöördumine ja hääletoon
+  order: 1
 ---
 
-# Hääletoon
+# Pöördumine ja hääletoon
 
  <!-- <p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes on soovitatav kasutada järgnevaid juhiseid</p> -->
 
