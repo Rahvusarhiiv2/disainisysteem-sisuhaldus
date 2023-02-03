@@ -77,6 +77,7 @@ Koopiatellimuse esitamiseks läbige järgmised sammud.
 <p class="ml-5">1.2. Digitaalkoopia</p>
 <p class="ml-14">1.2.1. Tarbekoopia kuni A2 formaadis arhivaalist</p>
 <p class="ml-14">1.2.2. Trükikvaliteediga koopia</p>
+<p class="mt-1">2. Ja nii edasi</p>
 {% endex %}
 
 **Kui loetelu koosneb küsimustest**, pannakse sissejuhatava lause lõppu punkt ja iga loetelujaotiseks oleva küsilause lõppu küsimärk.
@@ -109,9 +110,9 @@ Kas teie tellimuse eesmärk on
 {% ex %}
 Uurimissaal on avatud
 
-- esmaspäevast reedeni 9—19
-- laupäeval 10—15
-- riiklike pühade eel 9—13
+- esmaspäevast reedeni 9–19
+- laupäeval 10–15
+- riiklike pühade eel 9–13
 
 {% endex %}
 
