@@ -48,7 +48,7 @@ eleventyNavigation:
 {# Discard non nested values from automatic render – `current`, `inherit`, `white`, `black`, `transparent` #}
 {% if n1 !== 'current' and n1 !== 'inherit' and n1 !== 'white' and n1 !== 'black' and n1 !== 'transparent' %}
 
-<div>
+<div class="mb-10">
   <h2 class="mt-8 mb-4">{{ n1 }}</h2>
 
   <div class="grid lg:grid-cols-10 md:grid-cols-6 grid-cols-4 gap-4">
@@ -68,36 +68,4 @@ eleventyNavigation:
 {% endif %}
 {% endfor %}
 
-
-## Värvide määramine stiiliraamistikus "Tailwind CSS"
-
-Värv määratakse klassiga, mille nimi koosneb kolmest osast, mis on eraldatud sidekriipsuga, näiteks `bg-gray-50`, kus `bg` on utiliidi nimi, `gray` värvi nimi ja `50` tooni kood.
-
-<div class="space-y-6 my-12">
-  <input class="placeholder-gray-300 border border-gray-300 p-2" placeholder="placeholder-gray-300">
-  <p class="text-red-500">text-red-500</p>
-  <p class="bg-gray-50 p-2">bg-gray-50</p>
-  <p class="border border-green-500 p-2">border-green-500</p>
-  <div class="grid grid-cols-3 divide-x-4 divide-yellow-500">
-    <div class="bg-gray-50 p-2"></div>
-    <div class="bg-gray-50 p-2 text-center">divide-yellow-500</div>
-    <div class="bg-gray-50 p-2"></div>
-  </div>
-  <button class="rounded p-2 bg-blue-300 text-white text-center ring ring-blue-300 ring-offset-2 ring-offset-blue-100">ring-blue-300 ring-offset-blue-200</button>
-</div>
-
-```html
-<input class="placeholder-gray-300 ...">
-<p class="text-red-500 ..."></p>
-<p class="bg-gray-50 ..."></p>
-<p class="border-green-500 ..."></p>
-<div class="divide-yellow-500 ...">
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
-<button class="ring-blue-300 ring-offset-blue-100 ..."></button>
-
-```
-
-Loe täpsemalt [dokumentatsioonist](https://tailwindcss.com/docs).
+Värvide kasutamise kohta stiiliraamistikus "Tailwind CSS" loe täpsemalt [dokumentatsioonist](https://tailwindcss.com/docs).
