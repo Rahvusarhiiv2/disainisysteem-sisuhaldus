@@ -235,17 +235,17 @@ eleventyNavigation:
   </div>
   <div class="not-prose w-1/2 group">
     <nav class="flex justify-start">
-      <a href="#" class="w-36 rounded-t-sm shadow-sm group-hover:shadow-lg bg-white text-center py-1 realtive z-0">
+      <div class="flex-none w-36 rounded-t-sm shadow-sm py-1 realtive z-0 group-hover:shadow-lg">
+        &nbsp;
+      </div>
+      <a href="#" class="flex-none w-36 text-center py-1">
         Üldotsing
       </a>
-      <a href="#" class="w-36 text-center py-1">
+    </nav>
+    <div class="bg-white rounded-b-sm rounded-tr-sm shadow-sm h-48 -mb-1 p-4 relative z-10 group-hover:shadow-lg">
+      <a href="#" class="block w-36 -ml-4 -mt-14 rounded-t-sm bg-white text-center py-1">
         Täpsem otsing
       </a>
-    </nav>
-    <div class="bg-white rounded-b-sm rounded-tr-sm shadow-sm group-hover:shadow-lg h-48 -mb-1 p-4 relative z-10">
-      <div class="w-36 h-2 -ml-4 -mt-6 bg-white"></div>
-      <div class="flex flex-wrap content-center justify-center h-48">
-      </div>
     </div>
   </div> 
 </div>
@@ -315,18 +315,18 @@ eleventyNavigation:
   </div>
   <div class="not-prose w-1/2">
     <nav class="flex justify-start">
-      <a href="#" class="w-24 rounded-t-sm shadow-md bg-white text-center py-1 realtive z-0">
-        Sakk
-      </a>
-      <a href="#" class="w-24 text-center py-1">
+      <div class="flex-none w-24 rounded-t-sm shadow-md py-1 realtive z-0">
+        &nbsp;
+      </div>
+      <a href="#" class="flex-none w-24 text-center py-1">
         Sakk
       </a>
     </nav>
     <div class="bg-white rounded-b-sm rounded-tr-sm shadow-md h-48 -mb-1 p-4 relative z-10">
-      <div class="w-24 h-2 -ml-4 -mt-5 bg-white"></div>
-      <div class="flex flex-wrap content-center justify-center h-48">  
-      </div>
-    </div> 
+      <a href="#" class="block w-24 -ml-4 -mt-14 rounded-t-sm bg-white text-center py-1">
+        Sakk
+      </a>
+    </div>
   </div> 
 </div>
 
@@ -346,7 +346,6 @@ eleventyNavigation:
       </a>
     </nav>
     <div class="bg-white rounded-sm shadow-md h-48 -mb-1 p-4 relative z-10">
-      <div class="w-24 h-2 -ml-4 -mt-5 bg-white"></div>
       <div class="flex flex-wrap content-center justify-center h-48">
       </div>
     </div> 
