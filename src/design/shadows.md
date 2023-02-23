@@ -239,12 +239,12 @@ eleventyNavigation:
         &nbsp;
       </div>
       <a href="#" class="flex-none w-36 text-center py-1">
-        Üldotsing
+        Täpsem otsing
       </a>
     </nav>
     <div class="bg-white rounded-b-sm rounded-tr-sm shadow-sm h-48 -mb-1 p-4 relative z-10 group-hover:shadow-lg">
       <a href="#" class="block w-36 -ml-4 -mt-14 rounded-t-sm bg-white text-center py-1">
-        Täpsem otsing
+        Üldotsing
       </a>
     </div>
   </div> 
