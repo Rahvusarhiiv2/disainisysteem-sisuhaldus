@@ -124,30 +124,30 @@ Uurimissaal on avatud
   <table class="min-w-full divide-y divide-gray-200">
     <thead class="bg-gray-50">
       <tr>
-        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900 sm:pl-6">Nimetus</th>
-        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900">E-post</th>
+        <th scope="col" class="px-3 py-2.5 text-left font-semibold text-gray-900 sm:pl-6">Nimetus</th>
+        <th scope="col" class="px-3 py-2.5 text-left font-semibold text-gray-900">E-post</th>
       </tr>
     </thead>
     <tbody class="divide-y divide-gray-200 bg-white">
       <tr>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Tartus</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500">tartu@ra.ee</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Rahvusarhiiv Tartus</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500">tartu@ra.ee</td>
       </tr>
       <tr>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Tallinnas</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500">tallinn@ra.ee</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Rahvusarhiiv Tallinnas</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500">tallinn@ra.ee</td>
       </tr>
       <tr>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Filmiarhiiv</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500">filmiarhiiv@ra.ee</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Filmiarhiiv</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500">filmiarhiiv@ra.ee</td>
       </tr>
       <tr>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Rakveres</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500">rakvere@ra.ee</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Rahvusarhiiv Rakveres</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500">rakvere@ra.ee</td>
       </tr>
       <tr>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Valgas</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500">valga@ra.ee</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Rahvusarhiiv Valgas</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500">valga@ra.ee</td>
       </tr>                       
     </tbody>
   </table>
@@ -159,30 +159,30 @@ Kui veergude vahel on piisavalt ruumi ja read on **triibutatud**, siis võib är
   <table class="min-w-full divide-y divide-gray-200">
     <thead class="bg-gray-50">
       <tr>
-        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900 sm:pl-6">Nimetus</th>
-        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900">E-post</th>
+        <th scope="col" class="px-3 py-2.5 text-left font-semibold text-gray-900 sm:pl-6">Nimetus</th>
+        <th scope="col" class="px-3 py-2.5 text-left font-semibold text-gray-900">E-post</th>
       </tr>
     </thead>
     <tbody>
       <tr class="even:bg-gray-50 even:bg-opacity-50">
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Tartus</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500">tartu@ra.ee</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Rahvusarhiiv Tartus</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500">tartu@ra.ee</td>
       </tr>
       <tr class="even:bg-gray-50 even:bg-opacity-50">
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Tallinnas</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500">tallinn@ra.ee</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Rahvusarhiiv Tallinnas</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500">tallinn@ra.ee</td>
       </tr>
       <tr class="even:bg-gray-50 even:bg-opacity-50">
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Filmiarhiiv</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500">filmiarhiiv@ra.ee</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Filmiarhiiv</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500">filmiarhiiv@ra.ee</td>
       </tr> 
       <tr class="even:bg-gray-50 even:bg-opacity-50">
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Rakveres</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500">rakvere@ra.ee</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Rahvusarhiiv Rakveres</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500">rakvere@ra.ee</td>
       </tr>
       <tr class="even:bg-gray-50 even:bg-opacity-50">
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Valgas</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500">valga@ra.ee</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Rahvusarhiiv Valgas</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500">valga@ra.ee</td>
       </tr>                     
     </tbody>
   </table>
@@ -194,30 +194,30 @@ Kui veergude vahel on piisavalt ruumi ja read on **triibutatud**, siis võib är
   <table class="min-w-full divide-y divide-gray-200">
     <thead class="bg-gray-50">
       <tr>
-        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900 sm:pl-6">Eesmärk</th>
-        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900 text-right">Uurijate arv</th>
+        <th scope="col" class="px-3 py-2.5 text-left font-semibold text-gray-900 sm:pl-6">Eesmärk</th>
+        <th scope="col" class="px-3 py-2.5 text-left font-semibold text-gray-900 text-right">Uurijate arv</th>
       </tr>
     </thead>
     <tbody class="divide-y divide-gray-200 bg-white">
       <tr>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Kodu-uurimine</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-right">40 073</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Kodu-uurimine</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 text-right">40 073</td>
       </tr>
       <tr>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Genealoogia</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-right">33 995</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Genealoogia</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 text-right">33 995</td>
       </tr>
       <tr>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Õppetöö</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-right">7 774</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Õppetöö</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 text-right">7 774</td>
       </tr>
       <tr>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Teadustöö</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-right">5 775</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Teadustöö</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 text-right">5 775</td>
       </tr>
       <tr>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Õiguste tõestamine</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-right">2 799</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 sm:pl-6">Õiguste tõestamine</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 text-right">2 799</td>
       </tr>                       
     </tbody>
   </table>
@@ -229,30 +229,30 @@ Kui veergude vahel on piisavalt ruumi ja read on **triibutatud**, siis võib är
   <table class="min-w-full divide-y divide-gray-200">
     <thead class="bg-gray-50">
       <tr>
-        <th scope="col" class="py-3.5 pl-4 pr-3 text-left font-semibold text-gray-900 sm:pl-6">Failinimi</th>
-        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900 text-center">Maht</th>
-        <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6"></th>
+        <th scope="col" class="py-2.5 pl-3 pr-3 text-left font-semibold text-gray-900 sm:pl-6">Failinimi</th>
+        <th scope="col" class="px-3 py-2.5 text-left font-semibold text-gray-900 text-center">Maht</th>
+        <th scope="col" class="relative py-2.5 pl-3 pr-3 sm:pr-6"></th>
       </tr>
     </thead>
     <tbody class="divide-y divide-gray-200 bg-white">
       <tr>
-        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-gray-500 sm:pl-6">lvma-888-18561-l-11.jpg</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-center">1 MB</td>
-        <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right font-medium sm:pr-6">
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pl-6">lvma-888-18561-l-11.jpg</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 text-center">1 MB</td>
+        <td class="relative whitespace-nowrap py-3 pl-3 pr-3 text-right font-medium sm:pr-6">
           <a href="#" class="text-indigo-600 hover:text-indigo-900">Laadi alla</a>
         </td>
       </tr>
       <tr>
-        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-gray-500 sm:pl-6">lvma-888-18561-l-12.jpg</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-center">398 KB</td>
-        <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right font-medium sm:pr-6">
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pl-6">lvma-888-18561-l-12.jpg</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 text-center">398 KB</td>
+        <td class="relative whitespace-nowrap py-3 pl-3 pr-3 text-right font-medium sm:pr-6">
           <a href="#" class="text-indigo-600 hover:text-indigo-900">Laadi alla</a>
         </td>
       </tr> 
       <tr>
-        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-gray-500 sm:pl-6">lvma-888-18561-l-13.jpg</td>
-        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-center">430 KB</td>
-        <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right font-medium sm:pr-6">
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pl-6">lvma-888-18561-l-13.jpg</td>
+        <td class="whitespace-nowrap px-3 py-3 text-gray-500 text-center">430 KB</td>
+        <td class="relative whitespace-nowrap py-3 pl-3 pr-3 text-right font-medium sm:pr-6">
           <a href="#" class="text-indigo-600 hover:text-indigo-900">Laadi alla</a>
         </td>
       </tr>           
@@ -266,31 +266,31 @@ Kui veergude vahel on piisavalt ruumi ja read on **triibutatud**, siis võib är
   <table class="min-w-full divide-y divide-gray-200">
     <thead class="bg-gray-50">
       <tr class="divide-x divide-gray-200">
-        <th scope="col" class="py-3.5 pl-4 pr-4 text-left font-semibold text-gray-900 sm:pl-6">Arvestus</th>
-        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900">Asutus</th>
-        <th scope="col" class="py-3.5 pl-4 pr-4 text-left font-semibold text-gray-900 sm:pr-6 text-right">Kokku €</th>
+        <th scope="col" class="py-2.5 pl-3 pr-3 text-left font-semibold text-gray-900 sm:pl-6">Arvestus</th>
+        <th scope="col" class="px-3 py-2.5 text-left font-semibold text-gray-900">Asutus</th>
+        <th scope="col" class="py-2.5 pl-3 pr-3 text-left font-semibold text-gray-900 sm:pr-6 text-right">Kokku €</th>
       </tr>
     </thead>
     <tbody class="divide-y divide-gray-200 bg-white">
       <tr class="divide-x divide-gray-200">
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pl-6">AKA2023-00006</td>
-        <td class="whitespace-nowrap p-4 text-gray-500">Sihtasutus Eesti Mälu Instituut</td>
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">30,60</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pl-6">AKA2023-00006</td>
+        <td class="whitespace-nowrap p-3 text-gray-500">Sihtasutus Eesti Mälu Instituut</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pr-6 text-right">30,60</td>
       </tr>
       <tr class="divide-x divide-gray-200">
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pl-6">AKA2023-00005</td>
-        <td class="whitespace-nowrap p-4 text-gray-500">Harku Vallavalitsus</td>
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">7,20</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pl-6">AKA2023-00005</td>
+        <td class="whitespace-nowrap p-3 text-gray-500">Harku Vallavalitsus</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pr-6 text-right">7,20</td>
       </tr> 
       <tr class="divide-x divide-gray-200">
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pl-6">AKA2023-00004</td>
-        <td class="whitespace-nowrap p-4 text-gray-500">Delfi Meedia AS</td>
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">5,00</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pl-6">AKA2023-00004</td>
+        <td class="whitespace-nowrap p-3 text-gray-500">Delfi Meedia AS</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pr-6 text-right">5,00</td>
       </tr>
       <tr class="divide-x divide-gray-200">
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pl-6">AKA2023-00003</td>
-        <td class="whitespace-nowrap p-4 text-gray-500">AS Äripäev</td>
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">20,50</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pl-6">AKA2023-00003</td>
+        <td class="whitespace-nowrap p-3 text-gray-500">AS Äripäev</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pr-6 text-right">20,50</td>
       </tr>     
     </tbody>
   </table>
@@ -311,31 +311,31 @@ Kui veergude vahel on piisavalt ruumi ja read on **triibutatud**, siis võib är
   <table class="min-w-full divide-y divide-gray-200">
     <thead class="bg-gray-50">
       <tr class="divide-x divide-gray-200">
-        <th scope="col" class="py-3.5 pl-4 pr-4 text-left font-semibold text-gray-900 sm:pl-6 text-center">#</th>
-        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900">Nimi</th>
-        <th scope="col" class="py-3.5 pl-4 pr-4 text-left font-semibold text-gray-900 sm:pr-6 text-right">Sisestanud kirjeid</th>
+        <th scope="col" class="py-2.5 pl-3 pr-3 text-left font-semibold text-gray-900 sm:pl-6 text-center">#</th>
+        <th scope="col" class="px-3 py-2.5 text-left font-semibold text-gray-900">Nimi</th>
+        <th scope="col" class="py-2.5 pl-3 pr-3 text-left font-semibold text-gray-900 sm:pr-6 text-right">Sisestanud kirjeid</th>
       </tr>
     </thead>
     <tbody class="divide-y divide-gray-200 bg-white">
       <tr class="divide-x divide-gray-200">
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-5000 sm:pl-6 text-center">1</td>
-        <td class="whitespace-nowrap p-4 text-gray-500">Tiina Ailt</td>
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">19 773</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-5000 sm:pl-6 text-center">1</td>
+        <td class="whitespace-nowrap p-3 text-gray-500">Tiina Ailt</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pr-6 text-right">19 773</td>
       </tr>
       <tr class="divide-x divide-gray-200">
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pl-6 text-center">2</td>
-        <td class="whitespace-nowrap p-4 text-gray-500">Anella Palginõmm</td>
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">14 251</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pl-6 text-center">2</td>
+        <td class="whitespace-nowrap p-3 text-gray-500">Anella Palginõmm</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pr-6 text-right">14 251</td>
       </tr> 
       <tr class="divide-x divide-gray-200">
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pl-6 text-center">3</td>
-        <td class="whitespace-nowrap p-4 text-gray-500">Eliis Truuman*</td>
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">9 144</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pl-6 text-center">3</td>
+        <td class="whitespace-nowrap p-3 text-gray-500">Eliis Truuman*</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pr-6 text-right">9 144</td>
       </tr>
       <tr class="divide-x divide-gray-200">
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pl-6 text-center">4</td>
-        <td class="whitespace-nowrap p-4 text-gray-500">Piret Tarto</td>
-        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">8 204</td>
+        <td class="whitespace-nowrap py-3 pl-3 pr-3 text-gray-500 sm:pl-6 text-center">4</td>
+        <td class="whitespace-nowrap p-3 text-gray-500">Piret Tarto</td>
+        <td class="whitespace-nowrap py-4 pl-3 pr-3 text-gray-500 sm:pr-6 text-right">8 204</td>
       </tr>     
     </tbody>
   </table>
