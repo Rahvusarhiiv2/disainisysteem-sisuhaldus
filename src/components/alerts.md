@@ -4,7 +4,7 @@ title: Hoiatused ja teated
 relative: ../..
 
 eleventyNavigation:
-  parent: Components
+  parent: Feedback
   key: Hoiatused ja teated
   order: 0
 ---
@@ -32,8 +32,8 @@ echo AlertWithDescription::widget()
     ->title('Attention needed')
     ->body('Lorem ipsum dolor sit amet consectetur adipisicing elit.')
     ->render();
-``` 
-{% endcode %} 
+```
+{% endcode %}
 
 ### Nimekirjaga
 
@@ -44,7 +44,7 @@ echo AlertWithDescription::widget()
 {% code 'HTML' %}
 ```html
 {% include "components/feedback/alerts/with_list.html" %}
-```  
+```
 {% endcode %}
 
 ### Parempoolse lingiga
@@ -56,7 +56,7 @@ echo AlertWithDescription::widget()
 {% code 'HTML' %}
 ```html
 {% include "components/feedback/alerts/with_link_on_right.html" %}
-``` 
+```
 {% endcode %}
 
 ### Sulgemise ikooniga
@@ -80,5 +80,5 @@ echo AlertWithDescription::widget()
 {% code 'HTML' %}
 ```html
 {% include "components/feedback/alerts/with_actions.html" %}
-``` 
+```
 {% endcode %}

@@ -67,8 +67,8 @@ module.exports = function (eleventyConfig) {
       <div class="ml-3">${content}</div>
     </div>`;
   });
-  eleventyConfig.addShortcode("live", function() {
-    return `<div class="not-prose font-body rounded border-2 border-gray-50 p-10">`;
+  eleventyConfig.addShortcode("live", function(dark) {
+    return `<div class="not-prose font-body rounded border-2 border-gray-50 p-10 ${dark ? 'bg-gray-200' : ''}">`;
   });
   eleventyConfig.addShortcode("endlive", function() {
     return `</div>`;
