@@ -23,6 +23,9 @@ eleventyNavigation:
 ```
 {% endcode %}
 
+{% wip %}
+Primaarnupule võib lisada teksti animatsiooni (vt Figma)
+{% endwip %}
 
 ### Sekundaarne nupp
 
@@ -48,7 +51,9 @@ eleventyNavigation:
 ```
 {% endcode %}
 
-_Tumedal taustal kuvatud tertsiaarse nupu taustavärv erineb, olenevalt olekust._
+{% warning %}
+Tumedal taustal kuvatud tertsiaarse nupu taustavärv erineb, olenevalt olekust.
+{% endwarning %}
 
 {% live 'dark' %}
 {% include "components/inputs/buttons/on_dark.html" %}
@@ -57,6 +62,18 @@ _Tumedal taustal kuvatud tertsiaarse nupu taustavärv erineb, olenevalt olekust.
 {% code 'HTML' %}
 ```html
 {% include "components/inputs/buttons/on_dark.html" %}
+```
+{% endcode %}
+
+### Link pehme nupuna
+
+{% live %}
+{% include "components/inputs/buttons/as_link.html" %}
+{% endlive %}
+
+{% code 'HTML' %}
+```html
+{% include "components/inputs/buttons/as_link.html" %}
 ```
 {% endcode %}
 
@@ -72,16 +89,6 @@ _Tumedal taustal kuvatud tertsiaarse nupu taustavärv erineb, olenevalt olekust.
 ```
 {% endcode %}
 
-_Figma: Ainult ikooniga nupul peaks alati juures olema lisainfo ehk tooltip, mida see nupp tähendab. (TODO)_
-
-### Pehme lingiga nupp
-
-{% live %}
-{% include "components/inputs/buttons/as_link.html" %}
-{% endlive %}
-
-{% code 'HTML' %}
-```html
-{% include "components/inputs/buttons/as_link.html" %}
-```
-{% endcode %}
+{% wip %}
+Ainult ikooniga nupul peaks alati juures olema lisainfo ehk tooltip, mida see nupp tähendab (vt Figma)
+{% endwip %}
