@@ -9,6 +9,7 @@ body {
 @tailwind components;
 
 /* Override defaults from tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+/* https://github.com/tailwindlabs/tailwindcss-forms/issues/14 */
 [type='text'], [type='text']:focus, [type='text']:active,
 [type='email'], [type='email']:focus, [type='email']:active,
 [type='checkbox'], [type='checkbox']:focus, [type='checkbox']:active,
