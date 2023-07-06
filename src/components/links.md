@@ -6,7 +6,7 @@ relative: ../..
 eleventyNavigation:
   parent: Inputs
   key: Lingid
-  order: 0
+  order: 2
 ---
 
 # Lingid

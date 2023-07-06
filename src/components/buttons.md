@@ -6,10 +6,17 @@ relative: ../..
 eleventyNavigation:
   parent: Inputs
   key: Nupud
-  order: 0
+  order: 1
 ---
 
 # Nupud
+
+{% wip %}
+Primaarnupule võib lisada teksti animatsiooni (vt Figma)
+{% endwip %}
+{% wip %}
+Ainult ikooniga nupul peaks alati juures olema lisainfo ehk tooltip, mida see nupp tähendab (vt Figma)
+{% endwip %}
 
 ### Primaarne nupp
 
@@ -22,10 +29,6 @@ eleventyNavigation:
 {% include "components/inputs/buttons/primary.html" %}
 ```
 {% endcode %}
-
-{% wip %}
-Primaarnupule võib lisada teksti animatsiooni (vt Figma)
-{% endwip %}
 
 ### Sekundaarne nupp
 
@@ -88,7 +91,3 @@ Tumedal taustal kuvatud tertsiaarse nupu taustavärv erineb, olenevalt olekust.
 {% include "components/inputs/buttons/with_icon.html" %}
 ```
 {% endcode %}
-
-{% wip %}
-Ainult ikooniga nupul peaks alati juures olema lisainfo ehk tooltip, mida see nupp tähendab (vt Figma)
-{% endwip %}
