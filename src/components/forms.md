@@ -64,14 +64,3 @@ eleventyNavigation:
 {% include "components/inputs/forms/dropdown.html" %}
 ```
 {% endcode %}
-
-{% live %}
-{% include "components/inputs/forms/dropdown_js.html" %}
-{% endlive %}
-
-{% code 'HTML' %}
-```html
-{% include "components/inputs/forms/dropdown_js.html" %}
-```
-{% endcode %}
-

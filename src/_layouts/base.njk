@@ -21,8 +21,8 @@
     {# Syntax highlighting styles #}
     <link href="https://unpkg.com/prism-themes/themes/prism-one-light.css" rel="stylesheet">
 
-    {# Tailwind Elements UI for dynamic components #}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    {# Tailwind Elements UI for dynamic components - css conflicts with preset #}
+    {# <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" /> #}
 
     <style>
       .tooltipped::before {
@@ -72,7 +72,7 @@
     {% initClipboardJS %}
 
     {# Tailwind Elements UI for dynamic components #}
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    {# <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script> #}
 
   </body>
 </html>
