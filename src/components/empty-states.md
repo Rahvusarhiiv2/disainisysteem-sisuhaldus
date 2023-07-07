@@ -4,7 +4,7 @@ title: Tühiolekud
 relative: ../..
 
 eleventyNavigation:
-  parent: Components
+  parent: Feedback
   key: Tühiolekud
   order: 1
 ---

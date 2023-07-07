@@ -1,0 +1,26 @@
+<fieldset>
+  <legend class="sr-only">Ainult digiteeritud säilikud</legend>
+  <div class="relative flex items-start">
+    <div class="flex h-6 items-center">
+      <input id="dgs" aria-describedby="digitized-objects" name="digitized" type="checkbox"
+             class="h-4 w-4 rounded-xs disabled:opacity-20 disabled:pointer-events-none">
+    </div>
+    <div class="ml-3 text-sm leading-6">
+      <label for="dgs" class="font-medium">Ainult digiteeritud säilikud</label>
+      <p id="comments-description" class="text-gray-500">Näita otsitulemustes ainult digiteeritud kirjeldusüksuseid</p>
+    </div>
+  </div>
+</fieldset>
+<fieldset class="mt-4">
+  <legend class="sr-only">Asukoht</legend>
+  <div class="space-y-4">
+    <div class="flex items-center">
+      <input id="tallinn" name="location" type="radio" checked class="h-4 w-4">
+      <label for="tallinn" class="ml-3 block text-sm font-medium leading-6 text-gray-900">Tallinn</label>
+    </div>
+    <div class="flex items-center">
+      <input id="tartu" name="location" type="radio" class="h-4 w-4">
+      <label for="tartu" class="ml-3 block text-sm font-medium leading-6 text-gray-900">Tartu</label>
+    </div>
+  </div>
+</fieldset>
