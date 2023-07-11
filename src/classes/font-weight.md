@@ -17,7 +17,7 @@ Klass | Kirjalaad
 -- | --
 font-normal | Roboto 400
 font-medium| Roboto 500
-font-bold | Roboto 500
+font-bold | Roboto 700
 font-normal italic | Roboto 400 kursiiv
 font-bold italic | Roboto 700 kursiiv 
 

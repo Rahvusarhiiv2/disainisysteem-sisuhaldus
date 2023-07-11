@@ -4,90 +4,93 @@ title: Nupud
 relative: ../..
 
 eleventyNavigation:
-  parent: Inputs
+  parent: Form
   key: Nupud
-  order: 1
+  order: 5
 ---
 
 # Nupud
 
-{% wip %}
-Primaarnupule võib lisada teksti animatsiooni (vt Figma)
-{% endwip %}
-{% wip %}
-Ainult ikooniga nupul peaks alati juures olema lisainfo ehk tooltip, mida see nupp tähendab (vt Figma)
-{% endwip %}
-
-### Primaarne nupp
+### Primaarne
 
 {% live %}
-{% include "components/inputs/buttons/primary.html" %}
+{% include "components/form/buttons/primary.html" %}
 {% endlive %}
 
 {% code 'HTML' %}
 ```html
-{% include "components/inputs/buttons/primary.html" %}
+{% include "components/form/buttons/primary.html" %}
 ```
 {% endcode %}
 
-### Sekundaarne nupp
+### Primaarne ikooniga
 
 {% live %}
-{% include "components/inputs/buttons/secondary.html" %}
+{% include "components/form/buttons/primary_with_icon.html" %}
 {% endlive %}
 
 {% code 'HTML' %}
 ```html
-{% include "components/inputs/buttons/secondary.html" %}
+{% include "components/form/buttons/primary_with_icon.html" %}
 ```
 {% endcode %}
 
-### Tavaline/tertsiaarne nupp
+### Sekundaarne
 
 {% live %}
-{% include "components/inputs/buttons/default.html" %}
+{% include "components/form/buttons/secondary.html" %}
 {% endlive %}
 
 {% code 'HTML' %}
 ```html
-{% include "components/inputs/buttons/default.html" %}
+{% include "components/form/buttons/secondary.html" %}
 ```
 {% endcode %}
 
-{% warning %}
-Tumedal taustal kuvatud tertsiaarse nupu taustavärv erineb, olenevalt olekust.
-{% endwarning %}
+### Sekundaarne ikooniga
+
+{% live %}
+{% include "components/form/buttons/secondary_with_icon.html" %}
+{% endlive %}
+
+{% code 'HTML' %}
+```html
+{% include "components/form/buttons/secondary_with_icon.html" %}
+```
+{% endcode %}
+
+### Tertsiaarne
+
+{% live %}
+{% include "components/form/buttons/tertiary.html" %}
+{% endlive %}
+
+{% code 'HTML' %}
+```html
+{% include "components/form/buttons/tertiary.html" %}
+```
+{% endcode %}
+
+### Tertsiaarne ikooniga
+
+{% live %}
+{% include "components/form/buttons/tertiary_with_icon.html" %}
+{% endlive %}
+
+{% code 'HTML' %}
+```html
+{% include "components/form/buttons/tertiary_with_icon.html" %}
+```
+{% endcode %}
+
+### Tertsiaarne tumedal taustal
 
 {% live 'dark' %}
-{% include "components/inputs/buttons/on_dark.html" %}
+{% include "components/form/buttons/tertiary_on_dark.html" %}
 {% endlive %}
 
 {% code 'HTML' %}
 ```html
-{% include "components/inputs/buttons/on_dark.html" %}
-```
-{% endcode %}
-
-### Link pehme nupuna
-
-{% live %}
-{% include "components/inputs/buttons/as_link.html" %}
-{% endlive %}
-
-{% code 'HTML' %}
-```html
-{% include "components/inputs/buttons/as_link.html" %}
-```
-{% endcode %}
-
-### Nupud ikoonidega
-
-{% live %}
-{% include "components/inputs/buttons/with_icon.html" %}
-{% endlive %}
-
-{% code 'HTML' %}
-```html
-{% include "components/inputs/buttons/with_icon.html" %}
+{% include "components/form/buttons/tertiary_on_dark.html" %}
 ```
 {% endcode %}
