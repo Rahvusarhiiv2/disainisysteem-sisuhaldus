@@ -12,7 +12,6 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",
-      "3xl": "1920px",
     },
     colors: {
       inherit: "inherit",
@@ -120,7 +119,6 @@ module.exports = {
     },
     borderRadius: {
       none: "0px",
-      xs: "0.125rem",
       sm: "0.25rem",
       DEFAULT: "0.5rem",
       full: "9999px",
@@ -132,9 +130,6 @@ module.exports = {
         "0px 43px 80px rgba(0, 0, 0, 0.02275), 0px 21.7687px 34.875px rgba(0, 0, 0, 0.035), 0px 8.6px 13px rgba(0, 0, 0, 0.04725), 0px 1.88125px 4.625px rgba(0, 0, 0, 0.07)",
       lg: "0px 65px 80px rgba(0, 0, 0, 0.02275), 0px 32.9062px 34.875px rgba(0, 0, 0, 0.035), 0px 13px 13px rgba(0, 0, 0, 0.04725), 0px 2.84375px 4.625px rgba(0, 0, 0, 0.07)",
       inner: "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
-      active: "0px 0px 0px 2px rgb(123, 201, 148)", /* green-300 */
-      error: "0px 0px 0px 2px rgb(246, 105, 94)", /* red-400 */
-      none: "none"
     },
     fontFamily: {
       heading: [
@@ -180,12 +175,6 @@ module.exports = {
         "monospace",
       ],
     },
-    fontWeight: {
-      normal: '400',
-      medium: '500',
-      semibold: '600', // none for Roboto
-      bold: '700',
-    },
     fontSize: {
       xs: ["0.6875rem", { lineHeight: "120%" }],
       sm: ["0.8125rem", { lineHeight: "120%" }],
@@ -222,12 +211,6 @@ module.exports = {
             },
             h6: {
               fontFamily: "Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
-            },
-            p: {
-              fontFamily: "Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
-            },
-            a: {
-              fontFamily: "Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
             },
           },
         },
@@ -268,13 +251,6 @@ module.exports = {
           },
         },
       }),
-      maxWidth: {
-        '1/2': '50%',
-        '1/3': '33.33%',
-        '2/3': '66.66%',
-        '1/4': '25%',
-        '3/4': '75%',
-      },
     },
   },
 };

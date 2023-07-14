@@ -1,106 +1,11 @@
 @tailwind base;
 
 /* Additional base styles */
+
 body {
   color: theme("colors.gray.900");
   font-family: theme("fontFamily.body");
 }
 
 @tailwind components;
-
-/* Override defaults from tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
-/* https://github.com/tailwindlabs/tailwindcss-forms/issues/14 */
-[type='text']::placeholder,
-[type='email']::placeholder,
-[type='checkbox']::placeholder,
-[type='radio']::placeholder,
-textarea::placeholder,
-select::placeholder {
-  color: theme("colors.gray.300");
-}
-
-[type='text'], [type='text']:focus, [type='text']:active,
-[type='email'], [type='email']:focus, [type='email']:active,
-[type='checkbox'], [type='checkbox']:focus, [type='checkbox']:active,
-[type='radio'], [type='radio']:focus, [type='radio']:active,
-textarea, textarea:focus, textarea:active,
-select, select:focus, select:active {
-  border-color: theme("colors.gray.900");
-  --tw-ring-width: 2px;
-  --tw-ring-offset-width: 0;
-  --tw-ring-color: theme("colors.green.300");
-}
-
-[type='text']:hover,
-[type='email']:hover,
-[type='checkbox']:hover,
-[type='radio']:hover,
-textarea:hover,
-select:hover {
-  box-shadow: theme("boxShadow.active");
-  border-color: theme("colors.gray.300");
-  transition: all;
-  transition-duration: 75ms;
-  transition-timing-function: linear;
-}
-
-[type='text']:focus, [type='text']:active,
-[type='email']:focus, [type='email']:active,
-[type='checkbox']:focus, [type='checkbox']:active,
-[type='radio']:focus, [type='radio']:active,
-textarea:focus, textarea:active,
-select:focus, select:active {
-  box-shadow: theme("boxShadow.active");
-}
-
-/* invalid state for forms elements */
-[type='text']:invalid, [type='text']:invalid:focus, [type='text']:invalid:active,
-[type='email']:invalid, [type='email']:invalid:focus, [type='email']:invalid:active,
-[type='checkbox']:invalid, [type='checkbox']:invalid:focus, [type='checkbox']:invalid:active,
-[type='radio']:invalid, [type='radio']:invalid:focus, [type='radio']:invalid:active,
-textarea:invalid, textarea:invalid:focus, textarea:invalid:active,
-select:invalid, select:invalid:focus, select:invalid:active {
-  color: theme("colors.red.500");
-  border-color: theme("colors.red.300");
-  --tw-ring-width: 2px;
-  --tw-ring-offset-width: 0;
-  --tw-ring-color: theme("colors.red.300");
-}
-
-[type='text']:invalid:hover,
-[type='email']:invalid:hover,
-[type='checkbox']:invalid:hover,
-[type='radio']:invalid:hover,
-textarea:invalid:hover,
-select:invalid:hover {
-  box-shadow: theme("boxShadow.error");
-  border-color: theme("colors.red.500");
-  transition: all;
-  transition-duration: 75ms;
-  transition-timing-function: linear;
-}
-
-[type='text']:invalid:focus, [type='text']:invalid:active,
-[type='email']:invalid:focus, [type='email']:invalid:active,
-[type='checkbox']:invalid:focus, [type='checkbox']:invalid:active,
-[type='radio']:invalid:focus, [type='radio']:invalid:active,
-textarea:invalid:focus, textarea:invalid:active,
-select:invalid:focus, select:invalid:active {
-  box-shadow: theme("boxShadow.error");
-}
-/**/
-
-[type="checkbox"]:checked, [type="checkbox"]:checked:focus { /* green-500 */
-  color: theme("colors.transparent");
-  border-color: theme("colors.gray.900");
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%233FA864' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
-}
-
-[type="radio"]:checked, [type="radio"]:checked:focus { /* green-500 */
-  color: theme("colors.transparent");
-  border-color: theme("colors.gray.900");
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%233FA864' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
-}
-/**/
-
 @tailwind utilities;
