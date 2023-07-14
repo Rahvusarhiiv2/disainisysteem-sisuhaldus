@@ -43,11 +43,18 @@ module.exports = {
 Rahvusarhiivi stiilierisused muudavad ainult väikest osa üldisest stiiliraamistikust. Suurem osa raamistikust toimib ka pärast erisuste paigaldamist edasi nii, nagu on kirjeldatud [dokumentatsioonis](https://tailwindcss.com/docs/).
 
 
-## 4. Seadista rahvusarhiivi kirjatüübid
+## 4. Seadista rahvusarhiivi baas-stiil ja kirjatüübid
 
-Laadi alla [kirjatüüpide failid](../../assets/fonts/fonts.zip) ja kopeeri need oma projekti `fonts` kausta. Lisa faili `tailwind.css` järgmised read:
+Laadi alla [kirjatüüpide failid](../../assets/fonts/fonts.zip) ja kopeeri need oma projekti `fonts` kausta. Lisa rakenduse CSS faili järgmised read:
 
 ```css
+@tailwind base;
+
+body {
+  color: theme("colors.gray.900");
+  font-family: theme("fontFamily.body");
+}
+
 @layer base {
   @font-face {
     font-family: 'Raleway';
@@ -100,6 +107,9 @@ Laadi alla [kirjatüüpide failid](../../assets/fonts/fonts.zip) ja kopeeri need
   }
 }
 
+@tailwind components;
+@tailwind utilities;
+
 ```
 
 Prototüübis võib kirjatüübid Google API kaudu linkida:
@@ -110,12 +120,13 @@ Prototüübis võib kirjatüübid Google API kaudu linkida:
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
 ```
 
-## 5. Seadista tüpograafia pistik
+## 5. Seadista pistikud
 
 Käivita konsoolis: 
 
 ```shell
 npm install @tailwindcss/typography
+npm install @tailwindcss/forms
 ```
 
 Lisa faili `tailwind.config.js`:
@@ -124,6 +135,7 @@ Lisa faili `tailwind.config.js`:
 module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
+    require("@tailwindcss/forms"),
   ],
   ...
 }
