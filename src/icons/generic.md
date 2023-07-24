@@ -6,7 +6,7 @@ relative: ../..
 eleventyNavigation:
   parent: Icons
   key: Üldised ikoonid
-  order: 1
+  order: 2
 ---
 
 # Üldised ikoonid
@@ -50,18 +50,6 @@ eleventyNavigation:
 {% icon 'vähenda kogust' %}
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M19 13H5V11H19V13Z" fill="#323232"/>
-</svg>
-{% endicon %}
-
-{% icon 'liiguta ülespoole' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M4 12L5.41 13.41L11 7.83V20H13V7.83L18.58 13.42L20 12L12 4L4 12Z" fill="#323232"/>
-</svg>
-{% endicon %}
-
-{% icon 'liiguta allapoole' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M20 12L18.59 10.59L13 16.17V4H11V16.17L5.42 10.58L4 12L12 20L20 12Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
@@ -125,21 +113,16 @@ eleventyNavigation:
 </svg>
 {% endicon %}
 
-{% icon 'ava kõik' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M12 5.83L15.17 9L16.58 7.59L12 3L7.40997 7.59L8.82997 9L12 5.83ZM12 18.17L8.82997 15L7.41997 16.41L12 21L16.59 16.41L15.17 15L12 18.17Z" fill="#323232"/>
-</svg>
-{% endicon %}
-
-{% icon 'sulge kõik' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M7.40997 18.59L8.82997 20L12 16.83L15.17 20L16.58 18.59L12 14L7.40997 18.59ZM16.59 5.41L15.17 4L12 7.17L8.82997 4L7.40997 5.41L12 10L16.59 5.41Z" fill="#323232"/>
-</svg>
-{% endicon %}
-
 {% icon 'teata veast' %}
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="#323232"/>
+</svg>
+{% endicon %}
+
+{% icon 'avaleht' %}
+<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M19,9.3V4h-3v2.6L12,3L2,12h3v8h6v-6h2v6h6v-8h3L19,9.3z M17,18h-2v-6H9v6H7v-7.81l5-4.5l5,4.5V18z"/>
+  <path d="M10,10h4c0-1.1-0.9-2-2-2S10,8.9,10,10z"/>
 </svg>
 {% endicon %}
 

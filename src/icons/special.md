@@ -6,7 +6,7 @@ relative: ../..
 eleventyNavigation:
   parent: Icons
   key: Spetsiaalsed ikoonid
-  order: 2
+  order: 3
 ---
 
 # Spetsiaalsed ikoonid
@@ -14,7 +14,7 @@ eleventyNavigation:
 <p class="-mt-8 text-gray-300">
   Arhiivile eriomaste tegevuste ja asjade tähistamiseks on soovitatav kasutada järgmisi ikoone
 </p>
-                
+
 <div class="grid grid-cols-[repeat(auto-fill,minmax(8rem,1fr))] gap-x-6 gap-y-8 pt-6">
 
 {% icon 'andmed' %}
@@ -57,8 +57,7 @@ eleventyNavigation:
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M4 21.5H7.8C7.8 20.67 8.06 19.96 8.59 19.38C9.11 18.79 9.75 18.5 10.5 18.5C11.25 18.5 11.88 18.8 12.41 19.38C12.94 19.96 13.2 20.67 13.2 21.5H13.55V17.55C13.36 17.4 13.16 17.27 12.95 17.17C12.07 16.73 11.25 16.5 10.5 16.5C9.75 16.5 8.93 16.72 8.05 17.17C7.16 17.62 6.52 18.4 6.12 19.5H4V17.3C4.9 16.95 5.63 16.38 6.18 15.6C6.72 14.82 7 13.96 7 13C7 12.04 6.73 11.16 6.18 10.38C5.62 9.59 4.9 9.03 4 8.7V6.5H10V4.5C10 4.37 10.05 4.25 10.15 4.15C10.25 4.05 10.37 4 10.5 4C10.63 4 10.75 4.05 10.85 4.15C10.95 4.25 11 4.37 11 4.5V6.5H17V12.5H19C19.13 12.5 19.25 12.55 19.35 12.65C19.45 12.75 19.5 12.87 19.5 13C19.5 13.03 19.5 13.07 19.49 13.1H21.5C21.5 13.1 21.5 13.03 21.5 13C21.5 12.3 21.25 11.71 20.77 11.23C20.29 10.74 19.7 10.5 19 10.5V6.5C19 5.95 18.8 5.48 18.41 5.09C18.02 4.7 17.55 4.5 17 4.5H13C13 3.8 12.75 3.2 12.27 2.72C11.79 2.24 11.2 2 10.5 2C9.8 2 9.21 2.24 8.73 2.72C8.24 3.21 8 3.8 8 4.5H4C3.45 4.5 2.98 4.7 2.59 5.09C2.2 5.48 2 5.95 2 6.5V10.3C2.8 10.3 3.5 10.55 4.1 11.06C4.7 11.57 5 12.21 5 13C5 13.79 4.7 14.43 4.1 14.94C3.5 15.45 2.8 15.7 2 15.7V19.5C2 20.05 2.2 20.52 2.59 20.91C2.98 21.3 3.45 21.5 4 21.5ZM17.22 20.42L16.42 23L18.56 21.51L20.68 23L19.88 20.42L22 18.64H19.42L18.56 16.11L17.69 18.64H15.11L17.22 20.42Z" fill="#323232"/>
 </svg>
-
-{% endicon %} 
+{% endicon %}
 
 {% icon 'sari' %}
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +69,7 @@ eleventyNavigation:
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M1.59 20.41C1.98 20.8 2.45 21 3 21H15.05V19H3V6H1V19C1 19.55 1.2 20.02 1.59 20.41ZM23 14.55V6C23 5.45 22.8 4.98 22.41 4.59C22.02 4.2 21.55 4 21 4H14L12 2H7C6.45 2 5.98 2.2 5.59 2.59C5.2 2.98 5 3.45 5 4V15C5 15.55 5.2 16.02 5.59 16.41C5.98 16.8 6.45 17 7 17H15.05V15H7V4H11.18L13.18 6H21V14.55H23ZM18.72 20.42L17.92 23L20.06 21.51L22.18 23L21.38 20.42L23.5 18.64H20.92L20.06 16.11L19.19 18.64H16.61L18.72 20.42Z" fill="#323232"/>
 </svg>
-{% endicon %} 
+{% endicon %}
 
 {% icon 'säilik' %}
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,6 +98,12 @@ eleventyNavigation:
 {% icon 'telli' %}
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM15 5H8C6.9 5 6.01 5.9 6.01 7L6 21C6 22.1 6.89 23 7.99 23H19C20.1 23 21 22.1 21 21V11L15 5ZM8 21V7H14V12H19V21H8Z" fill="#323232"/>
+</svg>
+{% endicon %}
+
+{% icon 'ava arhiivipuu' %}
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M21 18V16H8V18H21ZM4.4 17L9.4 12L4.4 7L3 8.4L6.6 12L3 15.6L4.4 17ZM21 13V11H11V13H21ZM21 8V6H8V8H21Z" fill="#323232"/>
 </svg>
 {% endicon %}
 

@@ -1,0 +1,72 @@
+<nav>
+  <ul class="flex flex-1 flex-col">
+    <li x-data="{ open: true }">
+      <button type="button" @click="open = !open"
+              class="group flex justify-between items-center w-full text-left font-bold py-2 border-b border-gray-200"
+              aria-controls="sub-menu-1" aria-expanded="false">
+        <div :class="open ? 'text-green-500' : 'text-gray-200'" class="text-sm">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/>
+          </svg>
+        </div>
+        <div class="grow px-4 group-hover:translate-x-2 group-hover:duration-300">
+          Otsiabi
+        </div>
+        <div class="p-2">
+          <svg :class="open ? '' : 'hidden'" class="h-4 w-4" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 13H5V11H19V13Z"/>
+          </svg>
+          <svg :class="open ? 'hidden' : ''" class="h-4 w-4" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+          </svg>
+        </div>
+      </button>
+      <ul :class="open ? 'pt-2 pb-4' : 'hidden'" id="sub-menu-1">
+        <li>
+          <a href="#"
+             class="hover:bg-green-50 focus:bg-gray-100 block rounded py-2 pr-2 pl-9 font-medium">Lühiülevaade</a>
+        </li>
+        <li>
+          <a href="#" class="hover:bg-green-50 focus:bg-gray-100 block rounded py-2 pr-2 pl-9 font-medium">Üldotsing</a>
+        </li>
+        <li>
+          <a href="#" class="hover:bg-green-50 focus:bg-gray-100 block rounded py-2 pr-2 pl-9 font-medium">Täpsem
+            otsing</a>
+        </li>
+      </ul>
+    </li>
+    <li x-data="{ open: false }">
+      <button type="button" @click="open = !open"
+              class="group flex justify-between items-center w-full text-left font-bold py-2 border-b border-gray-200"
+              aria-controls="sub-menu-2" aria-expanded="false">
+        <div :class="open ? 'text-green-500' : 'text-gray-200'" class="text-sm">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/>
+          </svg>
+        </div>
+        <div class="grow px-4 group-hover:translate-x-2 group-hover:duration-300">
+          Varia
+        </div>
+        <div class="p-2">
+          <svg :class="open ? '' : 'hidden'" class="h-4 w-4" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 13H5V11H19V13Z"/>
+          </svg>
+          <svg :class="open ? 'hidden' : ''" class="h-4 w-4" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+          </svg>
+        </div>
+      </button>
+      <ul :class="open ? 'pt-2 pb-4' : 'hidden'" id="sub-menu-2">
+        <li>
+          <a href="#" class="hover:bg-green-50 focus:bg-gray-100 block rounded py-2 pr-2 pl-9 font-medium">Privaatsuspoliitika</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#" class="block font-bold py-2 pl-8 border-b border-gray-200">Tagasiside</a>
+    </li>
+    <li>
+      <a href="#" class="block font-bold py-2 pl-8 border-b border-gray-200">Kontakt</a>
+    </li>
+  </ul>
+</nav>
