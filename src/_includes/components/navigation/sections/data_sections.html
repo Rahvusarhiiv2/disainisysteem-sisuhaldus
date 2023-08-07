@@ -1,0 +1,61 @@
+<section>
+  <ul class="flex flex-1 flex-col">
+    <li x-data="{ open: false }">
+      <button type="button" @click="open = !open"
+              class="group flex justify-between items-center w-full text-left font-bold p-2 border-b border-gray-200"
+              aria-controls="content-1" aria-expanded="false">
+        <div :class="open ? 'text-green-500' : 'text-gray-200'" class="text-sm">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/>
+          </svg>
+        </div>
+        <div :class="open ? 'py-4' : ''" class="grow px-4 group-hover:translate-x-2 group-hover:duration-300">
+          Põhiandmed
+        </div>
+        <div class="px-3">
+          <svg :class="open ? '' : 'hidden'" class="h-4 w-4" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 13H5V11H19V13Z"/>
+          </svg>
+          <svg :class="open ? 'hidden' : ''" class="h-4 w-4" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+          </svg>
+        </div>
+      </button>
+      <div role="contentinfo" :class="open ? 'pt-2 pb-6' : 'hidden'" id="content-1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.</p>
+      </div>
+    </li>
+    <li x-data="{ open: false }">
+      <button type="button" @click="open = !open"
+              class="group flex justify-between items-center w-full text-left font-bold p-2 border-b border-gray-200"
+              aria-controls="content-2" aria-expanded="false">
+        <div :class="open ? 'text-green-500' : 'text-gray-200'" class="text-sm">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"/>
+          </svg>
+        </div>
+        <div :class="open ? 'py-4' : ''" class="grow px-4 group-hover:translate-x-2 group-hover:duration-300">
+          Lisaandmed
+        </div>
+        <div class="px-3">
+          <svg :class="open ? '' : 'hidden'" class="h-4 w-4" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 13H5V11H19V13Z"/>
+          </svg>
+          <svg :class="open ? 'hidden' : ''" class="h-4 w-4" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+          </svg>
+        </div>
+      </button>
+      <div role="contentinfo" :class="open ? 'pt-2 pb-6' : 'hidden'" id="content-2">
+        <p>De quibus tres video sententias ferri, quarum nullam probo, unam, ut eodem modo erga amicum adfecti simus,
+          quo erga nosmet ipsos, alteram, ut nostra in amicos benevolentia illorum erga nos benevolentiae pariter
+          aequaliterque respondeat, tertiam, ut, quanti quisque se ipse facit, tanti fiat ab amicis.</p>
+      </div>
+    </li>
+  </ul>
+</section>

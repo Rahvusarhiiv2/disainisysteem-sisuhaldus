@@ -94,3 +94,27 @@ eleventyNavigation:
 {% include "components/form/buttons/tertiary_on_dark.html" %}
 ```
 {% endcode %}
+
+### Ainult ikooniga nupud
+
+{% live %}
+{% include "components/form/buttons/only_icon.html" %}
+{% endlive %}
+
+{% code 'HTML' %}
+```html
+{% include "components/form/buttons/only_icon.html" %}
+```
+{% endcode %}
+
+### Ainult ikooniga nupud tumedal taustal
+
+{% live 'dark' %}
+{% include "components/form/buttons/only_icon_on_dark.html" %}
+{% endlive %}
+
+{% code 'HTML' %}
+```html
+{% include "components/form/buttons/only_icon_on_dark.html" %}
+```
+{% endcode %}

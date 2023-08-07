@@ -102,6 +102,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("endcode", function() {
     return `</details>`;
   });
+  eleventyConfig.addPairedShortcode("badge", function(content) {
+    return `<span class="inline-flex items-center rounded bg-blue-50 p-2 text-sm font-medium text-blue-700">${content}</span>`;
+  });
 
   return {
     markdownTemplateEngine: "njk",

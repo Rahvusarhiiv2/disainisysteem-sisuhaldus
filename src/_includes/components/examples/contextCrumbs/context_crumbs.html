@@ -1,0 +1,87 @@
+<div x-data="{ open: true }" class="flex items-center bg-gray-50 rounded text-sm">
+  <div class="flex items-start w-full">
+    <div class="p-1 bg-white rounded mr-5">
+      <button class="flex flex-nowrap
+            rounded p-3 font-medium cursor-pointer border-none
+            no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300
+            hover:bg-gray-100/60 focus:active:bg-gray-100/80
+          ">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+        </svg>
+        Tagasi
+      </button>
+    </div>
+    <div class="flex grow self-center overflow-x-hidden">
+      <div id="short-path" :class="open ? '' : 'hidden'" class="flex items-center whitespace-nowrap p-1">
+        <button class="
+              inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-900 font-bold
+              bg-transparent rounded cursor-pointer border-none no-underline hover:focus:active:no-underline
+              focus:active:ring-2 focus:active:ring-green-300 hover:bg-white/60 focus:active:bg-white
+            ">
+          Arhiiv: ERA.5772 - Metsamajanduse Ökonoomika- ja Infokeskus
+        </button>
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+        </svg>
+        ...
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+        </svg>
+        <p
+          class="inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-700 bg-transparent border-none no-underline">
+          Säilik: ERA.5772.1.2 Juhataja käskkirjad nr 1-6
+        </p>
+      </div>
+      <div id="long-path" :class="open ? 'hidden' : ''" class="flex flex-col">
+        <div class="py-1.5 border-b">
+          <button class="w-auto m-1
+              inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-900 font-bold
+              bg-transparent rounded cursor-pointer border-none no-underline hover:focus:active:no-underline
+              focus:active:ring-2 focus:active:ring-green-300 hover:bg-white/60 focus:active:bg-white
+            ">
+            Arhiiv: ERA.5772 - Metsamajanduse Ökonoomika- ja Infokeskus
+          </button>
+        </div>
+        <div class="flex whitespace-nowrap py-1.5">
+          <button class="w-auto m-1
+            inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-900 font-bold
+            bg-transparent rounded cursor-pointer border-none no-underline hover:focus:active:no-underline
+            focus:active:ring-2 focus:active:ring-green-300 hover:bg-white/60 focus:active:bg-white
+          ">
+            Sari: 2 - Juhataja põhitegevuse käskkirjad, käskkirjade register
+          </button>
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+          </svg>
+          <p
+            class="inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-700 bg-transparent border-none no-underline">
+            Säilik: ERA.5772.1.2 Juhataja käskkirjad nr 1-6
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-1">
+      <button :class="open ? '' : 'hidden'" @click="open = !open" class="
+        flex flex-nowrap rounded p-3 font-medium cursor-pointer border-none
+        no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300
+        hover:bg-gray-100/60 focus:active:bg-gray-100/80 max-sm:!hidden
+      ">
+        Ava
+        <svg class="h-4 w-4" viewBox="0 0 24 24">
+          <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+        </svg>
+      </button>
+      <button :class="open ? 'hidden' : ''" @click="open = !open" class="
+        flex flex-nowrap rounded p-3 font-medium cursor-pointer border-none
+        no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300
+        hover:bg-gray-100/60 focus:active:bg-gray-100/80 max-sm:!hidden
+      ">
+        Sulge
+        <svg class="h-4 w-4" viewBox="0 0 24 24">
+          <path d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
