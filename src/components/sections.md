@@ -11,7 +11,7 @@ eleventyNavigation:
 
 # Sektsioonid
 
-### Akordion {% badge %} kasutab JS {% endbadge %}
+### Menüü {% badge %} kasutab JS {% endbadge %}
 
 {% live %}
 {% include "components/navigation/sections/accordeon.html" %}
@@ -23,7 +23,7 @@ eleventyNavigation:
 ```
 {% endcode %}
 
-### Sahtlid {% badge %} kasutab JS {% endbadge %}
+### Tekst {% badge %} kasutab JS {% endbadge %}
 
 {% live %}
 {% include "components/navigation/sections/data_sections.html" %}
