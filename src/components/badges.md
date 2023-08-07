@@ -4,14 +4,14 @@ title: Sildid
 relative: ../..
 
 eleventyNavigation:
-  parent: Components
+  parent: Elements
   key: Sildid
   order: 1
 ---
 
-# Sildid (_badges_)
+# Sildid
 
-### Tavapärane silt
+### Suur
 
 {% live %}
 {% include "components/elements/badge.html" %}
@@ -23,7 +23,7 @@ eleventyNavigation:
 ```
 {% endcode %}
 
-### Silt ikooniga
+### Suur ikooniga
 
 {% live %}
 {% include "components/elements/badge_with_icon.html" %}
@@ -32,5 +32,41 @@ eleventyNavigation:
 {% code 'HTML' %}
 ```html
 {% include "components/elements/badge_with_icon.html" %}
+```
+{% endcode %}
+
+### Väike
+
+{% live %}
+{% include "components/elements/badge_small.html" %}
+{% endlive %}
+
+{% code 'HTML' %}
+```html
+{% include "components/elements/badge_small.html" %}
+```
+{% endcode %}
+
+### Ümar
+
+{% live %}
+{% include "components/elements/badge_round.html" %}
+{% endlive %}
+
+{% code 'HTML' %}
+```html
+{% include "components/elements/badge_round.html" %}
+```
+{% endcode %}
+
+### Ümar ikooniga
+
+{% live %}
+{% include "components/elements/badge_round_with_icon.html" %}
+{% endlive %}
+
+{% code 'HTML' %}
+```html
+{% include "components/elements/badge_round_with_icon.html" %}
 ```
 {% endcode %}

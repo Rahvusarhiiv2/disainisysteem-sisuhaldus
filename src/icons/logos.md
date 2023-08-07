@@ -9,7 +9,11 @@ eleventyNavigation:
   order: 1
 ---
 
-# Rahvusarhiivi rakenduste logod
+# Rakenduste logod
+
+<p class="-mt-8 text-gray-300">
+  Rahvusarhiivi rakenduste logod vektorgraafikas
+</p>
 
 <div class="grid grid-cols-[repeat(auto-fill,minmax(8rem,1fr))] gap-x-6 gap-y-8 pt-6">
 

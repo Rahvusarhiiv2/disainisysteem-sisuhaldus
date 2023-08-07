@@ -39,18 +39,6 @@
     </section>
 
     <section class="py-3">
-      <h3 class="px-4 py-2 uppercase font-bold text-sm">Ikoonid ja logod</h3>
-      {% set navPages = collections.all | eleventyNavigation("Icons") %}
-      <ul class="space-y-1">
-        {%- for entry in navPages %}
-          <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
-          </li>
-        {%- endfor %}
-      </ul>
-    </section>
-
-    <section class="py-3">
       <h3 class="px-4 py-2 uppercase font-bold text-sm">Klassid ja omadused</h3>
       {% set navPages = collections.all | eleventyNavigation("Classes") %}
       <ul class="space-y-1">
@@ -63,9 +51,22 @@
     </section>
 
     <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Ikoonid ja logod</h3>
+      {% set navPages = collections.all | eleventyNavigation("Icons") %}
+      <ul class="space-y-1">
+        {%- for entry in navPages %}
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
+          </li>
+        {%- endfor %}
+      </ul>
+    </section>
+
+    <section class="py-3">
       <h3 class="px-4 py-2 uppercase font-bold text-sm">Komponendid ja küljendid</h3>
 
-      {% set navPages = collections.all | eleventyNavigation("Components") %}
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Elemendid</h3>
+      {% set navPages = collections.all | eleventyNavigation("Elements") %}
       <ul class="mb-4 space-y-0.5">
         {%- for entry in navPages %}
           <li>

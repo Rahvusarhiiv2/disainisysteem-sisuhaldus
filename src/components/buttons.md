@@ -11,7 +11,7 @@ eleventyNavigation:
 
 # Nupud
 
-### Primaarne
+### Esmatähtis
 
 {% live %}
 {% include "components/form/buttons/primary.html" %}
@@ -23,7 +23,7 @@ eleventyNavigation:
 ```
 {% endcode %}
 
-### Primaarne ikooniga
+### Esmatähtis ikooniga
 
 {% live %}
 {% include "components/form/buttons/primary_with_icon.html" %}
@@ -35,7 +35,7 @@ eleventyNavigation:
 ```
 {% endcode %}
 
-### Sekundaarne
+### Teisejärguline
 
 {% live %}
 {% include "components/form/buttons/secondary.html" %}
@@ -47,7 +47,7 @@ eleventyNavigation:
 ```
 {% endcode %}
 
-### Sekundaarne ikooniga
+### Teisejärguline ikooniga
 
 {% live %}
 {% include "components/form/buttons/secondary_with_icon.html" %}
@@ -59,7 +59,7 @@ eleventyNavigation:
 ```
 {% endcode %}
 
-### Tertsiaarne
+### Kolmandane
 
 {% live %}
 {% include "components/form/buttons/tertiary.html" %}
@@ -71,7 +71,7 @@ eleventyNavigation:
 ```
 {% endcode %}
 
-### Tertsiaarne ikooniga
+### Kolmandane ikooniga
 
 {% live %}
 {% include "components/form/buttons/tertiary_with_icon.html" %}
@@ -83,7 +83,7 @@ eleventyNavigation:
 ```
 {% endcode %}
 
-### Tertsiaarne tumedal taustal
+### Kolmandane tumedal taustal
 
 {% live 'dark' %}
 {% include "components/form/buttons/tertiary_on_dark.html" %}
@@ -95,7 +95,7 @@ eleventyNavigation:
 ```
 {% endcode %}
 
-### Ainult ikooniga nupud
+### Ikoon 
 
 {% live %}
 {% include "components/form/buttons/only_icon.html" %}
@@ -107,7 +107,19 @@ eleventyNavigation:
 ```
 {% endcode %}
 
-### Ainult ikooniga nupud tumedal taustal
+### Ikoon (ümmarguse kursoritaustaga) 
+
+{% live %}
+{% include "components/form/buttons/only_icon_rounded.html" %}
+{% endlive %}
+
+{% code 'HTML' %}
+```html
+{% include "components/form/buttons/only_icon_rounded.html" %}
+```
+{% endcode %}
+
+### Ikoon tumedal taustal
 
 {% live 'dark' %}
 {% include "components/form/buttons/only_icon_on_dark.html" %}
@@ -116,5 +128,17 @@ eleventyNavigation:
 {% code 'HTML' %}
 ```html
 {% include "components/form/buttons/only_icon_on_dark.html" %}
+```
+{% endcode %}
+
+### Ikoon tumedal taustal (ümmarguse kursoritaustaga)
+
+{% live 'dark' %}
+{% include "components/form/buttons/only_icon_rounded_on_dark.html" %}
+{% endlive %}
+
+{% code 'HTML' %}
+```html
+{% include "components/form/buttons/only_icon_rounded_on_dark.html" %}
 ```
 {% endcode %}

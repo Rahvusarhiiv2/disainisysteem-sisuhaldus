@@ -11,7 +11,7 @@ eleventyNavigation:
 
 # Sektsioonid
 
-### Mitmetasandiline navigatsioon (akordion) {% badge %} kasutab AlpineJS {% endbadge %}
+### Akordion {% badge %} kasutab JS {% endbadge %}
 
 {% live %}
 {% include "components/navigation/sections/accordeon.html" %}
@@ -23,7 +23,7 @@ eleventyNavigation:
 ```
 {% endcode %}
 
-### Sisu sektsioonid {% badge %} kasutab AlpineJS {% endbadge %}
+### Sahtlid {% badge %} kasutab JS {% endbadge %}
 
 {% live %}
 {% include "components/navigation/sections/data_sections.html" %}

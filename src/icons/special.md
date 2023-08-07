@@ -6,7 +6,7 @@ relative: ../..
 eleventyNavigation:
   parent: Icons
   key: Spetsiaalsed ikoonid
-  order: 3
+  order: 4
 ---
 
 # Spetsiaalsed ikoonid
