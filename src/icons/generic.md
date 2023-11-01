@@ -6,7 +6,7 @@ relative: ../..
 eleventyNavigation:
   parent: Icons
   key: Üldised ikoonid
-  order: 2
+  order: 4
 ---
 
 # Üldised ikoonid
