@@ -1,6 +1,10 @@
 /**
  * Rahvusarhiiv custom presets
- * @version 1.0.0
+ * @version 1.1.0
+ *
+ * Beginning with version 1.1.0, we now support an extended 'xxl' wax-width of 90rem.
+ * Additionally, the green color values for codes 50, 200, 300, and 400 have been
+ * updated to match the specifications in Figma.
  */
 
 module.exports = {
@@ -56,11 +60,11 @@ module.exports = {
         900: "#302109",
       },
       green: {
-        50: "#E4FBED",
+        50: "#E9F7EE",
         100: "#C4ECD1",
-        200: "#A1DDB6",
-        300: "#7BC994",
-        400: "#59C27E",
+        200: "#A5D7B6",
+        300: "#83C79A",
+        400: "#61B77E",
         500: "#3FA864",
         600: "#30834D",
         700: "#205D36",
@@ -187,6 +191,9 @@ module.exports = {
       "5xl": ["3rem", { lineHeight: "120%" }],
     },
     extend: {
+      maxWidth: {
+        'xxl': '90rem !important'
+      },
       backgroundImage: {
         "theme-ais":
           "linear-gradient(96.04deg, rgba(247, 227, 204, 0.65) -17.14%, #ECDDF4 94.45%)",
