@@ -2,7 +2,7 @@
  * Rahvusarhiiv custom presets
  * @version 1.1.0
  *
- * Beginning with version 1.1.0, we now support an extended 'xxl' wax-width of 90rem.
+ * Beginning with version 1.1.0, we now support an extended 'xxl' max-width of 90rem.
  * Additionally, the green color values for codes 50, 200, 300, and 400 have been
  * updated to match the specifications in Figma.
  */
