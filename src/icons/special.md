@@ -18,110 +18,132 @@ eleventyNavigation:
 <div class="grid grid-cols-[repeat(auto-fill,minmax(8rem,1fr))] gap-x-6 gap-y-8 pt-6">
 
 {% icon 'andmed' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-text_snippet">
   <path d="M14.17 5L19 9.83V19H5V5H14.17ZM14.17 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V9.83C21 9.3 20.79 8.79 20.41 8.42L15.58 3.59C15.21 3.21 14.7 3 14.17 3ZM7 15H17V17H7V15ZM7 11H17V13H7V11ZM7 7H14V9H7V7Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'arhiivimoodustaja' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-location_away">
   <path d="M2 21V9L10 3L15.4 7.05C15 7.1 14.6127 7.196 14.238 7.338C13.8627 7.47933 13.5083 7.66667 13.175 7.9L10 5.5L4 10V19H8V21H2ZM10 21V19.1C10 18.75 10.0873 18.4207 10.262 18.112C10.4373 17.804 10.675 17.5583 10.975 17.375C11.7417 16.925 12.5457 16.5833 13.387 16.35C14.229 16.1167 15.1 16 16 16C16.9 16 17.771 16.1167 18.613 16.35C19.4543 16.5833 20.2583 16.925 21.025 17.375C21.325 17.5583 21.5627 17.804 21.738 18.112C21.9127 18.4207 22 18.75 22 19.1V21H10ZM12.15 19H19.85C19.2667 18.6667 18.65 18.4167 18 18.25C17.35 18.0833 16.6833 18 16 18C15.3167 18 14.65 18.0833 14 18.25C13.35 18.4167 12.7333 18.6667 12.15 19ZM16 15C15.1667 15 14.4583 14.7083 13.875 14.125C13.2917 13.5417 13 12.8333 13 12C13 11.1667 13.2917 10.4583 13.875 9.875C14.4583 9.29167 15.1667 9 16 9C16.8333 9 17.5417 9.29167 18.125 9.875C18.7083 10.4583 19 11.1667 19 12C19 12.8333 18.7083 13.5417 18.125 14.125C17.5417 14.7083 16.8333 15 16 15ZM16 13C16.2833 13 16.5207 12.904 16.712 12.712C16.904 12.5207 17 12.2833 17 12C17 11.7167 16.904 11.479 16.712 11.287C16.5207 11.0957 16.2833 11 16 11C15.7167 11 15.4793 11.0957 15.288 11.287C15.096 11.479 15 11.7167 15 12C15 12.2833 15.096 12.5207 15.288 12.712C15.4793 12.904 15.7167 13 16 13Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'allüksused' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-account_tree">
   <path d="M22 11V3H15V6H9V3H2V11H9V8H11V18H15V21H22V13H15V16H13V8H15V11H22ZM7 9H4V5H7V9ZM17 15H20V19H17V15ZM17 5H20V9H17V5Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
+{% icon 'hoiutopo' %}
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-shelves">
+  <path d="M3 23V1H5V3H19V1H21V23H19V21H5V23H3ZM5 11H7V7H13V11H19V5H5V11ZM5 19H11V15H17V19H19V13H5V19ZM9 11H11V9H9V11ZM13 19H15V17H13V19Z" fill="#323232"/>
+</svg>
+{% endicon %}
+
+{% icon 'nimistud' %}
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-ballot">
+  <path d="M12 10H17V8H12V10ZM12 16H17V14H12V16ZM9 11C9.55 11 10.0208 10.8042 10.4125 10.4125C10.8042 10.0208 11 9.55 11 9C11 8.45 10.8042 7.97917 10.4125 7.5875C10.0208 7.19583 9.55 7 9 7C8.45 7 7.97917 7.19583 7.5875 7.5875C7.19583 7.97917 7 8.45 7 9C7 9.55 7.19583 10.0208 7.5875 10.4125C7.97917 10.8042 8.45 11 9 11ZM9 17C9.55 17 10.0208 16.8042 10.4125 16.4125C10.8042 16.0208 11 15.55 11 15C11 14.45 10.8042 13.9792 10.4125 13.5875C10.0208 13.1958 9.55 13 9 13C8.45 13 7.97917 13.1958 7.5875 13.5875C7.19583 13.9792 7 14.45 7 15C7 15.55 7.19583 16.0208 7.5875 16.4125C7.97917 16.8042 8.45 17 9 17ZM5 21C4.45 21 3.97917 20.8042 3.5875 20.4125C3.19583 20.0208 3 19.55 3 19V5C3 4.45 3.19583 3.97917 3.5875 3.5875C3.97917 3.19583 4.45 3 5 3H19C19.55 3 20.0208 3.19583 20.4125 3.5875C20.8042 3.97917 21 4.45 21 5V19C21 19.55 20.8042 20.0208 20.4125 20.4125C20.0208 20.8042 19.55 21 19 21H5ZM5 19H19V5H5V19Z" fill="#323232"/>
+</svg>
+{% endicon %}
+
 {% icon 'arhiiv' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-inventory_2">
   <path d="M3 20V8.7C2.71667 8.51667 2.47933 8.28333 2.288 8C2.096 7.71667 2 7.38333 2 7V4C2 3.45 2.196 2.979 2.588 2.587C2.97933 2.19567 3.45 2 4 2H20C20.55 2 21.021 2.19567 21.413 2.587C21.8043 2.979 22 3.45 22 4V7C22 7.38333 21.904 7.71667 21.712 8C21.5207 8.28333 21.2833 8.51667 21 8.7V20C21 20.55 20.8043 21.021 20.413 21.413C20.021 21.8043 19.55 22 19 22H5C4.45 22 3.979 21.8043 3.587 21.413C3.19567 21.021 3 20.55 3 20ZM5 9V20H19V9H5ZM20 7V4H4V7H20ZM9 14H15V12H9V14ZM5 20V9V20Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'allarhiiv' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path d="M3 8.7V20C3 20.55 3.2 21.02 3.59 21.41C3.98 21.8 4.45 22 5 22H13.05V20H5V9H19V14.55H21V8.7C21.28 8.52 21.52 8.28 21.71 8C21.9 7.72 22 7.38 22 7V4C22 3.45 21.8 2.98 21.41 2.59C21.02 2.2 20.55 2 20 2H4C3.45 2 2.98 2.2 2.59 2.59C2.2 2.98 2 3.45 2 4V7C2 7.38 2.1 7.72 2.29 8C2.48 8.28 2.72 8.52 3 8.7ZM20 4V7H4V4H20ZM15 14H9V12H15V14ZM16.72 20.42L15.92 23L18.06 21.51L20.18 23L19.38 20.42L21.5 18.64H18.92L18.06 16.11L17.19 18.64H14.61L16.72 20.42Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'funktsioon' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-extension">
   <path d="M10.5 4.5C10.78 4.5 11 4.72 11 5V7H17V13H19C19.28 13 19.5 13.22 19.5 13.5C19.5 13.78 19.28 14 19 14H17V20H14.88C14.2 18.25 12.49 17 10.5 17C8.51 17 6.8 18.25 6.12 20H4V17.88C5.75 17.2 7 15.49 7 13.5C7 11.51 5.76 9.8 4.01 9.12L4 7H10V5C10 4.72 10.22 4.5 10.5 4.5ZM10.5 2.5C9.12 2.5 8 3.62 8 5H4C2.9 5 2.01 5.9 2.01 7V10.8H2.3C3.79 10.8 5 12.01 5 13.5C5 14.99 3.79 16.2 2.3 16.2H2V20C2 21.1 2.9 22 4 22H7.8V21.7C7.8 20.21 9.01 19 10.5 19C11.99 19 13.2 20.21 13.2 21.7V22H17C18.1 22 19 21.1 19 20V16C20.38 16 21.5 14.88 21.5 13.5C21.5 12.12 20.38 11 19 11V7C19 5.9 18.1 5 17 5H13C13 3.62 11.88 2.5 10.5 2.5Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'allfunktsioon' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path d="M4 21.5H7.8C7.8 20.67 8.06 19.96 8.59 19.38C9.11 18.79 9.75 18.5 10.5 18.5C11.25 18.5 11.88 18.8 12.41 19.38C12.94 19.96 13.2 20.67 13.2 21.5H13.55V17.55C13.36 17.4 13.16 17.27 12.95 17.17C12.07 16.73 11.25 16.5 10.5 16.5C9.75 16.5 8.93 16.72 8.05 17.17C7.16 17.62 6.52 18.4 6.12 19.5H4V17.3C4.9 16.95 5.63 16.38 6.18 15.6C6.72 14.82 7 13.96 7 13C7 12.04 6.73 11.16 6.18 10.38C5.62 9.59 4.9 9.03 4 8.7V6.5H10V4.5C10 4.37 10.05 4.25 10.15 4.15C10.25 4.05 10.37 4 10.5 4C10.63 4 10.75 4.05 10.85 4.15C10.95 4.25 11 4.37 11 4.5V6.5H17V12.5H19C19.13 12.5 19.25 12.55 19.35 12.65C19.45 12.75 19.5 12.87 19.5 13C19.5 13.03 19.5 13.07 19.49 13.1H21.5C21.5 13.1 21.5 13.03 21.5 13C21.5 12.3 21.25 11.71 20.77 11.23C20.29 10.74 19.7 10.5 19 10.5V6.5C19 5.95 18.8 5.48 18.41 5.09C18.02 4.7 17.55 4.5 17 4.5H13C13 3.8 12.75 3.2 12.27 2.72C11.79 2.24 11.2 2 10.5 2C9.8 2 9.21 2.24 8.73 2.72C8.24 3.21 8 3.8 8 4.5H4C3.45 4.5 2.98 4.7 2.59 5.09C2.2 5.48 2 5.95 2 6.5V10.3C2.8 10.3 3.5 10.55 4.1 11.06C4.7 11.57 5 12.21 5 13C5 13.79 4.7 14.43 4.1 14.94C3.5 15.45 2.8 15.7 2 15.7V19.5C2 20.05 2.2 20.52 2.59 20.91C2.98 21.3 3.45 21.5 4 21.5ZM17.22 20.42L16.42 23L18.56 21.51L20.68 23L19.88 20.42L22 18.64H19.42L18.56 16.11L17.69 18.64H15.11L17.22 20.42Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'sari' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-folder_copy">
   <path d="M3 21C2.45 21 1.97933 20.8043 1.588 20.413C1.196 20.021 1 19.55 1 19V6H3V19H20V21H3ZM7 17C6.45 17 5.97933 16.8043 5.588 16.413C5.196 16.021 5 15.55 5 15V4C5 3.45 5.196 2.979 5.588 2.587C5.97933 2.19567 6.45 2 7 2H12L14 4H21C21.55 4 22.021 4.196 22.413 4.588C22.8043 4.97933 23 5.45 23 6V15C23 15.55 22.8043 16.021 22.413 16.413C22.021 16.8043 21.55 17 21 17H7ZM7 15H21V6H13.175L11.175 4H7V15ZM7 15V4V15Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'allsari' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path d="M1.59 20.41C1.98 20.8 2.45 21 3 21H15.05V19H3V6H1V19C1 19.55 1.2 20.02 1.59 20.41ZM23 14.55V6C23 5.45 22.8 4.98 22.41 4.59C22.02 4.2 21.55 4 21 4H14L12 2H7C6.45 2 5.98 2.2 5.59 2.59C5.2 2.98 5 3.45 5 4V15C5 15.55 5.2 16.02 5.59 16.41C5.98 16.8 6.45 17 7 17H15.05V15H7V4H11.18L13.18 6H21V14.55H23ZM18.72 20.42L17.92 23L20.06 21.51L22.18 23L21.38 20.42L23.5 18.64H20.92L20.06 16.11L19.19 18.64H16.61L18.72 20.42Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'säilik' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-topic">
   <path d="M20 6H12L10 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20.77C21.45 20 22 19.44 22 18.77V8C22 6.9 21.1 6 20 6ZM20 18H4V6H9.17L11.17 8H20V18ZM18 12H6V10H18V12ZM14 16H6V14H14V16Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'arhivaal' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-description">
   <path d="M8 16H16V18H8V16ZM8 12H16V14H8V12ZM14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'allarhivaal' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path d="M12.05 18H8V16H12.05V18ZM12.05 20H6V4H13V9H18V14.55H20V8L14 2H6C5.45 2 4.98 2.2 4.59 2.59C4.2 2.98 4 3.45 4 4V20C4 20.55 4.2 21.02 4.59 21.41C4.98 21.8 5.45 22 6 22H12.05V20ZM16 14H8V12H16V14ZM15.72 20.42L14.92 23L17.06 21.51L19.18 23L18.38 20.42L20.5 18.64H17.92L17.06 16.11L16.19 18.64H13.6L15.72 20.42Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'fail' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-insert_drive_file">
   <path d="M6 22C5.45 22 4.97933 21.8043 4.588 21.413C4.196 21.021 4 20.55 4 20V4C4 3.45 4.196 2.979 4.588 2.587C4.97933 2.19567 5.45 2 6 2H14L20 8V20C20 20.55 19.8043 21.021 19.413 21.413C19.021 21.8043 18.55 22 18 22H6ZM13 9V4H6V20H18V9H13ZM6 4V9V4V20V4Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'telli' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM15 5H8C6.9 5 6.01 5.9 6.01 7L6 21C6 22.1 6.89 23 7.99 23H19C20.1 23 21 22.1 21 21V11L15 5ZM8 21V7H14V12H19V21H8Z" fill="#323232"/>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-fact_check">
+  <g><rect fill="none" height="24" width="24"/></g>
+  <g><g>
+    <path d="M20,3H4C2.9,3,2,3.9,2,5v14c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V5 C22,3.9,21.1,3,20,3z M20,19H4V5h16V19z" fill-rule="evenodd"/><polygon fill-rule="evenodd" points="19.41,10.42 17.99,9 14.82,12.17 13.41,10.75 12,12.16 14.82,15"/><rect fill-rule="evenodd" height="2" width="5" x="5" y="7"/><rect fill-rule="evenodd" height="2" width="5" x="5" y="11"/>
+    <rect fill-rule="evenodd" height="2" width="5" x="5" y="15"/>
+  </g></g>
 </svg>
 {% endicon %}
 
 {% icon 'ava arhiivipuu' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path d="M21 18V16H8V18H21ZM4.4 17L9.4 12L4.4 7L3 8.4L6.6 12L3 15.6L4.4 17ZM21 13V11H11V13H21ZM21 8V6H8V8H21Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'sulge arhiivipuu' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-menu_open">
   <path d="M3 18H16V16H3V18ZM3 13H13V11H3V13ZM3 6V8H16V6H3ZM21 15.59L17.42 12L21 8.41L19.59 7L14.59 12L19.59 17L21 15.59Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'ava arhiivipuu osa' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-add_box">
   <path d="M19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM11 17H13V13H17V11H13V7H11V11H7V13H11V17Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
 {% icon 'sulge arhiivipuu osa' %}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-indeterminate_check_box">
   <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM7 11H17V13H7V11Z" fill="#323232"/>
+</svg>
+{% endicon %}
+
+{% icon 'lisa sama tasandi üksus' %}
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" glyph-name="mdi-note_stack_add">
+<path d="M7.00001 20V8.97501C7.00001 8.42501 7.20001 7.95835 7.60001 7.57501C8.00001 7.19168 8.47501 7.00001 9.02501 7.00001H20C20.55 7.00001 21.0208 7.19585 21.4125 7.58751C21.8042 7.97918 22 8.45001 22 9.00001V17L17 22H9.00001C8.45001 22 7.97918 21.8042 7.58751 21.4125C7.19585 21.0208 7.00001 20.55 7.00001 20ZM2.02501 6.25001C1.92501 5.70001 2.03335 5.20418 2.35001 4.76251C2.66668 4.32085 3.10001 4.05001 3.65001 3.95001L14.5 2.02501C15.05 1.92501 15.5458 2.03335 15.9875 2.35001C16.4292 2.66668 16.7 3.10001 16.8 3.65001L17.05 5.00001H15L14.825 4.00001L4.00001 5.92501L5.00001 11.575V18.55C4.73335 18.4 4.50418 18.2 4.31251 17.95C4.12085 17.7 4.00001 17.4167 3.95001 17.1L2.02501 6.25001ZM9.00001 9.00001V20H16L20 16V9.00001H9.00001ZM13.5 18.5H15.5V15.5H18.5V13.5H15.5V10.5H13.5V13.5H10.5V15.5H13.5V18.5Z" fill="#323232"/>
 </svg>
 {% endicon %}
 
