@@ -25,19 +25,6 @@
     </section>
 
     <section class="py-3">
-      <h3 class="px-4 py-2 uppercase font-bold text-sm">Kasutajaliides ja -kogemus</h3>
-
-      {% set navPages = collections.all | eleventyNavigation("Design") %}
-      <ul class="space-y-1">
-        {%- for entry in navPages %}
-          <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
-          </li>
-        {%- endfor %}
-      </ul>
-    </section>
-
-    <section class="py-3">
       <h3 class="px-4 py-2 uppercase font-bold text-sm">Klassid ja omadused</h3>
       {% set navPages = collections.all | eleventyNavigation("Classes") %}
       <ul class="space-y-1">
