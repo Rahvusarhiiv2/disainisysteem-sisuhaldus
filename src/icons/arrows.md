@@ -29,6 +29,30 @@ eleventyNavigation:
 </svg>
 {% endicon %}
 
+{% icon 'üles paremale' %}
+<svg width="24" height="24" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" glyph-name="mdi-north_east">
+<rect fill="none" height="24" width="24"/><path d="M9,5v2h6.59L4,18.59L5.41,20L17,8.41V15h2V5H9z"/>
+</svg>
+{% endicon %}
+
+{% icon 'üles vasakule' %}
+<svg width="24" height="24" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" glyph-name="mdi-north_west">
+<rect fill="none" height="24" width="24"/><path d="M5,15h2V8.41L18.59,20L20,18.59L8.41,7H15V5H5V15z"/>
+</svg>
+{% endicon %}
+
+{% icon 'alla paremale' %}
+<svg width="24" height="24" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" glyph-name="mdi-south_east">
+<rect fill="none" height="24" width="24"/><path d="M19,9h-2v6.59L5.41,4L4,5.41L15.59,17H9v2h10V9z"/>
+</svg>
+{% endicon %}
+
+{% icon 'alla vasakule' %}
+<svg width="24" height="24" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" glyph-name="mdi-south_west">
+<rect fill="none" height="24" width="24"/><path d="M15,19v-2H8.41L20,5.41L18.59,4L7,15.59V9H5v10H15z"/>
+</svg>
+{% endicon %}
+
 {% icon 'lühike vasakule' %}
 <svg width="24" height="24" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" glyph-name="mdi-keyboard_arrow_left">
 <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
@@ -77,6 +101,18 @@ eleventyNavigation:
 </svg>
 {% endicon %}
 
+{% icon 'algusesse' %}
+<svg width="24" height="24" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" glyph-name="mdi-first_page">
+  <path d="M24 0v24H0V0h24z" fill="none" opacity=".87"/><path d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6 1.41-1.41zM6 6h2v12H6V6z"/>
+</svg>
+{% endicon %}
+
+{% icon 'lõppu' %}
+<svg width="24" height="24" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" glyph-name="mdi-last_page">
+  <path d="M0 0h24v24H0V0z" fill="none" opacity=".87"/><path d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6-1.41 1.41zM16 6h2v12h-2V6z"/>
+</svg>
+{% endicon %}
+
 {% icon 'vertikaalselt lahku' %}
 <svg width="24" height="24" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" glyph-name="mdi-unfold_more">
   <path d="M12 5.83L15.17 9L16.58 7.59L12 3L7.40997 7.59L8.82997 9L12 5.83ZM12 18.17L8.82997 15L7.41997 16.41L12 21L16.59 16.41L15.17 15L12 18.17Z" fill="#323232"/>
@@ -86,31 +122,6 @@ eleventyNavigation:
 {% icon 'vertikaalselt kokku' %}
 <svg width="24" height="24" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" glyph-name="mdi-unfold_less">
   <path d="M7.40997 18.59L8.82997 20L12 16.83L15.17 20L16.58 18.59L12 14L7.40997 18.59ZM16.59 5.41L15.17 4L12 7.17L8.82997 4L7.40997 5.41L12 10L16.59 5.41Z" fill="#323232"/>
-</svg>
-{% endicon %}
-
-
-{% icon 'üles paremale' %}
-<svg width="24" height="24" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" glyph-name="mdi-north_east">
-  <rect fill="none" height="24" width="24"/><path d="M9,5v2h6.59L4,18.59L5.41,20L17,8.41V15h2V5H9z"/>
-</svg>
-{% endicon %}
-
-{% icon 'üles vasakule' %}
-<svg width="24" height="24" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" glyph-name="mdi-north_west">
-  <rect fill="none" height="24" width="24"/><path d="M5,15h2V8.41L18.59,20L20,18.59L8.41,7H15V5H5V15z"/>
-</svg>
-{% endicon %}
-
-{% icon 'alla paremale' %}
-<svg width="24" height="24" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" glyph-name="mdi-south_east">
-  <rect fill="none" height="24" width="24"/><path d="M19,9h-2v6.59L5.41,4L4,5.41L15.59,17H9v2h10V9z"/>
-</svg>
-{% endicon %}
-
-{% icon 'alla vasakule' %}
-<svg width="24" height="24" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" glyph-name="mdi-south_west">
-  <rect fill="none" height="24" width="24"/><path d="M15,19v-2H8.41L20,5.41L18.59,4L7,15.59V9H5v10H15z"/>
 </svg>
 {% endicon %}
 

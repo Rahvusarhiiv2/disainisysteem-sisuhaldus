@@ -11,19 +11,6 @@ eleventyNavigation:
 
 # Tabelid
 
-## Tavaline tabel
-
-{% live %}
-{% include "components/examples/tables/table_default.html" %}
-{% endlive %}
-
-{% code 'HTML' %}
-```html
-{% include "components/examples/tables/table_default.html" %}
-```
-{% endcode %}
-
-
 ## Triibuline tabel
 
 {% live %}
