@@ -6,7 +6,7 @@ relative: ../../..
 eleventyNavigation:
   parent: Examples
   key: Asukoharada
-  order: 3
+  order: 2
 ---
 
 # Asukoharada
