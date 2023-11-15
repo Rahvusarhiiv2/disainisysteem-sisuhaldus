@@ -6,6 +6,7 @@ relative: .
 eleventyNavigation:
   parent: Home
   key: Sissejuhatus
+  order: 1
 ---
 
 ## Tere tulemast Rahvusarhiivi disainisüsteemi

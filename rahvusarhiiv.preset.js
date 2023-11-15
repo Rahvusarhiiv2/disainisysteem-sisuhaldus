@@ -1,6 +1,6 @@
 /**
  * Rahvusarhiiv custom presets
- * @version 1.1.0
+ * @version 1.1.1
  *
  * Beginning with version 1.1.0, we now support an extended 'xxl' max-width of 90rem.
  * Additionally, the green color values for codes 50, 200, 300, and 400 have been
@@ -195,8 +195,8 @@ module.exports = {
         'xxl': '90rem !important'
       },
       backgroundImage: {
-        "theme-ais":
-          "linear-gradient(96.04deg, rgba(247, 227, 204, 0.65) -17.14%, #ECDDF4 94.45%)",
+        "theme-ais": "linear-gradient(96.04deg, rgba(247, 227, 204, 0.65) -17.14%, #ECDDF4 94.45%)",
+        "theme-vau": "linear-gradient(95.19deg, #CCEAD6 0.8%, #ECDDF4 158.87%)"
       },
       typography: ({ theme }) => ({
         DEFAULT: {

@@ -6,6 +6,7 @@ relative: ..
 eleventyNavigation:
   parent: Home
   key: Versioonid
+  order: 2
 ---
 
 # Versioonid
