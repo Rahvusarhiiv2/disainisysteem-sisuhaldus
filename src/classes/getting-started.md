@@ -70,6 +70,13 @@ body {
     font-style: italic;
     src: url('./fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
   }
+    @font-face {
+    font-family: 'Sora';
+    font-weight: 400 700;
+    font-display: swap;
+    font-style: normal;
+    src: url('./fonts/Sora-VariableFont_wght.ttf') format('truetype');
+  }
   @font-face {
     font-family: 'Roboto';
     font-weight: 400;
@@ -117,7 +124,7 @@ Prototüübis võib kirjatüübid Google API kaudu linkida:
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
 ```
 
 ## 5. Seadista pistikud

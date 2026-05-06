@@ -4,4 +4,5 @@ module.exports = {
   spacing: tailwindConfig.theme.spacing,
   colors: tailwindConfig.theme.colors,
   fontSize: tailwindConfig.theme.fontSize,
+  fontFamily: tailwindConfig.theme.fontFamily,
 };
