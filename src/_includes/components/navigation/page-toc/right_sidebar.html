@@ -1,0 +1,47 @@
+<aside x-data="{ active: null }" class="hidden lg:block w-72 shrink-0" aria-labelledby="page-toc-heading">
+  <nav class="sticky top-6 bg-white" aria-label="Lehe sisukord">
+    <h2 id="page-toc-heading" class="mb-4 ml-3 border-b border-gray-300 pb-2 text-sm font-bold uppercase text-gray-900">Sisukord</h2>
+    <ul class="border-l-2 border-gray-100 text-sm">
+      <li>
+        <a href="#intro" @click="active = 'intro'" :aria-current="active === 'intro' ? 'true' : null" :class="active === 'intro' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
+          Siit leiate näpunäiteid, kuidas ise arhiivis oma sugupuud uurida
+        </a>
+      </li>
+      <li>
+        <a href="#start" @click="active = 'start'" :aria-current="active === 'start' ? 'true' : null" :class="active === 'start' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
+          Millest alustada?
+        </a>
+      </li>
+      <li>
+        <a href="#archives" @click="active = 'archives'" :aria-current="active === 'archives' ? 'true' : null" :class="active === 'archives' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
+          Millises arhiivis leidub andmeid suguvõsa kohta?
+        </a>
+      </li>
+      <li>
+        <a href="#service" @click="active = 'service'" :aria-current="active === 'service' ? 'true' : null" :class="active === 'service' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
+          Kas saab tasu eest tellida oma sugupuu?
+        </a>
+      </li>
+      <li>
+        <a href="#family-names" @click="active = 'family-names'" :aria-current="active === 'family-names' ? 'true' : null" :class="active === 'family-names' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
+          Perekonnanimede panek
+        </a>
+      </li>
+      <li>
+        <a href="#name-estonianisation" @click="active = 'name-estonianisation'" :aria-current="active === 'name-estonianisation' ? 'true' : null" :class="active === 'name-estonianisation' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
+          Nimede eestistamine
+        </a>
+      </li>
+      <li>
+        <a href="#emigration" @click="active = 'emigration'" :aria-current="active === 'emigration' ? 'true' : null" :class="active === 'emigration' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
+          Venemaale väljarändamine
+        </a>
+      </li>
+      <li>
+        <a href="#old-believers" @click="active = 'old-believers'" :aria-current="active === 'old-believers' ? 'true' : null" :class="active === 'old-believers' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
+          Vanausulised
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
