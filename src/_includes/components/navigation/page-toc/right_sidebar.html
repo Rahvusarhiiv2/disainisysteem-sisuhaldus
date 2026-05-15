@@ -1,44 +1,45 @@
-<aside x-data="{ active: null }" class="hidden lg:block w-72 shrink-0" aria-labelledby="page-toc-heading">
+{% set tocPrefix = tocPrefix or '' %}
+<aside x-data="{ active: null, scrollToSection(id) { this.active = id; const target = document.getElementById(`{{ tocPrefix }}${id}`); if (!target) return; history.replaceState(null, '', `#${target.id}`); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }" class="hidden w-72 shrink-0 lg:block" aria-labelledby="{{ tocPrefix }}page-toc-heading">
   <nav class="sticky top-6 bg-white" aria-label="Lehe sisukord">
-    <h2 id="page-toc-heading" class="mb-4 ml-3 border-b border-gray-300 pb-2 text-sm font-bold uppercase text-gray-900">Sisukord</h2>
+    <h2 id="{{ tocPrefix }}page-toc-heading" class="mb-4 ml-3 border-b border-gray-300 pb-2 text-sm font-bold uppercase text-gray-900">Sisukord</h2>
     <ul class="border-l-2 border-gray-100 text-sm">
       <li>
-        <a href="#intro" @click="active = 'intro'" :aria-current="active === 'intro' ? 'true' : null" :class="active === 'intro' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
-          Siit leiate näpunäiteid, kuidas ise arhiivis oma sugupuud uurida
+        <a href="#{{ tocPrefix }}intro" @click.prevent="scrollToSection('intro')" :aria-current="active === 'intro' ? 'true' : null" :class="active === 'intro' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 no-underline focus:outline-none hover:no-underline">
+          Siit leiate n&auml;pun&auml;iteid, kuidas ise arhiivis oma sugupuud uurida
         </a>
       </li>
       <li>
-        <a href="#start" @click="active = 'start'" :aria-current="active === 'start' ? 'true' : null" :class="active === 'start' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
+        <a href="#{{ tocPrefix }}start" @click.prevent="scrollToSection('start')" :aria-current="active === 'start' ? 'true' : null" :class="active === 'start' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 no-underline focus:outline-none hover:no-underline">
           Millest alustada?
         </a>
       </li>
       <li>
-        <a href="#archives" @click="active = 'archives'" :aria-current="active === 'archives' ? 'true' : null" :class="active === 'archives' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
-          Millises arhiivis leidub andmeid suguvõsa kohta?
+        <a href="#{{ tocPrefix }}archives" @click.prevent="scrollToSection('archives')" :aria-current="active === 'archives' ? 'true' : null" :class="active === 'archives' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 no-underline focus:outline-none hover:no-underline">
+          Millises arhiivis leidub andmeid suguv&otilde;sa kohta?
         </a>
       </li>
       <li>
-        <a href="#service" @click="active = 'service'" :aria-current="active === 'service' ? 'true' : null" :class="active === 'service' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
+        <a href="#{{ tocPrefix }}service" @click.prevent="scrollToSection('service')" :aria-current="active === 'service' ? 'true' : null" :class="active === 'service' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 no-underline focus:outline-none hover:no-underline">
           Kas saab tasu eest tellida oma sugupuu?
         </a>
       </li>
       <li>
-        <a href="#family-names" @click="active = 'family-names'" :aria-current="active === 'family-names' ? 'true' : null" :class="active === 'family-names' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
+        <a href="#{{ tocPrefix }}family-names" @click.prevent="scrollToSection('family-names')" :aria-current="active === 'family-names' ? 'true' : null" :class="active === 'family-names' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 no-underline focus:outline-none hover:no-underline">
           Perekonnanimede panek
         </a>
       </li>
       <li>
-        <a href="#name-estonianisation" @click="active = 'name-estonianisation'" :aria-current="active === 'name-estonianisation' ? 'true' : null" :class="active === 'name-estonianisation' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
+        <a href="#{{ tocPrefix }}name-estonianisation" @click.prevent="scrollToSection('name-estonianisation')" :aria-current="active === 'name-estonianisation' ? 'true' : null" :class="active === 'name-estonianisation' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 no-underline focus:outline-none hover:no-underline">
           Nimede eestistamine
         </a>
       </li>
       <li>
-        <a href="#emigration" @click="active = 'emigration'" :aria-current="active === 'emigration' ? 'true' : null" :class="active === 'emigration' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
-          Venemaale väljarändamine
+        <a href="#{{ tocPrefix }}emigration" @click.prevent="scrollToSection('emigration')" :aria-current="active === 'emigration' ? 'true' : null" :class="active === 'emigration' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 no-underline focus:outline-none hover:no-underline">
+          Venemaale v&auml;ljar&auml;ndamine
         </a>
       </li>
       <li>
-        <a href="#old-believers" @click="active = 'old-believers'" :aria-current="active === 'old-believers' ? 'true' : null" :class="active === 'old-believers' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 focus:outline-none">
+        <a href="#{{ tocPrefix }}old-believers" @click.prevent="scrollToSection('old-believers')" :aria-current="active === 'old-believers' ? 'true' : null" :class="active === 'old-believers' ? 'border-green-300 font-bold text-gray-900' : 'border-transparent font-normal text-gray-700 hover:font-medium'" class="-ml-0.5 block border-l-2 py-1.5 pl-3 pr-2 no-underline focus:outline-none hover:no-underline">
           Vanausulised
         </a>
       </li>
