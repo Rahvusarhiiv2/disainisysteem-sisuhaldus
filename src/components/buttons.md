@@ -142,3 +142,29 @@ eleventyNavigation:
 {% include "components/form/buttons/only_icon_rounded_on_dark.html" %}
 ```
 {% endcode %}
+
+### Tekstlink nooleikooniga
+
+{% live %}
+{% include "components/form/buttons/text_link_with_hover_icon.html" %}
+{% endlive %}
+
+{% code 'HTML' %}
+```html
+{% include "components/form/buttons/text_link_with_hover_icon.html" %}
+```
+{% endcode %}
+
+### Tekstlink nooleikooniga tumedal taustal
+
+{% live %}
+<div class="rounded bg-blue-800 p-10">
+  {% include "components/form/buttons/text_link_with_hover_icon_on_dark.html" %}
+</div>
+{% endlive %}
+
+{% code 'HTML' %}
+```html
+{% include "components/form/buttons/text_link_with_hover_icon_on_dark.html" %}
+```
+{% endcode %}
