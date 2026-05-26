@@ -1,0 +1,16 @@
+<div x-data="{ loggedIn: true }" class="space-y-6 font-body">
+  <div class="flex items-center justify-between rounded bg-gray-50 px-5 py-4">
+    <p class="text-sm text-gray-500">Vaheta eelvaates olekut</p>
+    <button type="button" @click="loggedIn = !loggedIn" class="rounded bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow-sm hover:bg-gray-100 focus:outline-none">
+      <span x-html="loggedIn ? 'N&auml;ita sisselogimise nuppu' : 'N&auml;ita konto men&uuml;&uuml;d'"></span>
+    </button>
+  </div>
+
+  <div x-show="!loggedIn">
+    {% include "components/navigation/auth/login_button.html" %}
+  </div>
+
+  <div x-show="loggedIn">
+    {% include "components/navigation/auth/account_menu.html" %}
+  </div>
+</div>

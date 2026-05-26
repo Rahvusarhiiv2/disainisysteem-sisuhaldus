@@ -1,0 +1,33 @@
+<div x-data="{ open: true }" @keydown.escape.window="open = false" class="relative mx-auto max-w-[30rem] font-body">
+  <div class="rounded bg-theme-vau p-6 shadow">
+    <div class="flex justify-end">
+      <button type="button" @click="open = !open" id="user-menu-button" class="flex items-center rounded-full bg-gray-800 focus:outline-none" aria-controls="account-menu-panel" x-bind:aria-expanded="open.toString()">
+        <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-gray-800 text-sm font-medium text-white">
+          LP
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div id="account-menu-panel" x-show="open" x-cloak @click.outside="open = false" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="translate-y-2 opacity-0" x-transition:enter-end="translate-y-0 opacity-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="translate-y-0 opacity-100" x-transition:leave-end="translate-y-2 opacity-0" class="absolute right-0 z-50 mt-2 flex w-80 flex-col overflow-hidden rounded border border-gray-200 bg-white shadow-lg sm:w-96">
+    <div class="relative flex flex-col items-center border-b border-gray-50 px-2 pb-6 pt-12 sm:px-6">
+      <div class="absolute inset-x-0 top-0 -z-10 h-20 overflow-hidden rounded-t bg-gray-50"></div>
+      <svg class="h-20 w-20 rounded-full bg-white text-gray-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor" aria-hidden="true">
+        <path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/>
+      </svg>
+      <h3 class="mt-4 text-lg font-medium text-gray-900">Liina P&uuml;ttsepp</h3>
+      <p class="mt-1 text-gray-500">liina.pyttsepp@ra.ee</p>
+    </div>
+
+    <div class="flex h-16 flex-none w-full divide-x divide-gray-50">
+      <button type="button" class="flex h-full w-1/2 items-center justify-center gap-x-2 rounded-bl px-4 text-center font-semibold text-gray-900 no-underline hover:bg-green-50 hover:no-underline focus:outline-none">
+        <svg class="h-6 w-6 flex-none text-gray-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor" aria-hidden="true"><path d="M480-400q33 0 56.5-23.5T560-480q0-33-23.5-56.5T480-560q-33 0-56.5 23.5T400-480q0 33 23.5 56.5T480-400ZM320-240h320v-23q0-24-13-44t-36-30q-26-11-53.5-17t-57.5-6q-30 0-57.5 6T369-337q-23 10-36 30t-13 44v23ZM720-80H240q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80Zm0-80v-446L526-800H240v640h480Zm-480 0v-640 640Z"/></svg>
+        <span class="whitespace-nowrap text-base text-gray-900">Minu konto</span>
+      </button>
+      <button type="button" class="flex h-full w-1/2 items-center justify-center gap-x-2 rounded-br px-4 text-center font-semibold text-gray-900 no-underline hover:bg-green-50 hover:no-underline focus:outline-none">
+        <svg class="h-6 w-6 flex-none text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 8L15.59 9.41L17.17 11H9V13H17.17L15.59 14.59L17 16L21 12L17 8ZM5 5H12V3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H12V19H5V5Z"/></svg>
+        <span class="whitespace-nowrap text-base text-gray-900">V&auml;lju</span>
+      </button>
+    </div>
+  </div>
+</div>
