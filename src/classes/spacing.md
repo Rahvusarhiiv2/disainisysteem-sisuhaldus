@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Astmik
-relative: ../..
 
 eleventyNavigation:
   parent: Classes

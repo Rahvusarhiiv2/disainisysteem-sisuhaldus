@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Sildid
-relative: ../..
 
 eleventyNavigation:
   parent: Elements

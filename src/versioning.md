@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Versioonid
-relative: ..
 
 eleventyNavigation:
   parent: Home

@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Üldised ikoonid
-relative: ../..
 
 eleventyNavigation:
   parent: Icons

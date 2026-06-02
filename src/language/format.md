@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Vormistus- ja vormindusvõtted
-relative: ../..
 
 eleventyNavigation:
   parent: Language

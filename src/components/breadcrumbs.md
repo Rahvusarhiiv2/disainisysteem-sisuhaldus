@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Asukoharada
-relative: ../..
 
 eleventyNavigation:
   parent: Navigation

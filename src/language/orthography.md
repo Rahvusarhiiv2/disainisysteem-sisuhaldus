@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Heakeelsus ja õigekeelsus
-relative: ../..
 
 eleventyNavigation:
   parent: Language

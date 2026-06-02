@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Ekraanisuurused
-relative: ..
 
 eleventyNavigation:
   parent: Home
@@ -26,19 +25,19 @@ Selle hindamiseks, kui hästi kujundus nende ekraanidega kohandub, on soovitav k
 
 "Responsively" võimaldab vaadata veebilehekülge korraga/kõrvuti kõigis eelmainitud ekraanisuurustes.
 
-<a target="_blank" href="{{ relative }}/assets/images/responsively.png"><img src="{{ relative }}/assets/images/responsively.png" class="w-full" alt="Responsively"></a>
+<a target="_blank" href="{{ '/assets/images/responsively.png' | url }}"><img src="{{ '/assets/images/responsively.png' | url }}" class="w-full" alt="Responsively"></a>
 
 Ekraanisuurusi saab Responsivelys valida ja seadistada, liikudes "Manage Suites > Device Manager".
 
-<img src="{{ relative }}/assets/images/device_manager.png" class="h-32" alt="Device Manager">
+<img src="{{ '/assets/images/device_manager.png' | url }}" class="h-32" alt="Device Manager">
 
 Standardsed seadistused, mis määravad eelmainitud ekraanisuurused, on järgmised:
 
 <div class="not-prose grid grid-cols-3 gap-4">
-  <img src="{{ relative }}/assets/images/telefon.png" alt="telefon">
-  <img src="{{ relative }}/assets/images/tahvel.png" alt="väike tahvelarvuti">
-  <img src="{{ relative }}/assets/images/suur_tahvel.png" alt="suur tahvelarvuti">
-  <img src="{{ relative }}/assets/images/ekraan.png" alt="keskmine ekraan">
-  <img src="{{ relative }}/assets/images/monitor.png" alt="suur monitor">
+  <img src="{{ '/assets/images/telefon.png' | url }}" alt="telefon">
+  <img src="{{ '/assets/images/tahvel.png' | url }}" alt="väike tahvelarvuti">
+  <img src="{{ '/assets/images/suur_tahvel.png' | url }}" alt="suur tahvelarvuti">
+  <img src="{{ '/assets/images/ekraan.png' | url }}" alt="keskmine ekraan">
+  <img src="{{ '/assets/images/monitor.png' | url }}" alt="suur monitor">
 </div> 
 

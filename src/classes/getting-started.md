@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Seadistamine
-relative: ../..
 
 eleventyNavigation:
   parent: Classes
@@ -45,7 +44,7 @@ Rahvusarhiivi stiilierisused muudavad ainult väikest osa üldisest stiiliraamis
 
 ## 4. Seadista rahvusarhiivi baas-stiil ja kirjatüübid
 
-Laadi alla [kirjatüüpide failid](../../assets/fonts/fonts.zip) ja kopeeri need oma projekti `fonts` kausta. Lisa rakenduse CSS faili järgmised read:
+Laadi alla [kirjatüüpide failid]({{ '/assets/fonts/fonts.zip' | url }}) ja kopeeri need oma projekti `fonts` kausta. Lisa rakenduse CSS faili järgmised read:
 
 ```css
 @tailwind base;

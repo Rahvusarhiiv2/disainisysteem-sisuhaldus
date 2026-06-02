@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Tabelid
-relative: ../../..
 
 eleventyNavigation:
   parent: Examples

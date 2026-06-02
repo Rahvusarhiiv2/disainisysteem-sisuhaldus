@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Moodulite ikoonid
-relative: ../..
 
 eleventyNavigation:
   parent: Icons

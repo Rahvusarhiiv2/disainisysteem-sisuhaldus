@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Lehe sisukord
-relative: ../..
 
 eleventyNavigation:
   parent: Navigation

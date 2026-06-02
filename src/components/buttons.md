@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Nupud
-relative: ../..
 
 eleventyNavigation:
   parent: Form

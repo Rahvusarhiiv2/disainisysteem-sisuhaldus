@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Kirjalaadid
-relative: ../..
 
 eleventyNavigation:
   parent: Classes

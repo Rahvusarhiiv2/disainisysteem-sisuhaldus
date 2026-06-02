@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
 
   // Copy static assets to the `dist` dir
   eleventyConfig.addPassthroughCopy("src/assets/images");
+  eleventyConfig.addPassthroughCopy("src/assets/fonts");
 
   // https://www.npmjs.com/package/eleventy-plugin-code-clipboard
   const markdownLibrary = markdownIt({
@@ -108,6 +109,7 @@ module.exports = function (eleventyConfig) {
 
   return {
     markdownTemplateEngine: "njk",
+    pathPrefix: "/disainisysteem-sisuhaldus/",
     dir: {
       input: "src",
       output: "dist",

@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Raadionupud
-relative: ../..
 
 eleventyNavigation:
   parent: Form

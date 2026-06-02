@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Küpsised
-relative: ../../..
 
 eleventyNavigation:
   parent: Examples

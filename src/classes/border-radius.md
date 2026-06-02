@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Kumerused
-relative: ../..
 
 eleventyNavigation:
   parent: Classes

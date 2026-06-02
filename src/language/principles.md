@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Üldpõhimõtted
-relative: ../..
 
 eleventyNavigation:
   parent: _

@@ -5,7 +5,7 @@
       <ul class="space-y-1">
         {%- for entry in navPages %}
           <li class="">
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
@@ -18,7 +18,7 @@
       <ul class="space-y-1">
         {%- for entry in navPages %}
           <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
@@ -30,7 +30,7 @@
       <ul class="space-y-1">
         {%- for entry in navPages %}
           <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
@@ -42,7 +42,7 @@
       <ul class="space-y-1">
         {%- for entry in navPages %}
           <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ relative }}{{ entry.url }}">{{ entry.title }}</a>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
           </li>
         {%- endfor %}
       </ul>
@@ -58,7 +58,7 @@
           <li>
             <a
               class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}"
-              href="{{ relative }}{{ entry.url }}">{{ entry.title }}
+              href="{{ entry.url | url }}">{{ entry.title }}
             </a>
           </li>
         {%- endfor %}
@@ -71,7 +71,7 @@
           <li>
             <a
               class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}"
-              href="{{ relative }}{{ entry.url }}">{{ entry.title }}
+              href="{{ entry.url | url }}">{{ entry.title }}
             </a>
           </li>
         {%- endfor %}
@@ -84,7 +84,7 @@
           <li>
             <a
               class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}"
-              href="{{ relative }}{{ entry.url }}">{{ entry.title }}
+              href="{{ entry.url | url }}">{{ entry.title }}
             </a>
           </li>
         {%- endfor %}
@@ -97,7 +97,7 @@
           <li>
             <a
               class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}"
-              href="{{ relative }}{{ entry.url }}">{{ entry.title }}
+              href="{{ entry.url | url }}">{{ entry.title }}
             </a>
           </li>
         {%- endfor %}
@@ -110,7 +110,7 @@
           <li>
             <a
               class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 {% if entry.url == page.url %} bg-green-50 {% endif %}"
-              href="{{ relative }}{{ entry.url }}">{{ entry.title }}
+              href="{{ entry.url | url }}">{{ entry.title }}
             </a>
           </li>
         {%- endfor %}

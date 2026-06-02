@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Märkeruudud
-relative: ../..
 
 eleventyNavigation:
   parent: Form

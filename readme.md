@@ -1,6 +1,6 @@
 # Rahvusarhiivi disainisüsteemi sisuhaldus
 
-See on [Eleventy HTML-generaatori](https://www.11ty.dev/) projekt, mille abil saab luua ja hallata [Rahvusarhiivi disainisüsteemi dokumentatsiooni](https://rahvusarhiiv2.github.io/disainisysteem/).  
+See on [Eleventy HTML-generaatori](https://www.11ty.dev/) projekt, mille abil saab luua ja hallata [Rahvusarhiivi disainisüsteemi dokumentatsiooni](https://rahvusarhiiv2.github.io/disainisysteem-sisuhaldus/).  
 
 ## Töökorraldus
 
@@ -16,9 +16,9 @@ Rahvusarhiiv disainisüsteemi dokumentatsiooni haldavad **mitu toimetajat** ja *
 
 - vaatab alati `pull request`-i üle, 
 - palub vajadusel koodi muuta või muudab seda ise,
-- ühendab muudatuste haru põhiharuga,
-- genereerib dokumentatsiooni HTML-versiooni,
-- paneb uuendatud HTML-koodi [disainisüsteemi repositooriumisse](https://github.com/Rahvusarhiiv2/disainisysteem).
+- ühendab muudatuste haru põhiharuga.
+
+Kui muudatused on ühendatud harusse `main`, siis GitHub Actions genereerib staatilise HTML-versiooni ja avaldab selle automaatselt GitHub Pagesis.
 
 
 ## Generaatori kasutamine
@@ -55,4 +55,4 @@ Pärast seda saad vaadata töös olevat dokumentatsiooni aadressil: http://local
 npm run build
 ```
 
-Pärast seda saab peatoimetaja panna `dist` kausta sisu disainisüsteemi repositooriumisse.
+See käsk genereerib lokaalselt staatilise veebilehe kausta `dist`. Harus `main` teeb sama töö automaatselt GitHub Actions ning avaldab tulemuse GitHub Pagesis.

@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Lingid
-relative: ../..
 
 eleventyNavigation:
   parent: Navigation

@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Kirjasuurused
-relative: ../..
 
 eleventyNavigation:
   parent: Classes

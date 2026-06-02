@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Sektsioonid
-relative: ../..
 
 eleventyNavigation:
   parent: Navigation

@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Hoiatused ja teated
-relative: ../..
 
 eleventyNavigation:
   parent: Feedback

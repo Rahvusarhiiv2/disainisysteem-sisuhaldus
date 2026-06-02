@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Pöördumine ja hääletoon
-relative: ../..
 
 eleventyNavigation:
   parent: Language

@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Autotüpograafia
-relative: ../..
 
 eleventyNavigation:
   parent: Classes

@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Kirjatüübid
-relative: ../..
 
 eleventyNavigation:
   parent: Classes

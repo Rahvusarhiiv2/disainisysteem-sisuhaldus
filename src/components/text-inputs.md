@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Sisestuskastid
-relative: ../..
 
 eleventyNavigation:
   parent: Form

@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Valikukastid
-relative: ../..
 
 eleventyNavigation:
   parent: Form

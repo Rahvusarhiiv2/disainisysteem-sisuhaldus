@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Varjud
-relative: ../..
 
 eleventyNavigation:
   parent: Classes

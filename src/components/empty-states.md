@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Tühiolekud
-relative: ../..
 
 eleventyNavigation:
   parent: Feedback

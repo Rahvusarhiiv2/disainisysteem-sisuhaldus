@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Noolikoonid
-relative: ../..
 
 eleventyNavigation:
   parent: Icons

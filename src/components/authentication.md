@@ -1,7 +1,6 @@
 ---
 layout: base
 title: Sisselogimine ja konto menüü
-relative: ../..
 
 eleventyNavigation:
   parent: Navigation
