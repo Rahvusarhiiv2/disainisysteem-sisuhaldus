@@ -1,5 +1,47 @@
 {% set tocPrefix = tocPrefix or '' %}
-<aside x-data="{ active: null, scrollToSection(id) { this.active = id; const target = document.getElementById(`{{ tocPrefix }}${id}`); if (!target) return; history.replaceState(null, '', `#${target.id}`); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }" class="hidden w-72 shrink-0 lg:block" aria-labelledby="{{ tocPrefix }}page-toc-heading">
+<aside
+  x-data="{
+    active: 'intro',
+    sectionIds: ['intro', 'start', 'archives', 'service', 'family-names', 'name-estonianisation', 'emigration', 'old-believers'],
+    getSection(id) {
+      return document.getElementById(`{{ tocPrefix }}${id}`);
+    },
+    updateActiveFromScroll() {
+      const offset = window.innerHeight * 0.2;
+      let activeId = this.sectionIds[0];
+      for (let index = 0; index < this.sectionIds.length; index += 1) {
+        const id = this.sectionIds[index];
+        const section = this.getSection(id);
+        if (!section) {
+          continue;
+        }
+        if (section.getBoundingClientRect().top - offset <= 0) {
+          activeId = id;
+        } else {
+          break;
+        }
+      }
+      this.active = activeId;
+    },
+    scrollToSection(id) {
+      this.active = id;
+      const target = this.getSection(id);
+      if (!target) {
+        return;
+      }
+      history.replaceState(null, '', `#${target.id}`);
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    },
+    init() {
+      this.updateActiveFromScroll();
+      window.addEventListener('scroll', () => this.updateActiveFromScroll());
+      window.addEventListener('resize', () => this.updateActiveFromScroll());
+      window.addEventListener('hashchange', () => this.updateActiveFromScroll());
+    }
+  }"
+  class="hidden w-72 shrink-0 lg:block"
+  aria-labelledby="{{ tocPrefix }}page-toc-heading"
+>
   <nav class="sticky top-6 bg-white" aria-label="Lehe sisukord">
     <h2 id="{{ tocPrefix }}page-toc-heading" class="mb-4 ml-3 border-b border-gray-300 pb-2 text-sm font-bold uppercase text-gray-900">Sisukord</h2>
     <ul class="border-l-2 border-gray-100 text-sm">

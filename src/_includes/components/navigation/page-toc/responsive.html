@@ -1,5 +1,48 @@
 {% set tocPrefix = tocPrefix or '' %}
-<div x-data="{ open: false, active: null, scrollToSection(id) { this.active = id; this.open = false; const target = document.getElementById(`{{ tocPrefix }}${id}`); if (!target) return; history.replaceState(null, '', `#${target.id}`); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }" @keydown.escape.window="open = false">
+<div
+  x-data="{
+    open: false,
+    active: 'intro',
+    sectionIds: ['intro', 'start', 'archives', 'service', 'family-names', 'name-estonianisation', 'emigration', 'republic-sources', 'catholic', 'setu', 'old-believers', 'jews', 'baltic-germans', 'useful-links'],
+    getSection(id) {
+      return document.getElementById(`{{ tocPrefix }}${id}`);
+    },
+    updateActiveFromScroll() {
+      const offset = window.innerHeight * 0.2;
+      let activeId = this.sectionIds[0];
+      for (let index = 0; index < this.sectionIds.length; index += 1) {
+        const id = this.sectionIds[index];
+        const section = this.getSection(id);
+        if (!section) {
+          continue;
+        }
+        if (section.getBoundingClientRect().top - offset <= 0) {
+          activeId = id;
+        } else {
+          break;
+        }
+      }
+      this.active = activeId;
+    },
+    scrollToSection(id) {
+      this.active = id;
+      this.open = false;
+      const target = this.getSection(id);
+      if (!target) {
+        return;
+      }
+      history.replaceState(null, '', `#${target.id}`);
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    },
+    init() {
+      this.updateActiveFromScroll();
+      window.addEventListener('scroll', () => this.updateActiveFromScroll());
+      window.addEventListener('resize', () => this.updateActiveFromScroll());
+      window.addEventListener('hashchange', () => this.updateActiveFromScroll());
+    }
+  }"
+  @keydown.escape.window="open = false"
+>
 <button type="button" @click="open = true" class="flex w-full items-center justify-between rounded bg-gray-50 px-4 py-4 text-left text-sm font-bold uppercase text-gray-900 cursor-pointer border-none no-underline hover:focus:active:no-underline hover:bg-gray-100 focus:active:bg-gray-100" aria-controls="{{ tocPrefix }}page-toc-drawer" x-bind:aria-expanded="open.toString()" aria-label="Ava sisukord">
 <span>Sisukord</span>
 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
