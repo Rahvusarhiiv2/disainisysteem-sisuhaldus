@@ -1,38 +1,42 @@
 # Rahvusarhiivi disainisüsteemi sisuhaldus
 
-See on [Eleventy HTML-generaatori](https://www.11ty.dev/) projekt, mille abil saab luua ja hallata [Rahvusarhiivi disainisüsteemi dokumentatsiooni](https://rahvusarhiiv2.github.io/disainisysteem-sisuhaldus/).  
+See on [Eleventy HTML-generaatori](https://www.11ty.dev/) projekt, mille abil saab luua ja hallata Rahvusarhiivi disainisüsteemi dokumentatsiooni.
+
+- Lähtekood: [Rahvusarhiiv2/disainisysteem](https://github.com/Rahvusarhiiv2/disainisysteem)
+- Avalik veeb: [rahvusarhiiv2.github.io/disainisysteem](https://rahvusarhiiv2.github.io/disainisysteem/)
 
 ## Töökorraldus
 
-Rahvusarhiiv disainisüsteemi dokumentatsiooni haldavad **mitu toimetajat** ja **üks peatoimetaja**. 
+Dokumentatsiooni uuendamise töövoog on järgmine:
 
-**Toimetajad:** 
+1. klooni repositoorium ja loo muudatuste jaoks uus haru,
+2. tee muudatused ning ava `pull request`,
+3. vaata muudatused üle ja ühenda need harusse `main`,
+4. GitHub Actions käivitab automaatselt saidi ehituse,
+5. GitHub Pages avaldab uue staatilise HTML-versiooni.
 
-- kloonivad endale käesoleva repositooriumi,
-- loovad muudatuste tegemiseks alati uue `branch`-i, 
-- esitavad muudatused alati ainult `pull request` kaudu. 
+Avaldamine toimub otse sellest repositooriumist. Eraldi HTML-repositooriumisse `dist` kausta sisu enam käsitsi kopeerima ei pea.
 
-**Peatoimetaja:** 
+## Avaldamine
 
-- vaatab alati `pull request`-i üle, 
-- palub vajadusel koodi muuta või muudab seda ise,
-- ühendab muudatuste haru põhiharuga.
+GitHub Pagesi avaldamine käivitub igal `push`-il harusse `main`.
 
-Kui muudatused on ühendatud harusse `main`, siis GitHub Actions genereerib staatilise HTML-versiooni ja avaldab selle automaatselt GitHub Pagesis.
-
+- töövoog: [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml)
+- build käsk: `npm run build`
+- avaldatav väljund: `dist`
 
 ## Generaatori kasutamine
 
 ### 1. Klooni repositoorium
 
 ```shell
-git clone https://github.com/Rahvusarhiiv2/disainisysteem-sisuhaldus.git
+git clone https://github.com/Rahvusarhiiv2/disainisysteem.git
 ```
 
 ### 2. Liigu projekti juurkausta
 
 ```shell
-cd disainisysteem-sisuhaldus
+cd disainisysteem
 ```
 
 ### 3. Paigalda sõltuvused
@@ -40,6 +44,8 @@ cd disainisysteem-sisuhaldus
 ```shell
 npm install
 ```
+
+Soovi korral võid kasutada ka käsku `npm ci`, kui soovid paigaldada täpselt `package-lock.json`-is lukustatud sõltuvused.
 
 ### 4. Käivita lokaalne server
 
@@ -55,4 +61,4 @@ Pärast seda saad vaadata töös olevat dokumentatsiooni aadressil: http://local
 npm run build
 ```
 
-See käsk genereerib lokaalselt staatilise veebilehe kausta `dist`. Harus `main` teeb sama töö automaatselt GitHub Actions ning avaldab tulemuse GitHub Pagesis.
+See käsk genereerib lokaalselt staatilise veebilehe kausta `dist`. Kui sama lähtekood jõuab harusse `main`, teeb GitHub Actions selle ehituse automaatselt ja avaldab tulemuse GitHub Pagesis.

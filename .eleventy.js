@@ -109,7 +109,7 @@ module.exports = function (eleventyConfig) {
 
   return {
     markdownTemplateEngine: "njk",
-    pathPrefix: "/disainisysteem-sisuhaldus/",
+    pathPrefix: "/disainisysteem/",
     dir: {
       input: "src",
       output: "dist",
